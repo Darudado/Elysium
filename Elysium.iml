@@ -13,6 +13,5 @@
     <orderEntry type="library" exported="" name="LunaLib" level="project" />
     <orderEntry type="library" exported="" name="MagicLib" level="project" />
     <orderEntry type="library" exported="" name="Graphics" level="project" />
-    <orderEntry type="library" name="ApproLightCore" level="project" />
   </component>
 </module>
