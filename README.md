@@ -39,7 +39,7 @@ Elysium introduces a new aggressive and expansionist faction to the Starsector u
 
 ## Credits
 - Created by: Daruda
-- Special thanks (not in order) to: The fine people at Corvus, Banano, Crablobab, Tartiflette, President Matt Damon, Ymfah and many others! 
+- Special thanks (not in order) to: The fine people at Corvus, Tecrys, Banano, Crablobab, Pixel_rice_bowl,  Tartiflette, President Matt Damon and many others! 
 
 ## License
 GNU General Public License v2.0 (GPL-2.0)
