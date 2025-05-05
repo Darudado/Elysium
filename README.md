@@ -42,7 +42,7 @@ Elysium introduces a new aggressive and expansionist faction to the Starsector u
 - Special thanks (not in order) to: The fine people at Corvus, Tecrys, Banano, Crablobab, Pixel_rice_bowl,  Tartiflette, President Matt Damon and many others! 
 
 ## License
-GNU General Public License v2.0 (GPL-2.0)
+GNU General Public License v3.0 (GPL-3.0)
 
 ## Contact
 Search Daruda in Corvus or USC
