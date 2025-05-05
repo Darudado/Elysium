@@ -1,0 +1,33 @@
+{
+	"id":"elys_flowertrp_m",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"mountTypeOverride":"SYNERGY",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/weapons/elys_synergy_med_turret.png",
+	"hardpointSprite":"graphics/weapons/elys_synergy_med_base.png",
+	"hardpointOffsets":[9, 0, 9, 0, 9, 0],
+	"turretOffsets":[4, 0, 4, 0, 4, 0],
+	"hardpointAngleOffsets":[0, -3, 3],
+	"turretAngleOffsets":[0, -3, 3],
+	"barrelMode":"ALTERNATING",
+	#"renderHints":[RENDER_LOADED_MISSILES],
+	"interruptibleBurst":false,
+	"animationType":"NONE",
+	"smokeSpec":{
+		"particleSizeMin":14.0,
+		"particleSizeRange":14.0,
+		"cloudParticleCount":7,
+		"cloudDuration":1.2,
+		"cloudRadius":9.0,
+		"blowbackParticleCount":4,
+		"blowbackDuration":1.7,
+		"blowbackLength":18.0,
+		"blowbackSpread":12.0,
+		"particleColor":[0, 180, 255, 105]
+	},
+	"projectileSpecId":"elys_flower_torp",
+	"fireSoundTwo":"torpedo_fire",
+	"everyFrameEffect":"elysium.weapons.FlowerTorpWeaponEffect",
+	
+}

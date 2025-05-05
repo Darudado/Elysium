@@ -1,0 +1,66 @@
+{
+  "id":"elys_torpedo",
+  "specClass":"missile",
+  "missileType":"ROCKET",
+  "sprite":"graphics/missile/elys_torpedo.png",
+  "size":[14,23],
+  "center":[7,11],
+  "collisionRadius":20,
+  "collisionClass":"MISSILE_FF",
+  "explosionColor":[0, 255, 255, 255],  # Cyan/Aqua color for explosion
+  "explosionRadius":350, # purely visual
+  "explosionSpec":{
+    "duration":0.1,
+    "radius":175,
+    "coreRadius":75, # full damage within core radius
+    "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+    "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+    "particleSizeMin":5.0,
+    "particleSizeRange":3.0,
+    "particleDuration":1,
+    "particleCount":200,
+    "particleColor":[0, 150, 255, 255], # Blue color for particles
+    "explosionColor":[0, 255, 255, 255], # Cyan color for explosion
+    "detailedExplosionFlashColorFringe":[0, 255, 255, 255],
+    "detailedExplosionFlashRadius":500,
+    "useDetailedExplosion":true
+  },
+  "flameoutTime":3, # total time from flameout to full fadeout
+  "armingTime":0.5,
+  "noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+  "fadeTime":0.5, # fadeout duration
+  "glowColor":[0, 255, 255, 100], # Semi-transparent cyan
+  "maxFlightTime":3.5, # Same as reaper
+  "engineSpec":{
+    "turnAcc":30, # Some turning capability for initial guidance
+    "turnRate":20,
+    "acc":500, # Fast acceleration like reaper
+    "dec":0
+  },
+  "engineSlots":[{
+    "id":"ES1",
+    "loc":[-11, 0],
+    "style":"CUSTOM",
+    "styleSpec":{
+      "mode":"QUAD_STRIP",
+      "engineColor":[0, 150, 255, 0], # Transparent blue base
+      "contrailDuration":2,
+      "contrailWidthMult":1.5,
+      "contrailWidthAddedFractionAtEnd":1,
+      "contrailMinSeg":5,
+      "contrailMaxSpeedMult":0,
+      "contrailAngularVelocityMult":0.5,
+      "contrailSpawnDistMult":0,
+      "contrailColor":[0, 180, 255, 75], # Light blue for trail
+      "glowSizeMult":2.5,
+      "glowAlternateColor":[0, 255, 255, 255], # Bright cyan for glow
+      "type":"GLOW" # Additive blend mode
+    },
+    "width":10.0,
+    "length":80.0,
+    "angle":180.0
+  }],
+
+  # Custom plugin for increasing damage at close range
+  "onHitEffect":"elysium.weapons.ElysiumTorpedoHitEffect"
+}

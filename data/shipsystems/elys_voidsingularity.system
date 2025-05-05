@@ -1,0 +1,20 @@
+{
+	"id":"elys_voidsingularity",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+    "aiScript":"elysium.shipSystem.ai.ELYS_VoidSingularitySystemAI",
+	
+	"statsScript":"elysium.shipSystem.ELYS_VoidSingularitySystemScript",
+
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.75,
+	"soundFilterGainHF":0.5,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_temporalshell",
+	"loopSound":"system_temporalshell_loop",
+	"deactivateSound":"system_temporalshell_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+
+}

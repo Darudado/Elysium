@@ -1,0 +1,136 @@
+{
+    "hullName": "Aetherion wing",
+    "hullId": "ELYS_Aetherion_wing",
+    "hullSize": "CRUISER",
+    "style": "ELYSIUM",
+    "spriteName": "graphics/ships/aetherion/aetherion_wing.png",
+    "height": 362,
+    "width": 239,
+    "center": [
+        159, 156.5
+    ],
+    "collisionRadius": 225,
+    "coversColor": "",
+    "shieldCenter": [
+        24.5, 39.5
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInWings": [],
+    "builtInMods": [
+        "ELYS_Armor",
+        "ELYS_BarkCoating" 
+ 
+    ],
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 245,
+            "angle": 0,
+            "locations": [
+                     -11,    -12.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 189,
+            "angle": 0,
+            "locations": [
+                    64.5,      -46
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 176,
+            "angle": 0,
+            "locations": [
+                    38.5,       -1
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 183,
+            "angle": 0,
+            "locations": [
+                    -9.5,     60.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 187,
+            "angle": 181,
+            "locations": [
+                     -76,     47.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 183,
+            "angle": 89.5,
+            "locations": [
+                     -92,      102
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    13.5,       70
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 183,
+            "angle": 0,
+            "locations": [
+                   135.5,      -56
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+            -113,      -12,
+           -18.5,    -71.5,
+           207.5,    -67.5,
+              73,      -24,
+           105.5,      -20,
+        
+             3.5,     60.5,
+             -14,      107,
+             -35,    112.5,
+           -31.5,     88.5,
+          -157.5,    160.5,
+        
+             -75,       57,
+          -109.5,       62,
+             -44,     16.5,
+             -65,      3.5,
+          -123.5,     11.5
+    # 15 points total.
+    ]
+}

@@ -1,0 +1,31 @@
+{
+  "id":"elys_torpedo_medium",
+  "specClass":"projectile",
+  "type":"MISSILE",
+  "size":"MEDIUM",
+  "turretSprite":"graphics/weapons/elys_particle_med_turret.png",
+  "hardpointSprite":"graphics/weapons/elys_particle_med_base.png",
+  "hardpointOffsets":[20, -5, 20, 5], # Two barrels offset
+  "turretOffsets":[20, -5, 20, 5],     # Two barrels offset
+  "hardpointAngleOffsets":[0, 0],
+  "turretAngleOffsets":[0, 0],
+  "barrelMode":"ALTERNATING", # Fire both barrels at once
+  "animationType":"SMOKE",
+  "interruptibleBurst":false,
+  "displayArcRadius":1000,
+  "smokeSpec":{
+    "particleSizeMin":16.0,
+    "particleSizeRange":18.0,
+    "cloudParticleCount":10,
+    "cloudDuration":2.0,
+    "cloudRadius":12.0,
+    "blowbackParticleCount":6,
+    "blowbackDuration":2.0,
+    "blowbackLength":22.0,
+    "blowbackSpread":15.0,
+    "particleColor":[0, 180, 255, 105] # Light blue for smoke (medium weapon)
+  },
+  "projectileSpecId":"elys_torpedo",
+  "fireSoundTwo":"reaper_fire",
+  #"everyFrameEffect":"elysium.weapons.ElysiumTorpedoEveryFrameEffect"
+}

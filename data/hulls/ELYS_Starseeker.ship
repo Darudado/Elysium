@@ -1,0 +1,182 @@
+{
+    "hullName": "Starseeker",
+    "hullId": "ELYS_Starseeker",
+    "hullSize": "FRIGATE",
+    "style": "ELYSIUM",
+    "spriteName": "graphics/ships/starseeker.png",
+    "height": 129,
+    "width": 115,
+    "center": [
+        57.5, 64.5
+    ],
+    "collisionRadius": 69,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ELYS_Armor",
+        "hiressensors",
+        "ecm"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+     "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 202,
+            "angle": 59,
+            "locations": [
+                   -22.5,       12
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 174,
+            "angle": 315.5,
+            "locations": [
+                     -23,    -14.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 192,
+            "angle": 0,
+            "locations": [
+                    -6.5,     -0.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -29, 21
+            ],
+            "length": 10,
+            "width": 2,
+            "angle": 153,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -30, 18.5
+            ],
+            "length": 10,
+            "width": 2,
+            "angle": 153,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -28, -22.5
+            ],
+            "length": 10,
+            "width": 2,
+            "angle": 207,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -31.5, 16.5
+            ],
+            "length": 10,
+            "width": 2,
+            "angle": 153,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -32.5, 14
+            ],
+            "length": 10,
+            "width": 2,
+            "angle": 153,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -29.5, -20.5
+            ],
+            "length": 10,
+            "width": 2,
+            "angle": 207,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -31, -18.5
+            ],
+            "length": 10,
+            "width": 2,
+            "angle": 207,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -32, -16
+            ],
+            "length": 10,
+            "width": 2,
+            "angle": 207,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -52, -0.5
+            ],
+            "length": 22,
+            "width": 3,
+            "angle": 180.5,
+            "contrailSize": 12,
+            "style": "OMEGA"
+        }
+    ],
+    "bounds": [
+             -63,       -7,
+           -35.5,    -10.5,
+             -27,      -24,
+           -47.5,    -37.5,
+             -35,    -43.5,
+        
+             3.5,      -28,
+              -8,      -57,
+            12.5,    -37.5,
+            15.5,    -48.5,
+            25.5,    -19.5,
+        
+            61.5,     -3.5,
+            61.5,      3.5,
+            25.5,     19.5,
+            15.5,     48.5,
+            12.5,     37.5,
+        
+              -8,       57,
+             3.5,       28,
+             -35,     43.5,
+           -47.5,     37.5,
+             -27,       24,
+        
+           -35.5,     10.5,
+             -63,        7
+    # 22 points total.
+    ]
+}

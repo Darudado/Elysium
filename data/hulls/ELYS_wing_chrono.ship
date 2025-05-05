@@ -1,0 +1,99 @@
+{
+    "hullName": "Chrono",
+    "hullId": "ELYS_wing_Chrono",
+    "hullSize": "FIGHTER",
+    "style": "ELYSIUM",
+    "spriteName": "graphics/ships/wings/chrono.png",
+    "height": 84,
+    "width": 48,
+    "center": [
+        24, 42
+    ],
+    "collisionRadius": 44,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HIDDEN",
+            "arc": 32,
+            "angle": 0,
+            "locations": [
+                       3,        4
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HIDDEN",
+            "arc": 32,
+            "angle": 0,
+            "locations": [
+                       3,       -4
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HIDDEN",
+            "arc": 36,
+            "angle": 0,
+            "locations": [
+                    -3.5,      4.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HIDDEN",
+            "arc": 36,
+            "angle": 0,
+            "locations": [
+                    -3.5,     -4.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -34, 6
+            ],
+            "length": 12,
+            "width": 5,
+            "angle": 180,
+            "contrailSize": 13,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -34, -6
+            ],
+            "length": 12,
+            "width": 5,
+            "angle": 180,
+            "contrailSize": 13,
+            "style": "ELYSIUM"
+        }
+    ],
+    "bounds": [
+             -33,    -21.5,
+            39.5,     -5.5,
+             5.5,       -4,
+             5.5,        4,
+            39.5,      5.5,
+        
+             -33,     21.5,
+           -38.5,      0.5
+    ]
+}

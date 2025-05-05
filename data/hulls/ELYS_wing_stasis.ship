@@ -1,0 +1,112 @@
+{
+    "hullName": "Stasis",
+    "hullId": "ELYS_wing_statis",
+    "hullSize": "FIGHTER",
+    "style": "ELYSIUM",
+    "spriteName": "graphics/ships/wings/stasis.png",
+    "height": 90,
+    "width": 50,
+    "center": [
+        25, 45
+    ],
+    "collisionRadius": 47,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HIDDEN",
+            "arc": 43,
+            "angle": 0,
+            "locations": [
+                    17.5,      2.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HIDDEN",
+            "arc": 43,
+            "angle": 0,
+            "locations": [
+                    17.5,     -2.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HIDDEN",
+            "arc": 31,
+            "angle": 0,
+            "locations": [
+                      14,      4.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "UNIVERSAL",
+            "mount": "HIDDEN",
+            "arc": 31,
+            "angle": 0,
+            "locations": [
+                      14,     -4.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -27, 14
+            ],
+            "length": 7.5,
+            "width": 5,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -27, -14
+            ],
+            "length": 7.5,
+            "width": 5,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -33, 0
+            ],
+            "length": 16,
+            "width": 7,
+            "angle": 180.5,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        }
+    ],
+    "bounds": [
+             -44,       -6,
+           -24.5,    -25.5,
+            45.5,    -10.5,
+            45.5,       -5,
+            23.5,       -5,
+        
+            23.5,        5,
+            45.5,        5,
+            45.5,     10.5,
+           -24.5,     25.5,
+             -44,        6
+    ]
+}

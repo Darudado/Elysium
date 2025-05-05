@@ -1,0 +1,221 @@
+{
+    "hullName": "Twilight",
+    "hullId": "ELYS_Twilight",
+    "hullSize": "CRUISER",
+    "style": "ELYSIUM",
+    "spriteName": "graphics/ships/twilight.png",
+    "height": 320,
+    "width": 320,
+    "center": [
+        160, 159.5
+    ],
+    "collisionRadius": 164,
+    "coversColor": "",
+    "shieldCenter": [
+        0.5, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ELYS_Armor"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 130,
+            "angle": 0,
+            "locations": [
+                     -51,      0.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 105,
+            "angle": 0,
+            "locations": [
+                   -32.5,       44
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 105,
+            "angle": 0,
+            "locations": [
+                   -32.5,      -44
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 143,
+            "angle": 1.5,
+            "locations": [
+                    21.5,     45.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 143,
+            "angle": 358.5,
+            "locations": [
+                    21.5,    -45.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 186,
+            "angle": 12.5,
+            "locations": [
+                     2.5,     62.5
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 186,
+            "angle": 347.5,
+            "locations": [
+                     2.5,    -62.5
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 207,
+            "angle": 167.5,
+            "locations": [
+                   -19.5,     94.5
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 207,
+            "angle": 192.5,
+            "locations": [
+                   -19.5,    -94.5
+            ]
+        },
+        {
+            "id": "LB 000",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     -47,       47,
+                     -56,     55.5,
+                   -63.5,       62
+            ]
+        },
+        {
+            "id": "LB 001",
+            "size": "SMALL",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     -47,    -48.5,
+                   -54.5,      -55,
+                     -63,    -63.5
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -108, 0.5
+            ],
+            "length": 50,
+            "width": 18,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "OMEGA"
+        }
+    ],
+    "bounds": [
+            -125,     -9.5,
+          -145.5,    -10.5,
+            -104,      -20,
+          -131.5,    -45.5,
+             -85,    -23.5,
+        
+           -79.5,      -31,
+           -96.5,    -53.5,
+           -95.5,      -84,
+             -74,      -63,
+             -60,    -71.5,
+        
+             -99,     -103,
+           -34.5,      -92,
+             -67,   -148.5,
+               6,      -87,
+              13,   -109.5,
+        
+            31.5,      -79,
+              61,   -109.5,
+              48,    -70.5,
+           117.5,    -75.5,
+              57,      -41,
+        
+              77,    -24.5,
+             147,     -5.5,
+             126,     -4.5,
+             126,      4.5,
+             147,      5.5,
+        
+              77,     24.5,
+              57,       41,
+           117.5,     75.5,
+              48,     70.5,
+              61,    109.5,
+        
+            31.5,       79,
+              13,    109.5,
+               6,       87,
+             -67,    148.5,
+           -34.5,       92,
+        
+             -99,      103,
+             -60,     71.5,
+             -74,       63,
+           -95.5,       84,
+           -96.5,     53.5,
+        
+           -79.5,       31,
+             -85,     23.5,
+          -131.5,     45.5,
+            -104,       20,
+          -145.5,     10.5,
+        
+            -125,      9.5
+    # 46 points total.
+    ]
+}

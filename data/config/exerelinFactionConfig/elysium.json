@@ -1,0 +1,51 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Rebels",
+    
+    "directoryUseShortName":true,
+
+    "maxRelationships":{ "luddic_church":-0.55 },
+    "diplomacyPositiveChance":{ "luddic_church":0.25 },
+    "diplomacyNegativeChance":{ "luddic_church":2 },
+    "morality":"neutral",
+    "diplomacyTraits":["helps_allies", "irredentist", "stalwart", "likes_ai", "neutralist"],
+    "alignments":{
+        "ideological":-0.25,
+        "militarist":0.5,
+        "technocratic":1,
+    },
+    "canInvade":true,
+    "invasionPointMult":2,
+    
+    "colonyExpeditionChance":0.5,
+    
+    #"startShipsSolo":[["FM_Parasol_Standard"]],
+    #"startShipsCombatSmall":[
+    #  ["FM_Aya_Standard", "FM_Firefly_Standard", "FM_Firefly_Support"]
+    #],
+    
+    #"startShipsCarrierSmall":[["FM_Puppeteer_Standard", "FM_Rabbit_Standard"]],
+	
+	#"startShipsSuper":[
+    #    ["FM_Miko_Standard","FM_Rotation_Standard"],
+    #],
+    
+    #"startSpecialItems":[
+    #    [["FM_com_bp", ""]],
+    #],
+	
+	"bonusSeeds": [
+    {"id": "nanoforge_pristine", "count": 2},
+    {"id": "aiCore_station", "count": 2, "mult": 0.2},
+    {"id": "aiCore_military", "mult": 0.25},
+    {"id": "aiCore_heavyindustry", "count": 1},
+    {"id": "aiCore_any", "mult": 2.5},
+	],
+  
+
+    "defenceStations": [
+    {"ids": ["orbitalstation_high", "battlestation_high", "starfortress_high"]},
+    ],
+}

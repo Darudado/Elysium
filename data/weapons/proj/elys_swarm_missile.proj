@@ -1,0 +1,76 @@
+{
+  "id":"elys_swarm_missile",
+  "specClass":"missile",
+  "missileType":"MISSILE",
+  "sprite":"graphics/missile/whiteflower.png",
+  "size":[10, 22],
+  "center":[5, 11],
+  "collisionRadius":11,
+  "collisionClass":"MISSILE_NO_FF",
+  "explosionColor":[0, 255, 255, 175],
+  "explosionRadius":100,
+  "engineSpec":{
+    "turnAcc":250,
+    "turnRate":300,
+    "acc":150,
+    "dec":80,
+    "engineSlots":[{
+      "id":"ES1",
+      "loc":[-11, 0],
+      "style":"CUSTOM",
+      "styleSpec":{
+        "mode":"QUAD_STRIP",
+        "engineColor":[0, 255, 255, 200],
+        "contrailParticleSizeMult":2.5,
+        "contrailParticleDuration":2.5,
+        "contrailParticleFinalSizeMult":0.5,
+        "contrailMaxSpeedMult":0.5,
+        "contrailAngularVelocityMult":0.5,
+        "contrailWidthMult":1.0,
+        "contrailColor":[0, 150, 255, 125],
+        "type":"SMOKE"
+      },
+      "width":8.0,
+      "length":25.0,
+      "angle":180.0
+    }]
+  },
+  "explosionSpec":{
+    "duration":0.15,
+    "radius":100,
+    "coreRadius":40,
+    "collisionClass":"PROJECTILE_FF",
+    "collisionClassByFighter":"PROJECTILE_FIGHTER",
+    "particleSizeMin":4.0,
+    "particleSizeRange":4.0,
+    "particleDuration":1.25,
+    "particleCount":35,
+    "particleColor":[0, 255, 255, 175],
+    "sound":"explosion_missile"
+  },
+  "flameoutTime":1.75,
+  "fizzleTime":2.5,
+  "armingTime":0.2,
+  "maxFlightTime":7.0,
+  "fadeTime":0.5,
+  "flameoutSpec":{
+    "duration":0.2,
+    "particleSizeMin":12.0,
+    "particleSizeRange":7.0,
+    "particleDuration":0.5,
+    "particleCount":7,
+    "particleColor":[0, 180, 255, 175]
+  },
+  "passThroughMissiles":true,
+  "glowRadius":25,
+  "glowColor":[0, 255, 255, 200],
+  "alwaysAccelerate":true,
+  "renderTargetIndicator":true,
+  "noCollisionWhileFading":true,
+  "useHitGlowWhenDestroyed":true,
+  "dudProbabilityOnFlameout":0,
+  "behaviorSpec":{
+    "behavior":"CUSTOM",
+    "customPlugin":"elysium.weapons.ElysSwarmMissileAI"
+  }
+}

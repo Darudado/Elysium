@@ -1,0 +1,67 @@
+name,id,tier,rarity,tech/manufacturer,tech,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+Living Armor,ELYS_Armor,3,,Elysium,defensive,Defenses,5000,FALSE,FALSE,,0,0,0,0,elysium.hullmods.ELYS_Armor,"The hallmark of Elysium engineering, this unique living armor forms a symbiotic bond with the ship's hull. Composed of specialized arboreal tissues that can absorb, redistribute, and heal damage, the armor creates a resilient defensive layer that constantly regenerates itself by drawing energy from the ship's flux systems. The organic structure provides natural resistance against weapons while producing valuable resin as a byproduct.",Regenerative living armor that self-repairs using ship flux.,,graphics/hullmods/accelerated_shields.png
+Arboreal Resin Refinement,ELYS_ArborealResinRefinement,1,,Elysium,logistics,Logistics,6000,FALSE,FALSE,,3,6,9,15,elysium.hullmods.ELYS_ArborealResinRefinement,"Specialized collection and processing systems that harvest the natural resin produced by Elysium ships' living armor.
+
+Increases fuel efficiency by %s, reducing consumption during travel.
+Generates %s units of fuel per day when the fleet is stationary or at minimal burn.
+This collection system requires additional maintenance, increasing the ship's supply consumption by %s.",Processes living armor resin into usable fuel while improving efficiency.,,graphics/hullmods/accelerated_shields.png
+Bark Coating,ELYS_BarkCoating,1,,Elysium,defensive,Defenses,8000,FALSE,FALSE,,5,10,15,25,elysium.hullmods.ELYS_BarkCoating,"A specialized reinforcement of the ship's living armor with a denser outer layer of protective bark-like material.
+
+Increases hull hit points by %s, providing substantial structural reinforcement.
+Increases missile hull by %s, making them more resilient against point defenses.",Enhanced protective bark layer that reinforces hull integrity.,S-mod: Missile hull bonus increased to %s.,graphics/hullmods/accelerated_shields.png
+Beam Expertize,ELYS_BeamExpertize,1,,Elysium,offensive,Weapons,10000,FALSE,FALSE,,3,10,20,30,elysium.hullmods.ELYS_BeamExpertize,"Advanced energy weapon calibrations and focusing arrays that enhance beam weapon performance.
+
+Increases beam weapon range by %s units.
+Increases beam weapon damage by %s.",Specialized modifications that extend beam weapon range and increase damage.,S-mod: Beam weapons deal %s damage. Maintenance costs will increase by %s. ,graphics/hullmods/accelerated_shields.png
+#Canopy Defense,ELYS_CanopyDefense,3,,Elysium,defensive,Defenses,15000,FALSE,FALSE,,12,25,35,65,elysium.hullmods.ELYS_CanopyDefense,"Elysium ships feature a specialized canopy of sensory tendrils that enhance point defense capabilities.
+
+Reduces OP cost of small point defense weapons by %s.
+Enhances point defense targeting:
+- Point defense ignores flares
+- Improved target leading for point defense
+- Increases point defense damage to missiles by %s
+
+Cannot be removed if point defense weapons are installed.",Advanced point defense system that enhances targeting and reduces OP costs.,S-mod: Increases point defense range by %s and reduces the ship maximum flux dissipation by %s.,graphics/hullmods/accelerated_shields.png
+Charge Storage,ELYS_ChargeStorage,1,,Elysium,offensive,Weapons,7000,FALSE,FALSE,,3,6,12,20,elysium.hullmods.ELYS_ChargeStorage,"An advanced energy storage system derived from Elysium technology that enhances energy weapon capacity and performance.
+
+Increases energy weapon ammo capacity by %s.
+Increases energy weapon damage by %s.",Enhanced energy weapon storage system that improves ammunition and damage.,,graphics/hullmods/accelerated_shields.png
+Elite Crew,ELYS_EliteCrew,3,,Elysium,special,Special,12000,FALSE,FALSE,,3,6,12,20,elysium.hullmods.ELYS_EliteCrew,"Elysium ships are crewed by highly trained specialists with an intimate understanding of their unique technology.
+
+Reduces crew casualties in combat by %s.
+Increases energy weapon damage by %s due to superior weapon expertize.",Highly trained Elysium specialists that reduce casualties and enhance weapon performance.,S-mod: Reduces combat system repair time by %s.,graphics/hullmods/accelerated_shields.png
+EMP Beam Capacitors,ELYS_EMPBeam,3,,Elysium,offensive,Weapons,15000,FALSE,FALSE,,8,15,25,35,elysium.hullmods.ELYS_EMPBeam,"A specialized modification to beam weapon systems that imbues their energy discharge with electromagnetic disruption capabilities.
+
+Beam weapons deal %s of their damage as additional EMP damage when hitting hull or armor.
+Has a chance to create EMP arcs on impact on armor or shields. EMP arc deals half of the EMP damage. 
+Increases beam weapon flux cost by %s.",Enhances beam weapons with EMP damage capabilities.,S-mod: Flux cost penalty increased to %s.,graphics/hullmods/accelerated_shields.png
+Energy Rangefinder,ELYS_EnergyRangefinder,3,,Elysium,offensive,Weapons,14000,FALSE,FALSE,,0,10,15,25,elysium.hullmods.ELYS_EnergyRangefinder,"An advanced targeting system that utilizes data from the ship's largest energy weapon slot to extend the range of smaller energy weapons.
+
+Benefits vary based on the largest energy slot available:
+- Small/Medium slot: Small energy weapons gain up to +100 range
+- Large slot: Small energy weapons gain +200 range and medium energy weapons gain +100 range
+
+Synergy weapons receive double the range bonus, with a minimum of +100 range.
+
+Cannot be installed on frigates. Requires the ship to have at least one energy weapon slot.",Advanced targeting system that extends energy and synergy weapon range.,,graphics/hullmods/accelerated_shields.png
+Enhanced Healing Armor,ELYS_EnhancedHealingArmor,2,,Elysium,defensive,Defenses,12000,FALSE,FALSE,,10,20,30,45,elysium.hullmods.ELYS_EnhancedHealingArmor,"An advanced enhancement to the Elysium living armor system that improves its regenerative capabilities.
+
+Increases the armor repair ceiling by %s, allowing the living armor to repair to a higher threshold.
+However, this enhancement makes the ship even more vulnerable to kinetic damage, increasing damage taken by %s.
+
+Requires the Living Armor hullmod to be installed.",Enhanced regenerative capabilities for Elysium's living armor system.,S-mod: Kinetic damage vulnerability increased to %s.,graphics/hullmods/accelerated_shields.png
+Overcharged Munitions,ELYS_OverchargedMunitions,2,,Elysium,offensive,Weapons,9000,FALSE,FALSE,,8,15,25,35,elysium.hullmods.ELYS_OverchargedMunitions,"A specialized system that infuses missiles with additional energy discharge capabilities.
+
+Missiles deal %s of their base damage as additional energy damage on impact.
+Missiles have a %s chance to generate EMP arcs when striking a target. EMP arcs deal half the EMP damage. 
+
+This modification puts additional strain on missile systems:
+- Reduces missile hull by %s
+- Increases missile reload time by %s",Enhanced missiles with energy damage and EMP capabilities.,S-mod: increase missile reload time penalty to %s.,graphics/hullmods/accelerated_shields.png
+Tactical Flux Redirector,ELYS_TacticalFluxRedirector,3,,Elysium,offensive,Weapons,14000,FALSE,FALSE,,8,15,30,40,elysium.hullmods.ELYS_TacticalFluxRedirector,"A specialized system that redirects excess weapon flux into energy weapon systems, dramatically enhancing their performance at a cost.
+
+Increases energy weapon damage by %s.
+When flux level exceeds %s, the system begins to damage ship armor at a rate of %s per second.
+Increases energy weapon flux cost by %s.
+
+Cannot be installed on ships with shields.",High-risk energy weapon enhancement that damages own armor at high flux levels.,"S-mod: Lowers the armor damage threshold to %s flux,  increase degeneration of  ship's armor to a rate of %s per second.",graphics/hullmods/accelerated_shields.png

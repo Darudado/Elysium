@@ -1,0 +1,164 @@
+{
+    "hullName": "Starbane",
+    "hullId": "ELYS_Starbane",
+    "hullSize": "FRIGATE",
+    "style": "ELYSIUM",
+    "spriteName": "graphics/ships/starbane.png",
+    "height": 155,
+    "width": 112,
+    "center": [
+        56, 77.5
+    ],
+    "collisionRadius": 78,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ELYS_Armor",
+        "ELYS_EMPBeam"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 115,
+            "angle": 0.5,
+            "locations": [
+                     7.5,       20
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 128,
+            "angle": 0,
+            "locations": [
+                     7.5,      -20
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 122,
+            "angle": 8,
+            "locations": [
+                   -29.5,       14
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 149,
+            "angle": 0,
+            "locations": [
+                     -13,        0
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 134,
+            "angle": 347,
+            "locations": [
+                     -29,      -14
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 23,
+            "angle": 0,
+            "locations": [
+                    10.5,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -65.5, 7
+            ],
+            "length": 16,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -65.5, -7
+            ],
+            "length": 16,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -43, 20.5
+            ],
+            "length": 15,
+            "width": 5,
+            "angle": 164.5,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -43, -20.5
+            ],
+            "length": 15,
+            "width": 5,
+            "angle": 195.5,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        }
+    ],
+    "bounds": [
+              13,       -6,
+              78,     -3.5,
+              34,    -12.5,
+            33.5,      -19,
+           -10.5,    -40.5,
+        
+            -1.5,      -28,
+           -51.5,    -55.5,
+           -31.5,      -33,
+             -58,      -32,
+           -42.5,      -21,
+        
+           -76.5,    -14.5,
+           -76.5,     14.5,
+           -42.5,       21,
+             -58,       32,
+           -31.5,       33,
+        
+           -51.5,     55.5,
+            -1.5,       28,
+           -10.5,     40.5,
+            33.5,       19,
+              34,     12.5,
+        
+              78,      3.5,
+              13,        6
+    # 22 points total.
+    ]
+}

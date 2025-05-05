@@ -1,0 +1,18 @@
+{
+  "id": "ElvenElysium",
+  "name": "Elysium",
+  "author": "Daruda",
+  "utility": false,
+  "version": {
+    "major": "0",
+    "minor": "1",
+    "patch": "0"
+  },
+  "description": "Elf High tech faction",
+  "gameVersion": "0.98a-RC5",
+  "jars": [
+    "jars/Elysium.jar"
+  ],
+  "modPlugin": "elysium.ElysiumModPlugin",
+  "dependencies": []
+}

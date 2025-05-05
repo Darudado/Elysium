@@ -1,0 +1,69 @@
+{
+	"id":"elys_flower_torp",
+	"specClass":"missile",
+	"missileType":"MISSILE",
+	"onHitEffect":"elysium.weapons.FlowerTorpedoEffect",
+	"onFireEffect":"elysium.weapons.FlowerTorpedoEffect",
+	"sprite":"graphics/missile/whiteflower.png",
+	"size":[12,14],	
+	"center":[6,7],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255, 215, 0, 255],  # Golden explosion color
+	"explosionRadius":200, # purely visual
+	"explosionSpec":{
+		"duration":0.1, # not visual
+		"radius":150,
+		"coreRadius":65, # full damage within core radius
+		"collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+		"collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+		"particleSizeMin":5.0,
+		"particleSizeRange":3.0,
+		"particleDuration":1,
+		"particleCount":15,
+		"particleColor":[0, 191, 255, 255]  # Azure particle color
+	},
+	"noCollisionWhileFading":true,
+	"useHitGlowWhenDealingDamage":false, # using the scripted explosion instead
+	"useHitGlowWhenDestroyed":true, # instead of the default explosion
+	"dudProbabilityOnFlameout":0,
+	"fizzleOnReachingWeaponRange":true,					 
+	"armingTime":0.2,
+	"flameoutTime":0.2, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.2, # time spent without the engine glow being rendered
+	"fadeTime":0.2, # fadeout duration			
+	"glowColor":[0, 191, 255, 100], # Azure glow
+	"glowRadius":100,
+	"passThroughMissiles":true,
+	"passThroughFighters":false,
+	"applyOnHitEffectWhenPassThrough":false,
+	"engineSpec":{
+		"turnAcc":200,
+		"turnRate":75,
+		"acc":350,
+		"dec":250
+	},
+	"engineSlots":[{
+		"id":"ES1",
+		"loc":[0, 0],
+		"style":"CUSTOM",
+		"styleSpec":{
+			"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP
+			"engineColor":[0, 191, 255, 0],
+			"glowSizeMult":2.0,
+			"glowAlternateColor":[255, 215, 0, 255], # Golden alternate glow
+			"contrailDuration":2,
+			"contrailWidthMult":1.5,
+			"contrailWidthAddedFractionAtEnd":1,
+			"contrailMinSeg":5, # min segment length, in pixels
+			"contrailMaxSpeedMult":0,
+			"contrailAngularVelocityMult":0.5,
+			"contrailSpawnDistMult":0, # how far away from engine it starts
+			"contrailColor":[186, 127, 255, 75], # Light purple contrail
+			"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+		},
+		"width":10.0,
+		"length":45.0,
+		"angle":180.0
+	}]
+}

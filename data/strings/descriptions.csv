@@ -1,0 +1,10 @@
+id,type,text1,text2,text3,text4,notes
+# Types: WEAPON,SHIP,RESOURCE,CUSTOM,ACTION_TOOLTIP,ASTEROID,PLANET,SHIP_SYSTEM,FACTION,TERRAIN
+#astral,SHIP,"Text goes here",,,,
+elys_starforgerepair,SHIP_SYSTEM,"Channels the ship's living armor's regenerative properties through a specialized projection system to repair the hull of nearby allied ships.
+
+Automatically targets the most damaged allied ship within range.
+Generates hard flux to repair hull.
+Pause repair if flux levels become dangerous.","The Elysium living armor's remarkable self-healing properties were eventually weaponized as support technology. By catalyzing and projecting the regenerative resin through specialized emitters, Elysium support vessels can repair their allies in the heat of battle.",,,
+elys_sensoryboost,SHIP_SYSTEM,"Temporarily stimulates the ship's living armor to produce specialized sensory filaments, enhancing the ship's sensor capabilities and boosting its speed.
+","Elysium engineers discovered that their living ship armor could be temporarily stimulated to grow sensory filaments that detect subtle spatial disturbances. These sensory enhancements also synchronize with the ship's engines, allowing for brief but significant mobility increases.",,,

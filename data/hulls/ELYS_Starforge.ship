@@ -1,0 +1,110 @@
+{
+    "hullName": "Starforge",
+    "hullId": "ELYS_Starforge",
+    "hullSize": "FRIGATE",
+    "style": "ELYSIUM",
+    "spriteName": "graphics/ships/starforge.png",
+    "height": 161,
+    "width": 120,
+    "center": [
+        60, 80
+    ],
+    "collisionRadius": 81,
+    "coversColor": "",
+    "shieldCenter": [
+        0.5, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ELYS_Armor",
+        "repair_gantry"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 157,
+            "angle": 326.5,
+            "locations": [
+                       4,      -20
+            ]
+        },
+        {
+            "id": "WS 000",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "HARDPOINT",
+            "arc": 15,
+            "angle": 0,
+            "locations": [
+                    37.5,        0
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 145,
+            "angle": 34.5,
+            "locations": [
+                       4,       20
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "SYNERGY",
+            "mount": "TURRET",
+            "arc": 75,
+            "angle": 0.5,
+            "locations": [
+                     -19,        0
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -54.5, 5
+            ],
+            "length": 29,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -54.5, -5
+            ],
+            "length": 29,
+            "width": 6,
+            "angle": 180,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        }
+    ],
+    "bounds": [
+           -49.5,     -4.5,
+             -80,       -7,
+             -26,    -41.5,
+           -36.5,      -58,
+              82,     -6.5,
+        
+            38.5,       -6,
+            38.5,        6,
+              82,      6.5,
+           -36.5,       58,
+             -26,     41.5,
+        
+             -80,        7,
+           -49.5,      4.5
+    # 12 points total.
+    ]
+}

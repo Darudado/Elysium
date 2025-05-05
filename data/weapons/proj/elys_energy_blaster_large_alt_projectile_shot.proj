@@ -1,0 +1,21 @@
+{
+	"id":"elys_energy_blaster_large_alt_projectile_shot",
+	"specClass":"projectile",
+    "spawnType":"BALLISTIC_AS_BEAM",
+    "collisionClass":"RAY",
+    "collisionClassByFighter":"RAY_FIGHTER",
+    "length":80.0,
+	"onHitEffect":"elysium.weapons.onhit.EnergyBlasterOnHitAlt",
+    "hitGlowRadius":100.0,
+    "width":28.0,
+    "fadeTime":0.05,
+    "fringeColor": [120, 180, 255, 150],
+    "coreColor": [230, 240, 255, 200],
+    "glowColor": [170, 200, 255, 100],
+    "glowRadius":175,
+    "textureType":"ROUGH",
+    "textureScrollSpeed":-512.0,
+    "pixelsPerTexel":1.0,
+    "passThroughMissiles":true,
+	"passThroughFighters":true
+}
