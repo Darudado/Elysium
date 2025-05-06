@@ -1,0 +1,146 @@
+{
+    "hullName": "Aetherion",
+    "hullId": "ELYS_Aetherion",
+    "hullSize": "CAPITAL_SHIP",
+    "style": "ELYSIUM",
+    "spriteName": "graphics/ships/aetherion/aetherion.png",
+    "height": 250,
+    "width": 135,
+    "center": [
+        67.5, 125
+    ],
+    "collisionRadius": 132,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ELYS_Armor",
+        "ELYS_EnhancedHealingArmor",
+        "ELYS_EliteCrew"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 172,
+            "angle": 359.5,
+            "locations": [
+                    20.5,       30
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 186,
+            "angle": 0,
+            "locations": [
+                    21.5,    -28.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 168,
+            "angle": 270.5,
+            "locations": [
+                     -38,    -43.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 175,
+            "angle": 92,
+            "locations": [
+                     -38,     43.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 173,
+            "angle": 180,
+            "locations": [
+                     -73,      0.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 170,
+            "angle": 0,
+            "locations": [
+                      -4,      0.5
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "MEDIUM",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    21.5,       49
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "MEDIUM",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                      24,      -47
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+            -124,       -3,
+             -84,    -14.5,
+          -108.5,    -20.5,
+           -40.5,      -55,
+             -57,    -65.5,
+        
+             -12,    -66.5,
+              43,    -34.5,
+            53.5,      -23,
+              74,    -15.5,
+              89,    -20.5,
+        
+           124.5,     -5.5,
+           124.5,      5.5,
+              89,     20.5,
+              74,     15.5,
+            53.5,       23,
+        
+              43,     34.5,
+             -12,     66.5,
+             -57,     65.5,
+           -40.5,       55,
+          -108.5,     20.5,
+        
+             -84,     14.5,
+            -124,        3
+    # 22 points total.
+    ]
+}
