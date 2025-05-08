@@ -1,0 +1,102 @@
+{
+    "displayName": "Persean",
+    "fluxCapacitors": 0,
+    "fluxVents": 25,
+    "goalVariant": true,
+    "hullId": "ELYS_Woodslaught",
+    "hullMods": [
+        "heavyarmor",
+        "magazines",
+        "reinforcedhull",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Woodslaught_Persean",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 028": "tpc",
+                "WS 029": "tpc",
+                "WS 030": "tpc",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "hammerrack",
+                "WS 003": "hammerrack",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "typhoon",
+                "WS 015": "sabot",
+                "WS 005": "typhoon",
+                "WS 013": "sabot",
+                "WS 014": "sabot",
+                "WS 011": "sabot",
+                "WS 012": "sabot",
+                "WS 010": "sabot",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 037": "autopulse",
+                "WS 038": "autopulse",
+                "WS 000": "autopulse",
+                "WS 001": "autopulse",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "taclaser",
+                "WS 007": "taclaser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "pdburst",
+                "WS 009": "pdburst",
+                "WS 017": "pdburst",
+                "WS 026": "pdlaser",
+                "WS 016": "pdburst",
+                "WS 027": "pdlaser",
+                "WS 024": "pdlaser",
+                "WS 035": "pdlaser",
+                "WS 025": "pdlaser",
+                "WS 036": "pdlaser",
+                "WS 022": "pdlaser",
+                "WS 033": "pdlaser",
+                "WS 023": "pdlaser",
+                "WS 034": "pdlaser",
+                "WS 031": "pdlaser",
+                "WS 032": "pdlaser",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 020": "sabot",
+                "WS 021": "sabot",
+                "WS 019": "sabot",
+                "WS 018": "sabot",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

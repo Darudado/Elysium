@@ -1,0 +1,106 @@
+{
+    "displayName": "Persean",
+    "fluxCapacitors": 0,
+    "fluxVents": 6,
+    "goalVariant": true,
+    "hullId": "ELYS_CometStrike",
+    "hullMods": [
+        "ELYS_OverchargedMunitions",
+        "missleracks",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_CometStrike_Persean",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 026": "squall",
+                "WS 027": "squall",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 039": "elys_swarm_small_comet_inbuilt",
+                "WS 037": "elys_swarm_small_comet_inbuilt",
+                "WS 038": "elys_swarm_small_comet_inbuilt",
+                "WS 035": "elys_swarm_small_comet_inbuilt",
+                "WS 036": "elys_swarm_small_comet_inbuilt",
+                "WS 033": "elys_swarm_small_comet_inbuilt",
+                "WS 034": "elys_swarm_small_comet_inbuilt",
+                "WS 032": "elys_swarm_small_comet_inbuilt",
+                "WS 040": "elys_swarm_small_comet_inbuilt",
+                "WS 041": "elys_swarm_small_comet_inbuilt",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 017": "atropos_single",
+                "WS 016": "atropos_single",
+                "WS 024": "typhoon",
+                "WS 025": "typhoon",
+                "WS 023": "sabotpod",
+                "WS 020": "sabotpod",
+                "WS 021": "sabotpod",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 013": "atropos_single",
+                "WS 012": "atropos_single",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 031": "gravitonbeam",
+                "WS 030": "gravitonbeam",
+                "WS 028": "ionbeam",
+                "WS 029": "ionbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 019": "pdburst",
+                "WS 018": "pdburst",
+                "WS 015": "pdlaser",
+                "WS 014": "pdlaser",
+                "WS 011": "pdlaser",
+                "WS 010": "pdlaser",
+                "WS 008": "pdlaser",
+                "WS 009": "pdlaser",
+                "WS 006": "pdlaser",
+                "WS 007": "pdlaser",
+                "WS 004": "pdlaser",
+                "WS 005": "pdlaser",
+                "WS 002": "pdlaser",
+                "WS 003": "pdlaser",
+                "WS 000": "pdlaser",
+                "WS 001": "pdlaser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 022": "heavyburst",
+            }
+        },
+    ],
+    "wings": [
+        "trident_wing",
+        "trident_wing",
+    ],
+    "modules": [],
+}

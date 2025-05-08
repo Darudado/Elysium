@@ -113,7 +113,7 @@
         },
         {
             "id": "WS 008",
-            "size": "LARGE",
+            "size": "MEDIUM",
             "type": "MISSILE",
             "mount": "TURRET",
             "arc": 71,
@@ -124,7 +124,7 @@
         },
         {
             "id": "WS 009",
-            "size": "LARGE",
+            "size": "MEDIUM",
             "type": "MISSILE",
             "mount": "TURRET",
             "arc": 71,

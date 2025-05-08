@@ -2,17 +2,12 @@ package elysium.shipSystem;
 
 import java.awt.Color;
 import java.util.List;
+
+import com.fs.starfarer.api.combat.*;
 import org.lwjgl.util.vector.Vector2f;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.combat.CombatEngineAPI;
-import com.fs.starfarer.api.combat.CombatEngineLayers;
-import com.fs.starfarer.api.combat.MutableShipStatsAPI;
-import com.fs.starfarer.api.combat.ShipAPI;
-import com.fs.starfarer.api.combat.ShipSystemAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
-import com.fs.starfarer.api.combat.FluxTrackerAPI;
-import com.fs.starfarer.api.combat.CollisionClass;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import org.lazywizard.lazylib.combat.CombatUtils;
@@ -266,106 +261,113 @@ public class ELYS_TemporalOverdriveStats extends BaseShipSystemScript {
 	// Create jitter effect for the main ship
 	ship.setJitterUnder(this, JITTER_UNDER_COLOR, jitterLevel, 3, 0f, jitterRange);
 
-	float droneDistance = ship.getCollisionRadius() * 3f; // Distance from main ship
 
-	// Update all decoy slots
-	for (int i = 0; i < MAX_AFTERIMAGES; i++) {
-	    DecoySlot slot = decoySlots[i];
+	if(!ship.getHullSpec().getHints().contains(ShipHullSpecAPI.ShipTypeHints.MODULE) && !ship.getHullSpec().getHints().contains(ShipHullSpecAPI.ShipTypeHints.SHIP_WITH_MODULES))
+	{
+	    float droneDistance = ship.getCollisionRadius() * 3f; // Distance from main ship
+	    // Update all decoy slots
+	    for (int i = 0; i < MAX_AFTERIMAGES; i++)
+	    {
+		DecoySlot slot = decoySlots[i];
 
-	    // Update timers
-	    if (slot.timer != 0) {
-		// If timer is negative (cooldown), count up to 0
-		if (slot.timer < 0) {
-		    slot.timer += elapsed;
-		    if (slot.timer >= 0) {
-			slot.timer = 0; // Reset when cooldown is complete
-			if (player) {
-			    engine.addFloatingText(
-				    ship.getLocation(),
-				    "Echo " + (i+1) + " ready",
-				    20f,
-				    Color.GREEN,
-				    ship,
-				    1f,
-				    3f
-			    );
+		// Update timers
+		if( slot.timer != 0 )
+		{
+		    // If timer is negative (cooldown), count up to 0
+		    if( slot.timer < 0 )
+		    {
+			slot.timer += elapsed;
+			if( slot.timer >= 0 )
+			{
+			    slot.timer = 0; // Reset when cooldown is complete
+			    if( player )
+			    {
+				engine.addFloatingText(ship.getLocation(), "Echo " + (i + 1) + " ready", 20f,
+					Color.GREEN, ship, 1f, 3f);
+			    }
 			}
 		    }
 		}
-	    }
 
-	    // Check if the decoy is still alive
-	    if (slot.decoy != null) {
-		if (slot.decoy.isHulk() || !slot.decoy.isAlive() || slot.decoy.getHitpoints() <= 0) {
-		    // Decoy was destroyed, remove it
-		    engine.removeEntity(slot.decoy);
-		    slot.decoy = null;
+		// Check if the decoy is still alive
+		if( slot.decoy != null )
+		{
+		    if( slot.decoy.isHulk() || !slot.decoy.isAlive() || slot.decoy.getHitpoints() <= 0 )
+		    {
+			// Decoy was destroyed, remove it
+			engine.removeEntity(slot.decoy);
+			slot.decoy = null;
 
-		    // Start cooldown timer
-		    slot.timer = -RESPAWN_COOLDOWN;
+			// Start cooldown timer
+			slot.timer = -RESPAWN_COOLDOWN;
 
-		}
-	    }
-
-	    // If system is not active, remove all decoys but preserve cooldowns
-	    if (!systemActive) {
-		if (slot.decoy != null) {
-		    engine.removeEntity(slot.decoy);
-		    slot.decoy = null;
-
-		    // If it wasn't in cooldown, reset timer to 0 (ready to spawn when system is active again)
-		    if (slot.timer > 0) {
-			slot.timer = 0;
 		    }
 		}
-		continue; // Skip the rest of the loop since system is not active
-	    }
 
-	    // Try to spawn new decoy if timer is 0 (ready) and system is active
-	    if (slot.timer == 0 && slot.decoy == null && systemActive) {
-		float angle = slot.angle;
-		float posX = ship.getLocation().x + (float)Math.cos(Math.toRadians(angle)) * droneDistance;
-		float posY = ship.getLocation().y + (float)Math.sin(Math.toRadians(angle)) * droneDistance;
-		Vector2f position = new Vector2f(posX, posY);
+		// If system is not active, remove all decoys but preserve cooldowns
+		if( !systemActive )
+		{
+		    if( slot.decoy != null )
+		    {
+			engine.removeEntity(slot.decoy);
+			slot.decoy = null;
 
-		// Check for collisions at spawn position
-		if (!isShipAtPosition(position, ship)) {
-		    // No collision, safe to spawn
-		    createDecoy(slot, ship, position);
-
+			// If it wasn't in cooldown, reset timer to 0 (ready to spawn when system is active again)
+			if( slot.timer > 0 )
+			{
+			    slot.timer = 0;
+			}
+		    }
+		    continue; // Skip the rest of the loop since system is not active
 		}
-	    }
 
-	    // Update existing decoys
-	    if (slot.decoy != null && slot.decoy.isAlive() && !slot.decoy.isHulk()) {
-		// Update position without jitter
-		float angle = slot.angle;
-		float offsetX = (float)Math.cos(Math.toRadians(angle)) * droneDistance;
-		float offsetY = (float)Math.sin(Math.toRadians(angle)) * droneDistance;
+		// Try to spawn new decoy if timer is 0 (ready) and system is active
+		if( slot.timer == 0 && slot.decoy == null && systemActive )
+		{
+		    float angle = slot.angle;
+		    float posX = ship.getLocation().x + (float) Math.cos(Math.toRadians(angle)) * droneDistance;
+		    float posY = ship.getLocation().y + (float) Math.sin(Math.toRadians(angle)) * droneDistance;
+		    Vector2f position = new Vector2f(posX, posY);
 
-		// Set the position
-		slot.decoy.getLocation().set(
-			ship.getLocation().x + offsetX,
-			ship.getLocation().y + offsetY
-		);
+		    // Check for collisions at spawn position
+		    if( !isShipAtPosition(position, ship) )
+		    {
+			// No collision, safe to spawn
+			createDecoy(slot, ship, position);
 
-		// Match velocity and facing of the main ship
-		slot.decoy.getVelocity().set(ship.getVelocity());
-		slot.decoy.setFacing(ship.getFacing());
+		    }
+		}
 
-		// Calculate alpha based on flickering effect
-		float flickerPhase = (engine.getTotalElapsedTime(false) * AFTERIMAGE_FLICKER_SPEED) + slot.flickerOffset;
-		float flickerFactor = 0.5f + 0.5f * (float)Math.sin(flickerPhase * Math.PI);
-		float alpha = AFTERIMAGE_MIN_ALPHA + (AFTERIMAGE_MAX_ALPHA - AFTERIMAGE_MIN_ALPHA) * flickerFactor;
+		// Update existing decoys
+		if( slot.decoy != null && slot.decoy.isAlive() && !slot.decoy.isHulk() )
+		{
+		    // Update position without jitter
+		    float angle = slot.angle;
+		    float offsetX = (float) Math.cos(Math.toRadians(angle)) * droneDistance;
+		    float offsetY = (float) Math.sin(Math.toRadians(angle)) * droneDistance;
 
-		// Apply alpha
-		slot.decoy.setAlphaMult(alpha);
+		    // Set the position
+		    slot.decoy.getLocation().set(ship.getLocation().x + offsetX, ship.getLocation().y + offsetY);
 
-		// Update flux levels to match (scaled)
-		FluxTrackerAPI droneFlux = slot.decoy.getFluxTracker();
-		FluxTrackerAPI shipFlux = ship.getFluxTracker();
-		droneFlux.setCurrFlux(shipFlux.getCurrFlux() * AFTERIMAGE_HULL_ARMOR_FACTOR);
-		droneFlux.setHardFlux(shipFlux.getHardFlux() * AFTERIMAGE_HULL_ARMOR_FACTOR);
+		    // Match velocity and facing of the main ship
+		    slot.decoy.getVelocity().set(ship.getVelocity());
+		    slot.decoy.setFacing(ship.getFacing());
+
+		    // Calculate alpha based on flickering effect
+		    float flickerPhase = (engine.getTotalElapsedTime(
+			    false) * AFTERIMAGE_FLICKER_SPEED) + slot.flickerOffset;
+		    float flickerFactor = 0.5f + 0.5f * (float) Math.sin(flickerPhase * Math.PI);
+		    float alpha = AFTERIMAGE_MIN_ALPHA + (AFTERIMAGE_MAX_ALPHA - AFTERIMAGE_MIN_ALPHA) * flickerFactor;
+
+		    // Apply alpha
+		    slot.decoy.setAlphaMult(alpha);
+
+		    // Update flux levels to match (scaled)
+		    FluxTrackerAPI droneFlux = slot.decoy.getFluxTracker();
+		    FluxTrackerAPI shipFlux = ship.getFluxTracker();
+		    droneFlux.setCurrFlux(shipFlux.getCurrFlux() * AFTERIMAGE_HULL_ARMOR_FACTOR);
+		    droneFlux.setHardFlux(shipFlux.getHardFlux() * AFTERIMAGE_HULL_ARMOR_FACTOR);
+		}
 	    }
 	}
 

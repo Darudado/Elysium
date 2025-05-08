@@ -1,0 +1,74 @@
+{
+    "displayName": "Persean",
+    "fluxCapacitors": 0,
+    "fluxVents": 40,
+    "goalVariant": true,
+    "hullId": "ELYS_Emberfang",
+    "hullMods": [
+        "ELYS_EMPBeam",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Emberfang_persean",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 006": "elys_swarm_med",
+                "WS 005": "elys_swarm_med",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "elys_swarm_med",
+                "WS 003": "elys_swarm_med",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "elys_energy_blaster_large",
+                "WS 000": "elys_energy_blaster_large",
+                "WS 001": "elys_energy_blaster_large",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 011": "elys_tacticlaser",
+                "WS 012": "elys_tacticlaser",
+                "WS 010": "elys_tacticlaser",
+                "WS 008": "elys_tacticlaser",
+                "WS 009": "elys_tacticlaser",
+                "WS 007": "elys_tacticlaser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 019": "elys_tacticlaser",
+                "WS 017": "elys_tacticlaser",
+                "WS 018": "elys_tacticlaser",
+                "WS 015": "elys_tacticlaser",
+                "WS 016": "elys_tacticlaser",
+                "WS 013": "elys_tacticlaser",
+                "WS 014": "elys_tacticlaser",
+                "WS 024": "elys_tacticlaser",
+                "WS 022": "elys_tacticlaser",
+                "WS 023": "elys_tacticlaser",
+                "WS 020": "elys_tacticlaser",
+                "WS 021": "elys_tacticlaser",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

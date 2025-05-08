@@ -1,0 +1,93 @@
+{
+    "displayName": "Elysian Torpedo",
+    "fluxCapacitors": 0,
+    "fluxVents": 30,
+    "goalVariant": false,
+    "hullId": "ELYS_Necrothauma",
+    "hullMods": [
+        "missleracks",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Necrothauma_Elysian_Torpedo",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "elys_flowertrp_l",
+                "WS 002": "elys_flowertrp_l",
+                "WS 003": "elys_flowertrp_l",
+                "WS 000": "elys_flowertrp_l",
+                "WS 001": "elys_flowertrp_l",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 019": "elys_torpedo_small",
+                "WS 028": "elys_torpedo_small",
+                "WS 027": "elys_torpedo_small",
+                "WS 020": "elys_torpedo_small",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 017": "atropos_single",
+                "WS 018": "atropos_single",
+                "WS 015": "atropos_single",
+                "WS 016": "atropos_single",
+                "WS 013": "atropos_single",
+                "WS 014": "atropos_single",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "gravitonbeam",
+                "WS 007": "gravitonbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 037": "heavyburst",
+                "WS 038": "heavyburst",
+                "WS 011": "heavyburst",
+                "WS 012": "heavyburst",
+                "WS 010": "heavyburst",
+                "WS 009": "heavyburst",
+                "WS 006": "heavyburst",
+                "WS 005": "heavyburst",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 035": "elys_tacticlaser",
+                "WS 036": "elys_tacticlaser",
+                "WS 033": "elys_tacticlaser",
+                "WS 034": "elys_tacticlaser",
+                "WS 031": "elys_tacticlaser",
+                "WS 032": "elys_tacticlaser",
+                "WS 030": "elys_tacticlaser",
+                "WS 029": "elys_tacticlaser",
+                "WS 026": "elys_tacticlaser",
+                "WS 024": "elys_tacticlaser",
+                "WS 025": "elys_tacticlaser",
+                "WS 022": "elys_tacticlaser",
+                "WS 023": "elys_tacticlaser",
+                "WS 021": "elys_tacticlaser",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

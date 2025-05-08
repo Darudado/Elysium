@@ -1,0 +1,22 @@
+{
+    "displayName": "Guardian",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "ELYS_wing_stasis",
+    "hullMods": [no_weapon_flux, autorepair,insulatedengine],
+    "quality": 0.0,
+    "variantId": "ELYS_wing_stasis_guardian",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "elys_tacticlaser",
+                "WS 001": "elys_tacticlaser",
+                "WS 002": "elys_tacticlaser",
+                "WS 003": "elys_tacticlaser"
+            }
+        }
+    ]
+}

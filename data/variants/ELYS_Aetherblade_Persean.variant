@@ -1,0 +1,51 @@
+{
+    "displayName": "Persean",
+    "fluxCapacitors": 20,
+    "fluxVents": 11,
+    "goalVariant": true,
+    "hullId": "ELYS_Aetherblade",
+    "hullMods": [
+        "heavyarmor",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Aetherblade_Persean",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "amblaster",
+                "WS 001": "amblaster",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 006": "breachpod",
+                "WS 007": "breachpod",
+                "WS 004": "breachpod",
+                "WS 005": "breachpod",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "elys_energy_beam_repeater_small_inbuilt",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "pdlaser",
+                "WS 003": "pdlaser",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

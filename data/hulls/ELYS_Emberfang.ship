@@ -21,6 +21,9 @@
         "ELYS_EliteCrew",
         "ELYS_BeamExpertize"
     ],
+    "builtInWeapons": {
+        "WS 025": "elys_ember_fang"
+    },
     "builtInWings": [],
     "builtInModules": null,
     "weaponSlots": [

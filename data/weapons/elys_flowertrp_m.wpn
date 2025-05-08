@@ -14,6 +14,7 @@
 	#"renderHints":[RENDER_LOADED_MISSILES],
 	"interruptibleBurst":false,
 	"animationType":"NONE",
+	"autocharge":true,
 	"smokeSpec":{
 		"particleSizeMin":14.0,
 		"particleSizeRange":14.0,

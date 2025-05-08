@@ -1,0 +1,21 @@
+{
+    "displayName": "Flower",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "ELYS_wing_comet",
+    "hullMods": [no_weapon_flux, autorepair,insulatedengine],
+    "quality": 0.0,
+    "variantId": "ELYS_wing_comet_flower",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "elys_flowertrp_s_Comet_hidden",
+                "WS 001": "elys_flowertrp_s_Comet_hidden",
+                #"WS 002": "elys_energy_beam_repeater_small_inbuilt",
+            }
+        }
+    ]
+}

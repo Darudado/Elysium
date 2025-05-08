@@ -1,0 +1,26 @@
+{
+    "displayName": "Base",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "ELYS_Aetherion_wing_right",
+    "hullMods": [],
+    "quality": 0.0,
+    "variantId": "ELYS_Aetherion_wing_right_base",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 007": "elys_energy_blaster_large",
+                "WS 001": "elys_energy_blaster_medium",
+                "WS 000": "elys_energy_blaster_medium",
+                "WS 004": "elys_tacticlaser",
+                "WS 002": "elys_tacticlaser",
+                "WS 003": "elys_tacticlaser",
+                "WS 006": "elys_tacticlaser",
+                "WS 005": "elys_torpedo_medium"
+            }
+        }
+    ]
+}

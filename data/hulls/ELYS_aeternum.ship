@@ -1,0 +1,223 @@
+{
+    "hullName": "Aeternum",
+    "hullId": "ELYS_aeternum",
+    "hullSize": "DEFAULT",
+    "style": "LOW_TECH",
+    "spriteName": "graphics/ships/aeternum/aeternum.png",
+    "height": 543,
+    "width": 136,
+    "center": [
+        67.5, 271
+    ],
+    "collisionRadius": 278,
+    "coversColor": "",
+    "shieldCenter": [
+        0.5, -0.5
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInWings": [],
+    "builtInModules": [ELYS_Armor, "ELYS_EliteCrew","shared_flux_sink"],
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "SYNERGY",
+            "mount": "TURRET",
+            "arc": 66,
+            "angle": 0,
+            "locations": [
+                      77,     -0.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "MEDIUM",
+            "type": "SYNERGY",
+            "mount": "TURRET",
+            "arc": 73,
+            "angle": 0,
+            "locations": [
+                      46,     -0.5
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 119,
+            "angle": 0,
+            "locations": [
+                    -119,     -0.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 263,
+            "angle": 181,
+            "locations": [
+                    -247,     -0.5
+            ]
+        },
+        {
+            "id": "WS 004",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 166,
+            "angle": 147,
+            "locations": [
+                  -159.5,     26.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 85,
+            "angle": 225.5,
+            "locations": [
+                  -159.5,    -27.5
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 190,
+            "angle": 89.5,
+            "locations": [
+                  -112.5,     21.5
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 160,
+            "angle": 270,
+            "locations": [
+                    -113,    -23.5
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 115,
+            "angle": 91.5,
+            "locations": [
+                     -35,     29.5
+            ]
+        },
+        {
+            "id": "WS 009",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 65,
+            "angle": 273,
+            "locations": [
+                     -34,    -31.5
+            ]
+        },
+        {
+            "id": "WS 010",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 155,
+            "angle": 88.5,
+            "locations": [
+                      -5,     32.5
+            ]
+        },
+        {
+            "id": "WS 011",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 122,
+            "angle": 270,
+            "locations": [
+                      -3,      -35
+            ]
+        },
+        {
+            "id": "WS 012",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     121,     -0.5
+            ]
+        },
+        {
+            "id": "LB 000",
+            "size": "LARGE",
+            "type": "LAUNCH_BAY",
+            "mount": "HIDDEN",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     -65,       -1
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -262, -0.5
+            ],
+            "length": 95.5,
+            "width": 27.5,
+            "angle": 180,
+            "contrailSize": 60,
+            "style": "ELYSIUM"
+        }
+    ],
+    "bounds": [
+           179.5,      -15,
+           270.5,    -17.5,
+           236.5,    -32.5,
+           148.5,    -40.5,
+           125.5,    -58.5,
+        
+            24.5,      -32,
+             0.5,    -46.5,
+             -23,    -30.5,
+            -106,    -65.5,
+          -168.5,    -67.5,
+        
+          -169.5,    -38.5,
+          -226.5,      -14,
+            -269,    -12.5,
+            -269,     12.5,
+          -226.5,       14,
+        
+          -169.5,     38.5,
+          -168.5,     67.5,
+            -106,     65.5,
+             -23,     30.5,
+             0.5,     46.5,
+        
+            24.5,       32,
+           125.5,     58.5,
+           148.5,     40.5,
+           236.5,     32.5,
+           270.5,     17.5,
+        
+           179.5,       15
+    # 26 points total.
+    ]
+}

@@ -1,6 +1,6 @@
 {
     "hullName": "Stasis",
-    "hullId": "ELYS_wing_statis",
+    "hullId": "ELYS_wing_stasis",
     "hullSize": "FIGHTER",
     "style": "ELYSIUM",
     "spriteName": "graphics/ships/wings/stasis.png",
@@ -24,7 +24,7 @@
             "size": "SMALL",
             "type": "UNIVERSAL",
             "mount": "HIDDEN",
-            "arc": 43,
+            "arc": 90,
             "angle": 0,
             "locations": [
                     17.5,      2.5
@@ -35,7 +35,7 @@
             "size": "SMALL",
             "type": "UNIVERSAL",
             "mount": "HIDDEN",
-            "arc": 43,
+            "arc": 90,
             "angle": 0,
             "locations": [
                     17.5,     -2.5
@@ -46,7 +46,7 @@
             "size": "SMALL",
             "type": "UNIVERSAL",
             "mount": "HIDDEN",
-            "arc": 31,
+            "arc": 90,
             "angle": 0,
             "locations": [
                       14,      4.5
@@ -57,7 +57,7 @@
             "size": "SMALL",
             "type": "UNIVERSAL",
             "mount": "HIDDEN",
-            "arc": 31,
+            "arc": 90,
             "angle": 0,
             "locations": [
                       14,     -4.5

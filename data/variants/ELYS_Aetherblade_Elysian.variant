@@ -1,0 +1,51 @@
+{
+    "displayName": "Elysian",
+    "fluxCapacitors": 5,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "ELYS_Aetherblade",
+    "hullMods": [
+        "missleracks",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Aetherblade_Elysian",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "elys_tacticlaser",
+                "WS 001": "elys_tacticlaser",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 006": "elys_flowertrp_m",
+                "WS 007": "elys_flowertrp_m",
+                "WS 004": "elys_torpedo_medium",
+                "WS 005": "elys_swarm_med",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "elys_energy_beam_repeater_small_inbuilt",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "elys_tacticlaser",
+                "WS 003": "elys_tacticlaser",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

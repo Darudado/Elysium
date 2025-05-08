@@ -1,6 +1,6 @@
 {
     "hullName": "Chrono",
-    "hullId": "ELYS_wing_Chrono",
+    "hullId": "ELYS_wing_chrono",
     "hullSize": "FIGHTER",
     "style": "ELYSIUM",
     "spriteName": "graphics/ships/wings/chrono.png",

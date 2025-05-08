@@ -1,0 +1,34 @@
+{
+    "displayName": "Persean",
+    "fluxCapacitors": 10,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "ELYS_Starseeker",
+    "hullMods": [
+        "ELYS_EMPBeam",
+        "safetyoverrides",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Starseeker_Persean",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "phasebeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "taclaser",
+                "WS 001": "taclaser",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

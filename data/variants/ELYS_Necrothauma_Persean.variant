@@ -1,0 +1,99 @@
+{
+    "displayName": "Persean",
+    "fluxCapacitors": 24,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "ELYS_Necrothauma",
+    "hullMods": [
+        "missleracks",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Necrothauma_Persean",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "hammerrack",
+                "WS 005": "typhoon",
+                "WS 006": "typhoon",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 019": "atropos_single",
+                "WS 031": "atropos",
+                "WS 032": "atropos",
+                "WS 030": "atropos",
+                "WS 028": "atropos",
+                "WS 029": "atropos",
+                "WS 026": "atropos",
+                "WS 027": "atropos",
+                "WS 024": "atropos",
+                "WS 025": "atropos",
+                "WS 022": "atropos",
+                "WS 023": "atropos",
+                "WS 020": "atropos_single",
+                "WS 021": "atropos",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 017": "atropos_single",
+                "WS 018": "atropos_single",
+                "WS 015": "atropos_single",
+                "WS 016": "atropos_single",
+                "WS 013": "atropos_single",
+                "WS 014": "atropos_single",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "tachyonlance",
+                "WS 003": "tachyonlance",
+                "WS 000": "tachyonlance",
+                "WS 001": "tachyonlance",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "gravitonbeam",
+                "WS 007": "gravitonbeam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 037": "heavyburst",
+                "WS 038": "heavyburst",
+                "WS 011": "heavyburst",
+                "WS 012": "heavyburst",
+                "WS 010": "heavyburst",
+                "WS 009": "heavyburst",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 035": "pdburst",
+                "WS 036": "pdburst",
+                "WS 033": "pdburst",
+                "WS 034": "pdburst",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

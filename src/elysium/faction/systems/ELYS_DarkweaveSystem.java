@@ -42,7 +42,7 @@ import java.util.Random;
 	    // Create the star system
 	    StarSystemAPI system = sector.createStarSystem("Darkweave");
 	    system.getLocation().set(-34000, -20000); // Southwest quadrant, near Elysium
-	    system.setBackgroundTextureFilename("graphics/backgrounds/background5.jpg");
+	    system.setBackgroundTextureFilename("graphics/backgrounds/ELYS_BG2.jpeg");
 
 	    // Create a nebula effect for the system
 	    /*SectorEntityToken darkweave_nebula = Misc.addNebulaFromPNG("data/campaign/terrain/nebula_dark.png",
@@ -106,10 +106,11 @@ import java.util.Random;
 				    Industries.FARMING,
 				    Industries.MEGAPORT,
 				    Industries.LIGHTINDUSTRY,
-				    Industries.PATROLHQ,
+				    Industries.MILITARYBASE,
 				    Industries.COMMERCE,
 				    Industries.STARFORTRESS_HIGH,
-				    Industries.WAYSTATION
+				    Industries.WAYSTATION,
+				    Industries.REFINING
 			    )
 		    ),
 		    0.3f,
@@ -173,7 +174,6 @@ import java.util.Random;
 			    Arrays.asList(
 				    Industries.POPULATION,
 				    Industries.MINING,
-				    Industries.REFINING,
 				    Industries.HEAVYINDUSTRY,
 				    Industries.MILITARYBASE,
 				    Industries.SPACEPORT,

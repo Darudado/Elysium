@@ -1,0 +1,93 @@
+{
+    "displayName": "Elysean",
+    "fluxCapacitors": 0,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "ELYS_Woodslaught",
+    "hullMods": [
+        "heavyarmor",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Woodslaught_Elysean",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 030": "tpc",
+                "WS 028": "tpc",
+                "WS 029": "tpc",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 037": "elys_flowertrp_l",
+                "WS 038": "elys_flowertrp_l",
+                "WS 000": "elys_flowertrp_l",
+                "WS 001": "elys_flowertrp_l",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "elys_swarm_large",
+                "WS 003": "elys_swarm_large",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "elys_torpedo_medium",
+                "WS 005": "elys_torpedo_medium",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 019": "elys_tacticlaser",
+                "WS 017": "elys_tacticlaser",
+                "WS 018": "elys_tacticlaser",
+                "WS 016": "elys_tacticlaser",
+                "WS 008": "elys_tacticlaser",
+                "WS 009": "elys_tacticlaser",
+                "WS 006": "elys_tacticlaser",
+                "WS 007": "elys_tacticlaser",
+                "WS 020": "elys_tacticlaser",
+                "WS 021": "elys_tacticlaser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 015": "pdlaser",
+                "WS 035": "pdlaser",
+                "WS 013": "pdlaser",
+                "WS 014": "pdlaser",
+                "WS 036": "pdlaser",
+                "WS 033": "pdlaser",
+                "WS 011": "pdlaser",
+                "WS 034": "pdlaser",
+                "WS 012": "pdlaser",
+                "WS 031": "pdlaser",
+                "WS 010": "pdlaser",
+                "WS 026": "pdlaser",
+                "WS 027": "pdlaser",
+                "WS 024": "pdlaser",
+                "WS 025": "pdlaser",
+                "WS 022": "pdlaser",
+                "WS 023": "pdlaser",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

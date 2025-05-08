@@ -19,8 +19,12 @@
     "builtInMods": [
         "ELYS_Armor",
         "ELYS_EnhancedHealingArmor",
-        "ELYS_EliteCrew"
+        "ELYS_EliteCrew",
+        "shared_flux_sink"
     ],
+    "builtInWeapons": {
+        "WS 008": "elys_aetherion_beam"
+    },
     "builtInWings": [],
     "builtInModules": null,
     "weaponSlots": [
@@ -29,7 +33,7 @@
             "size": "MEDIUM",
             "type": "ENERGY",
             "mount": "TURRET",
-            "arc": 172,
+            "arc": 60,
             "angle": 359.5,
             "locations": [
                     20.5,       30
@@ -40,7 +44,7 @@
             "size": "MEDIUM",
             "type": "ENERGY",
             "mount": "TURRET",
-            "arc": 186,
+            "arc": 60,
             "angle": 0,
             "locations": [
                     21.5,    -28.5
@@ -84,7 +88,7 @@
             "size": "MEDIUM",
             "type": "ENERGY",
             "mount": "TURRET",
-            "arc": 170,
+            "arc": 60,
             "angle": 0,
             "locations": [
                       -4,      0.5
@@ -110,6 +114,17 @@
             "angle": 0,
             "locations": [
                       24,      -47
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "LARGE",
+            "type": "BUILT_IN",
+            "mount": "HARDPOINT",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                     113,      0.5
             ]
         }
     ],

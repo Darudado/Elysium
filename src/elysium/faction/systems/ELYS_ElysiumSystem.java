@@ -41,7 +41,7 @@ public class ELYS_ElysiumSystem {
 	// Create the star system
 	StarSystemAPI system = sector.createStarSystem("Elysium");
 	system.getLocation().set(-35000, -18000); // Southwest quadrant
-	system.setBackgroundTextureFilename("graphics/backgrounds/background2.jpg");
+	system.setBackgroundTextureFilename("graphics/backgrounds/ELYS_BG1.jpeg");
 
 	// Create a nebula effect for the system
 	/*SectorEntityToken elysium_nebula = Misc.addNebulaFromPNG("data/campaign/terrain/nebula_blue.png",

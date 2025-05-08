@@ -31,7 +31,8 @@ import static org.magiclib.util.MagicFakeBeam.*;
 public class ELYS_starforgeRepair extends BaseShipSystemScript {
     // Configuration
     private static final float REPAIR_RANGE = 1000f;             // Range in units
-    private static final float REPAIR_AMOUNT = 100f;             // Hull repair per second
+    private static final float REPAIR_AMOUNT = 100f;
+    private static final float REPAIR_AMOUNT_CAPITAL = 1000f;
     private static final float REPAIR_FLUX_RATIO = 3f;           // Hardflux generated per hull point repaired
     private static final float MAX_FLUX_PERCENT = 0.8f;          // Max flux level before the system stops repairing
     private static final Color BEAM_COLOR = new Color(180, 80, 255);  // Purple
@@ -80,7 +81,7 @@ public class ELYS_starforgeRepair extends BaseShipSystemScript {
 	    }
 
 	    // Calculate repair amount for this frame
-	    float repairThisFrame = REPAIR_AMOUNT * Global.getCombatEngine().getElapsedInLastFrame();
+	    float repairThisFrame = (ship.getHullSize()== HullSize.FRIGATE) ? REPAIR_AMOUNT * Global.getCombatEngine().getElapsedInLastFrame() : REPAIR_AMOUNT_CAPITAL * Global.getCombatEngine().getElapsedInLastFrame() ;
 	    float remainingDamage = target.getMaxHitpoints() - target.getHitpoints();
 	    repairThisFrame = Math.min(repairThisFrame, remainingDamage);
 
@@ -135,7 +136,7 @@ public class ELYS_starforgeRepair extends BaseShipSystemScript {
 
 	if (target != null) {
 	    totalRepaired = 0f;
-	    addSystemMessage(engine, ship, "REPAIRING " + target.getName());
+	    addSystemMessage(engine, ship, "Repairing " + target.getHullSpec().getHullName());
 	}
     }
 

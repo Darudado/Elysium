@@ -1,0 +1,21 @@
+{
+    "displayName": "Repeater",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "ELYS_wing_comet",
+    "hullMods": [no_weapon_flux, autorepair,insulatedengine],
+    "quality": 0.0,
+    "variantId": "ELYS_wing_comet_repeater",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "elys_swarm_small",
+                "WS 001": "elys_energy_beam_repeater_small_inbuilt",
+                #"WS 002": "elys_energy_beam_repeater_small_inbuilt",
+            }
+        }
+    ]
+}

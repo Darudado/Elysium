@@ -2,7 +2,7 @@
     "displayName": "Perseus",
     "fluxCapacitors":  22,
     "fluxVents": 22,
-    "goalVariant": false,
+    "goalVariant": true,
     "hullId": "ELYS_CometStrike",
     "hullMods": [],
     "quality": 0.0,

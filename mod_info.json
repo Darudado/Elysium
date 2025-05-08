@@ -9,10 +9,19 @@
     "patch": "0"
   },
   "description": "Elf High tech faction",
-  "gameVersion": "0.98a-RC5",
+  "gameVersion": "0.98a",
   "jars": [
     "jars/Elysium.jar"
   ],
   "modPlugin": "elysium.ElysiumModPlugin",
-  "dependencies": []
+  "dependencies": [
+    {
+      "id": "lw_lazylib",
+      "name": "LazyLib"
+    },
+    {
+      "id": "MagicLib",
+      "name": "MagicLib"
+    }
+  ]
 }
