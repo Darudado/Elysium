@@ -1,0 +1,27 @@
+{
+    "displayName": "Base",
+    "fluxCapacitors": 22,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "ELYS_aeternum_right_artillery",
+    "hullMods": ["ELYS_OverchargedMunitions"],
+    "quality": 0.0,
+    "variantId": "ELYS_aeternum_right_artillery_base",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "elys_flowertrp_l",
+                "WS 003": "elys_flowertrp_m",
+                "WS 002": "elys_flowertrp_m",
+                "WS 001": "elys_flowertrp_s",
+                "WS 007": "elys_tacticlaser",
+                "WS 009": "elys_tacticlaser",
+                "WS 008": "elys_tacticlaser",
+                "WS 005": "elys_tacticlaser",
+                "WS 006": "elys_tacticlaser"
+            }
+        }
+    ]
+}

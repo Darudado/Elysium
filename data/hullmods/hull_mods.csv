@@ -1,6 +1,6 @@
 name,id,tier,rarity,tech/manufacturer,tech,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
 Living Armor,ELYS_Armor,3,,Elysium,defensive,Defenses,5000,FALSE,FALSE,,0,0,0,0,elysium.hullmods.ELYS_Armor,"The hallmark of Elysium engineering, this unique living armor forms a symbiotic bond with the ship's hull. Composed of specialized arboreal tissues that can absorb, redistribute, and heal damage, the armor creates a resilient defensive layer that constantly regenerates itself by drawing energy from the ship's flux systems. The organic structure provides natural resistance against weapons while producing valuable resin as a byproduct.",Regenerative living armor that self-repairs using ship flux.,,graphics/hullmods/accelerated_shields.png
-Arboreal Resin Refinement,ELYS_ArborealResinRefinement,1,,Elysium,logistics,Logistics,6000,FALSE,FALSE,,3,6,9,15,elysium.hullmods.ELYS_ArborealResinRefinement,"Specialized collection and processing systems that harvest the natural resin produced by Elysium ships' living armor.
+#Arboreal Resin Refinement,ELYS_ArborealResinRefinement,1,,Elysium,logistics,Logistics,6000,FALSE,FALSE,,3,6,9,15,elysium.hullmods.ELYS_ArborealResinRefinement,"Specialized collection and processing systems that harvest the natural resin produced by Elysium ships' living armor.
 
 Increases fuel efficiency by %s, reducing consumption during travel.
 Generates %s units of fuel per day when the fleet is stationary or at minimal burn.
@@ -65,3 +65,4 @@ When flux level exceeds %s, the system begins to damage ship armor at a rate of 
 Increases energy weapon flux cost by %s.
 
 Cannot be installed on ships with shields.",High-risk energy weapon enhancement that damages own armor at high flux levels.,"S-mod: Lowers the armor damage threshold to %s flux,  increase degeneration of  ship's armor to a rate of %s per second.",graphics/hullmods/accelerated_shields.png
+AeternumBeamAnimationHullmod,ELYS_AeternumBeamAnimationHullmod,3,,Elysium,offensive,Weapons,14000,TRUE,TRUE,TRUE,0,0,0,0,elysium.hullmods.ELYS_AeternumBeamAnimationHullmod,"","","",graphics/hullmods/accelerated_shields.png

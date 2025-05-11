@@ -1,0 +1,95 @@
+{
+    "hullName": "Aeternum Right Armor",
+    "hullId": "ELYS_aeternum_right_armor",
+    "hullSize": "DESTROYER",
+    "style": "ELYSIUM",
+    "spriteName": "graphics/ships/aeternum/aeternum_mid_right.png",
+    "height": 196,
+    "width": 75,
+    "center": [
+        37.5, 98
+    ],
+    "moduleAnchor": [
+        33, 19
+    ],
+    "collisionRadius": 100,
+    "coversColor": "",
+    "shieldCenter": [
+        0, 0
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ELYS_Armor",
+        "always_detaches",
+        "ELYS_EnhancedHealingArmor"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "MEDIUM",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 137,
+            "angle": 311,
+            "locations": [
+                     -11,       -7
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 131,
+            "angle": 298.5,
+            "locations": [
+                    11.5,       17
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 139,
+            "angle": 293,
+            "locations": [
+                      22,        7
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 122,
+            "angle": 308,
+            "locations": [
+                    40.5,      7.5
+            ]
+        }
+    ],
+    "engineSlots": [],
+    "bounds": [
+           -97.5,        5,
+           -51.5,       25,
+              -8,       25,
+              10,     32.5,
+              29,     18.5,
+        
+              61,       34,
+              86,     35.5,
+              54,     17.5,
+            33.5,    -20.5,
+            24.5,     -2.5,
+        
+             -25,      -37,
+           -21.5,      -15,
+             -90,    -33.5,
+           -48.5,        3
+    # 14 points total.
+    ]
+}

@@ -68,8 +68,8 @@ public class ELYS_TacticalFluxRedirector extends BaseHullMod {
     @Override
     public String getDescriptionParam(int index, HullSize hullSize) {
 	if (index == 0) return Math.round(ENERGY_DAMAGE_BOOST * 100) + "%";
-	if (index == 1) return Math.round(ARMOR_DAMAGE_PERCENT * 100) + "%";
-	if (index == 2) return Math.round(FLUX_THRESHOLD * 100) + "%";
+	if (index == 1) return Math.round(FLUX_THRESHOLD * 100) + "%";
+	if (index == 2) return Math.round(ARMOR_DAMAGE_PERCENT * 100) + "%";
 	if (index == 3) return Math.round(FLUX_COST_PERCENT * 100) + "%";
 	return null;
     }

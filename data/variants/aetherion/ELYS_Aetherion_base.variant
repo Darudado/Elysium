@@ -1,10 +1,10 @@
 {
     "displayName": "Custom",
-    "fluxCapacitors": 0,
-    "fluxVents": 0,
+    "fluxCapacitors":42,
+    "fluxVents": 50,
     "goalVariant": true,
     "hullId": "ELYS_Aetherion",
-    "hullMods": [],
+    "hullMods": ["hardened_subsystems","fluxdistributor"],
     "quality": 0.0,
     "variantId": "ELYS_Aetherion_custom",
     "weaponGroups": [

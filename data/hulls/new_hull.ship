@@ -1,8 +1,8 @@
 {
     "hullName": "Aeternum",
     "hullId": "ELYS_aeternum",
-    "hullSize": "DEFAULT",
-    "style": "LOW_TECH",
+    "hullSize": "CAPITAL_SHIP",
+    "style": "ELYSIUM",
     "spriteName": "graphics/ships/aeternum/aeternum.png",
     "height": 543,
     "width": 136,
@@ -16,8 +16,16 @@
     ],
     "shieldRadius": 0,
     "viewOffset": 0,
+    "builtInWeapons": {
+        "WS 012": "elys_aeternum_beam"
+    },
     "builtInWings": [],
-    "builtInModules": [ELYS_Armor, "ELYS_EliteCrew","shared_flux_sink"],
+    "builtInModules": null,
+    "builtInMods": [
+            "ELYS_Armor",
+            "ELYS_AeternumBeamAnimationHullmod",
+            "advancedcore"
+        ],
     "weaponSlots": [
         {
             "id": "WS 000",
@@ -160,6 +168,72 @@
             "angle": 0,
             "locations": [
                      121,     -0.5
+            ]
+        },
+        {
+            "id": "WS 013",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    -109,       63
+            ]
+        },
+        {
+            "id": "WS 014",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                    -109,      -63
+            ]
+        },
+        {
+            "id": "WS 015",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                       1,       44
+            ]
+        },
+        {
+            "id": "WS 016",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                       1,      -44
+            ]
+        },
+        {
+            "id": "WS 017",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   124.5,     56.5
+            ]
+        },
+        {
+            "id": "WS 018",
+            "size": "LARGE",
+            "type": "STATION_MODULE",
+            "mount": "TURRET",
+            "arc": 0,
+            "angle": 0,
+            "locations": [
+                   124.5,    -56.5
             ]
         },
         {

@@ -1,0 +1,4 @@
+name,id,tags,tech/manufacturer,rarity,base price,stack size,cargo space,baseRaidDanger,icon,sound id,sound id drop,plugin,plugin params,desc,order
+
+Eluysium Ship hulls Blueprint package,elysium_hull_package,package_bp,Elysium,0.4,100000,1,1,,"graphics/cargo/blueprint_elysium.png",ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,elysium_bp,"A collection of blueprint data for many ELysium vessels.",281
+Eluysium weapons Blueprint package,elysium_weap_package,package_bp,Elysium,0.4,100000,1,1,,"graphics/cargo/blueprint_elysium.png",ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,elysium_weap_bp,"A collection of blueprint data for many ELysium weapons.",281

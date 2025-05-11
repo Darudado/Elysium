@@ -37,7 +37,7 @@
 	"hullFrequency":{
 		"tags":{
 		},
-		"hulls":{
+		"hulls":{"ELYS_Starbane":1.2,"ELYS_Starforge":1.2,"ELYS_Starseeker":1.2,"ELYS_Aetherblade":1.2,"ELYS_Solstice":1.2,"ELYS_Aetherion":1.2,"ELYS_CometStrike":1.2,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
@@ -46,31 +46,34 @@
 		"hulls":[],
 	},
 	"knownShips":{
-		"tags":["elysium"],
+		"tags":["elysium_bp"],
 		"hulls":[
 		    "atlas",
-		    "prometheus"
+		    "prometheus",
+			"buffalo",
+			"phaeton",
+			"dram"
 
 
 		],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
-		"tags":[],
-		"hulls":[],
+		"tags":["elysium_bp"],
+		"hulls":["ELYS_Starbane","ELYS_Starforge","ELYS_Starseeker","ELYS_Aetherblade","ELYS_Solstice","ELYS_Aetherion","ELYS_CometStrike" ],
 	},
 	"knownFighters":{
-		"tags":["hightech_bp"],
+		"tags":["hightech_bp", "elysium_bp","elysium_weap_bp"],
 		"fighters":[
 		],
 	},
 	"priorityFighters":{
 		"tags":[],
-		"fighters":[
+		"fighters":["ELYS_wing_chrono","ELYS_wing_trail"
 		],
 	},
 	"knownWeapons":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp"],
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp, elysium_weap_bp"],
 		"weapons":[
 			"gorgon",
 			"gorgonpod",
@@ -111,7 +114,7 @@
 		],
 	},
 	"priorityWeapons":{
-		"tags":[""],
+		"tags":[],
 		"weapons":[
 		],
 	},
@@ -146,6 +149,16 @@
 			"solar_shielding",
 			"stabilizedshieldemitter",
 			"surveying_equipment",
+			"ELYS_BarkCoating",
+			"ELYS_BeamExpertize",
+			"ELYS_ChargeStorage",
+			"ELYS_EliteCrew",
+			"ELYS_EMPBeam",
+			"ELYS_EnergyRangefinder",
+			"ELYS_EnhancedHealingArmor",
+			"ELYS_OverchargedMunitions",
+			"ELYS_TacticalFluxRedirector"
+
 		],
 	},
 	"factionDoctrine":{
@@ -189,36 +202,60 @@
 		"encounter_friendly":"music_tritach_encounter_friendly",
 	},
 	"internalComms":"tritachyon_internal",
-	"portraits":{
-		"standard_male":[
-			"graphics/portraits/portrait_corporate01.png",
-			"graphics/portraits/portrait_corporate03.png",
-			"graphics/portraits/portrait_corporate05.png",
-			"graphics/portraits/portrait_corporate06.png",
-			"graphics/portraits/portrait_corporate08.png",
-			"graphics/portraits/portrait_corporate10.png",
-			"graphics/portraits/portrait13.png",
-			"graphics/portraits/portrait18.png",
-			"graphics/portraits/portrait25.png",
-			"graphics/portraits/portrait26.png",
-			"graphics/portraits/portrait30.png",
-			"graphics/portraits/portrait35.png",
-		],
-		"standard_female":[
-			"graphics/portraits/portrait_corporate02.png",
-			"graphics/portraits/portrait_corporate04.png",
-			"graphics/portraits/portrait_corporate07.png",
-			"graphics/portraits/portrait_corporate09.png",
-			"graphics/portraits/portrait_corporate11.png",
-			"graphics/portraits/portrait_mercenary02.png",
-			"graphics/portraits/portrait_mercenary08.png",
-			"graphics/portraits/portrait16.png",
-			"graphics/portraits/portrait21.png",
-			"graphics/portraits/portrait28.png",
-			"graphics/portraits/portrait32.png",
-			"graphics/portraits/portrait34.png",
-			"graphics/portraits/portrait41.png",
-		],
+	"portraits": {
+    	"standard_male": [
+        	"graphics/portraits/male/ELYS_1.png",
+        	"graphics/portraits/male/ELYS_2.png",
+        	"graphics/portraits/male/ELYS_3.png",
+        	"graphics/portraits/male/ELYS_4.png",
+        	"graphics/portraits/male/ELYS_5.png",
+        	"graphics/portraits/male/ELYS_6.png",
+        	"graphics/portraits/male/ELYS_7.png",
+        	"graphics/portraits/male/ELYS_8.png",
+        	"graphics/portraits/male/ELYS_9.png",
+        	"graphics/portraits/male/ELYS_10.png",
+        	"graphics/portraits/male/ELYS_11.png",
+        	"graphics/portraits/male/ELYS_12.png",
+        	"graphics/portraits/male/ELYS_13.png",
+        	"graphics/portraits/male/ELYS_14.png",
+        	"graphics/portraits/male/ELYS_15.png",
+        	"graphics/portraits/male/ELYS_16.png",
+        	"graphics/portraits/male/ELYS_17.png",
+        	"graphics/portraits/male/ELYS_18.png",
+        	"graphics/portraits/male/ELYS_19.png",
+        	"graphics/portraits/male/ELYS_20.png",
+        	"graphics/portraits/male/ELYS_21.png"
+    	],
+    	"standard_female": [
+        	"graphics/portraits/female/ELYS_1.png",
+        	"graphics/portraits/female/ELYS_2.png",
+        	"graphics/portraits/female/ELYS_3.png",
+        	"graphics/portraits/female/ELYS_4.png",
+        	"graphics/portraits/female/ELYS_5.png",
+        	"graphics/portraits/female/ELYS_6.png",
+        	"graphics/portraits/female/ELYS_7.png",
+        	"graphics/portraits/female/ELYS_8.png",
+        	"graphics/portraits/female/ELYS_9.png",
+        	"graphics/portraits/female/ELYS_10.png",
+        	"graphics/portraits/female/ELYS_11.png",
+        	"graphics/portraits/female/ELYS_12.png",
+        	"graphics/portraits/female/ELYS_13.png",
+        	"graphics/portraits/female/ELYS_14.png",
+        	"graphics/portraits/female/ELYS_15.png",
+        	"graphics/portraits/female/ELYS_16.png",
+        	"graphics/portraits/female/ELYS_17.png",
+        	"graphics/portraits/female/ELYS_18.png",
+        	"graphics/portraits/female/ELYS_19.png",
+        	"graphics/portraits/female/ELYS_20.png",
+        	"graphics/portraits/female/ELYS_21.png",
+        	"graphics/portraits/female/ELYS_22.png",
+        	"graphics/portraits/female/ELYS_23.png",
+        	"graphics/portraits/female/ELYS_24.png",
+        	"graphics/portraits/female/ELYS_25.png",
+        	"graphics/portraits/female/ELYS_26.png",
+        	"graphics/portraits/female/ELYS_27.png",
+        	"graphics/portraits/female/ELYS_28.png"
+    	]
 	},
 	"ranks":{
 		"ranks":{

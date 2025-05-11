@@ -1,0 +1,177 @@
+{
+    "hullName": "Aeternum Right Artillery",
+    "hullId": "ELYS_aeternum_right_artillery",
+    "hullSize": "CRUISER",
+    "style": "ELYSIUM",
+    "spriteName": "graphics/ships/aeternum/aeternum_bot_right.png",
+    "height": 275,
+    "width": 149,
+    "center": [
+        59.5, 130
+    ],
+    "moduleAnchor": [
+        143, 2
+    ],
+    "collisionRadius": 140,
+    "coversColor": "",
+    "shieldCenter": [
+        7.5, -15
+    ],
+    "shieldRadius": 0,
+    "viewOffset": 0,
+    "builtInMods": [
+        "ELYS_Armor",
+        "always_detaches",
+        "ELYS_BarkCoating"
+    ],
+    "builtInWings": [],
+    "builtInModules": null,
+    "weaponSlots": [
+        {
+            "id": "WS 000",
+            "size": "LARGE",
+            "type": "SYNERGY",
+            "mount": "TURRET",
+            "arc": 128,
+            "angle": 330.5,
+            "locations": [
+                      44,        9
+            ]
+        },
+        {
+            "id": "WS 002",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 162,
+            "angle": 342.5,
+            "locations": [
+                      17,    -41.5
+            ]
+        },
+        {
+            "id": "WS 005",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 115,
+            "angle": 288,
+            "locations": [
+                      37,    -43.5
+            ]
+        },
+        {
+            "id": "WS 006",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 116,
+            "angle": 296.5,
+            "locations": [
+                    53.5,    -28.5
+            ]
+        },
+        {
+            "id": "WS 007",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 147,
+            "angle": 180.5,
+            "locations": [
+                   -96.5,     44.5
+            ]
+        },
+        {
+            "id": "WS 008",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 124,
+            "angle": 296.5,
+            "locations": [
+                     3.5,      -64
+            ]
+        },
+        {
+            "id": "WS 009",
+            "size": "SMALL",
+            "type": "ENERGY",
+            "mount": "TURRET",
+            "arc": 168,
+            "angle": 225,
+            "locations": [
+                     -68,      9.5
+            ]
+        },
+        {
+            "id": "WS 001",
+            "size": "SMALL",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 134,
+            "angle": 344,
+            "locations": [
+                    12.5,    -13.5
+            ]
+        },
+        {
+            "id": "WS 003",
+            "size": "MEDIUM",
+            "type": "MISSILE",
+            "mount": "TURRET",
+            "arc": 148,
+            "angle": 322,
+            "locations": [
+                     4.5,       16
+            ]
+        }
+    ],
+    "engineSlots": [
+        {
+            "location": [
+                -36.5, -9.5
+            ],
+            "length": 49,
+            "width": 15,
+            "angle": 178,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        },
+        {
+            "location": [
+                -38.5, -22
+            ],
+            "length": 42,
+            "width": 14,
+            "angle": 178.5,
+            "contrailSize": 12,
+            "style": "ELYSIUM"
+        }
+    ],
+    "bounds": [
+          -127.5,     54.5,
+            36.5,       48,
+            45.5,     38.5,
+              84,       27,
+              85,     -4.5,
+        
+           140.5,     -4.5,
+              63,      -39,
+            48.5,      -73,
+              38,      -56,
+             -10,      -89,
+        
+              -6,    -67.5,
+             -77,      -84,
+             -35,    -47.5,
+             -83,    -48.5,
+           -51.5,      -34,
+        
+           -82.5,      -15,
+           -37.5,       -9,
+            -125,       32,
+             -99,     36.5
+    # 19 points total.
+    ]
+}

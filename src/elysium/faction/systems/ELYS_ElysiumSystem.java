@@ -7,17 +7,14 @@ import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.impl.campaign.ids.*;
-import com.fs.starfarer.api.impl.campaign.procgen.StarAge;
-import com.fs.starfarer.api.impl.campaign.terrain.AsteroidFieldTerrainPlugin;
-import com.fs.starfarer.api.impl.campaign.terrain.BaseRingTerrain;
 import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
 import com.fs.starfarer.api.util.Misc;
-
-
-import java.awt.*;
+import com.fs.starfarer.api.impl.campaign.ids.Commodities;
+import com.fs.starfarer.api.impl.campaign.ids.Items;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Random;
 
 public class ELYS_ElysiumSystem {
@@ -41,14 +38,8 @@ public class ELYS_ElysiumSystem {
 	// Create the star system
 	StarSystemAPI system = sector.createStarSystem("Elysium");
 	system.getLocation().set(-35000, -18000); // Southwest quadrant
-	system.setBackgroundTextureFilename("graphics/backgrounds/ELYS_BG1.jpeg");
+	system.setBackgroundTextureFilename("graphics/backgrounds/ELYS_BG2.jpeg");
 
-	// Create a nebula effect for the system
-	/*SectorEntityToken elysium_nebula = Misc.addNebulaFromPNG("data/campaign/terrain/nebula_blue.png",
-		0, 0, // center of nebula
-		system, // location to add to
-		"terrain", "nebula_blue", // texture to use
-		4, 4, StarAge.YOUNG); // cell settings */
 
 	// Initialize the star
 	PlanetAPI elysiumStar = system.initStar("elysium_star", // unique id
@@ -102,9 +93,10 @@ public class ELYS_ElysiumSystem {
 				Industries.MEGAPORT,
 				Industries.LIGHTINDUSTRY,
 				Industries.HIGHCOMMAND,
-				Industries.ORBITALWORKS,
 				Industries.STARFORTRESS_HIGH,
-				Industries.WAYSTATION
+				Industries.WAYSTATION,
+				Industries.MINING,
+				Industries.HEAVYBATTERIES
 			)
 		),
 		0.3f,
@@ -112,6 +104,28 @@ public class ELYS_ElysiumSystem {
 		true);
 
 	elysiumPrime.setCustomDescriptionId("planet_elysium_prime");
+
+
+
+	// Add AI cores to Elysium Prime
+	if (elysiumPrime_market.hasIndustry(Industries.HIGHCOMMAND)) {
+	    elysiumPrime_market.getIndustry(Industries.HIGHCOMMAND).setAICoreId(Commodities.ALPHA_CORE);
+	}
+	if (elysiumPrime_market.hasIndustry(Industries.STARFORTRESS_HIGH)) {
+	    elysiumPrime_market.getIndustry(Industries.STARFORTRESS_HIGH).setAICoreId(Commodities.ALPHA_CORE);
+	}
+	if (elysiumPrime_market.hasIndustry(Industries.ORBITALWORKS)) {
+	    elysiumPrime_market.getIndustry(Industries.ORBITALWORKS).setAICoreId(Commodities.ALPHA_CORE);
+	}
+	if (elysiumPrime_market.hasIndustry(Industries.MEGAPORT)) {
+	    elysiumPrime_market.getIndustry(Industries.MEGAPORT).setAICoreId(Commodities.ALPHA_CORE);
+	}
+	if (elysiumPrime_market.hasIndustry(Industries.LIGHTINDUSTRY)) {
+	    elysiumPrime_market.getIndustry(Industries.LIGHTINDUSTRY).setAICoreId(Commodities.GAMMA_CORE);
+	}
+	if (elysiumPrime_market.hasIndustry(Industries.FARMING)) {
+	    elysiumPrime_market.getIndustry(Industries.FARMING).setAICoreId(Commodities.GAMMA_CORE);
+	}
 
 	// Add a faction leader
 	PersonAPI elysiumLeader = Global.getFactory().createPerson();
@@ -123,7 +137,7 @@ public class ELYS_ElysiumSystem {
 	elysiumLeader.setImportance(PersonImportance.VERY_HIGH);
 	elysiumLeader.getName().setFirst("Sylvaris");
 	elysiumLeader.getName().setLast("Everlight");
-	elysiumLeader.setPortraitSprite("graphics/portraits/portrait_hegemony03.png");
+	elysiumLeader.setPortraitSprite("graphics/portraits/female/Elys_1.png");
 
 	Global.getSector().getImportantPeople().addPerson(elysiumLeader);
 	elysiumPrime_market.getCommDirectory().addPerson(elysiumLeader);
@@ -168,11 +182,11 @@ public class ELYS_ElysiumSystem {
 				Industries.POPULATION,
 				Industries.MINING,
 				Industries.REFINING,
-				Industries.HEAVYINDUSTRY,
 				Industries.MILITARYBASE,
 				Industries.SPACEPORT,
 				Industries.ORBITALSTATION,
-				Industries.WAYSTATION
+				Industries.WAYSTATION,
+				Industries.HEAVYBATTERIES
 			)
 		),
 		0.3f,
@@ -180,6 +194,23 @@ public class ELYS_ElysiumSystem {
 		true);
 
 	emberForge.setCustomDescriptionId("planet_emberforge");
+
+	// Add ORBITALWORKS with PRISTINE_NANOFORGE
+	emberForge_market.addIndustry(Industries.ORBITALWORKS, Collections.singletonList(Items.PRISTINE_NANOFORGE));
+
+	// Add AI cores to Emberforge
+	if (emberForge_market.hasIndustry(Industries.ORBITALWORKS)) {
+	    emberForge_market.getIndustry(Industries.ORBITALWORKS).setAICoreId(Commodities.ALPHA_CORE);
+	}
+	if (emberForge_market.hasIndustry(Industries.MILITARYBASE)) {
+	    emberForge_market.getIndustry(Industries.MILITARYBASE).setAICoreId(Commodities.BETA_CORE);
+	}
+	if (emberForge_market.hasIndustry(Industries.REFINING)) {
+	    emberForge_market.getIndustry(Industries.REFINING).setAICoreId(Commodities.BETA_CORE);
+	}
+	if (emberForge_market.hasIndustry(Industries.MINING)) {
+	    emberForge_market.getIndustry(Industries.MINING).setAICoreId(Commodities.GAMMA_CORE);
+	}
 
 	// Tidesong (water world)
 	PlanetAPI tideSong = system.addPlanet("tide_song",
@@ -222,7 +253,8 @@ public class ELYS_ElysiumSystem {
 				Industries.FARMING,
 				Industries.FUELPROD,
 				Industries.PATROLHQ,
-				Industries.WAYSTATION
+				Industries.WAYSTATION,
+				Industries.GROUNDDEFENSES
 			)
 		),
 		0.3f,
@@ -230,6 +262,20 @@ public class ELYS_ElysiumSystem {
 		true);
 
 	tideSong.setCustomDescriptionId("planet_tidesong");
+
+	// Add AI cores to Tidesong
+	if (tideSong_market.hasIndustry(Industries.MEGAPORT)) {
+	    tideSong_market.getIndustry(Industries.MEGAPORT).setAICoreId(Commodities.ALPHA_CORE);
+	}
+	if (tideSong_market.hasIndustry(Industries.FARMING)) {
+	    tideSong_market.getIndustry(Industries.FARMING).setAICoreId(Commodities.GAMMA_CORE);
+	}
+	if (tideSong_market.hasIndustry(Industries.FUELPROD)) {
+	    tideSong_market.getIndustry(Industries.FUELPROD).setAICoreId(Commodities.GAMMA_CORE);
+	}
+	if (tideSong_market.hasIndustry(Industries.MINING)) {
+	    tideSong_market.getIndustry(Industries.MINING).setAICoreId(Commodities.GAMMA_CORE);
+	}
 
 	// Add non-colonized celestial bodies
 

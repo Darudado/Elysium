@@ -1,10 +1,10 @@
 {
     "displayName": "Base",
-    "fluxCapacitors": 0,
-    "fluxVents": 0,
+    "fluxCapacitors": 25,
+    "fluxVents": 30,
     "goalVariant": false,
     "hullId": "ELYS_Aetherion_wing_left",
-    "hullMods": [],
+    "hullMods": ["heavyarmor"],
     "quality": 0.0,
     "variantId": "ELYS_Aetherion_wing_left_base",
     "weaponGroups": [
