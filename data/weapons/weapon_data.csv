@@ -2,50 +2,50 @@ name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn r
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #energy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##small ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Elysian Tactical Laser,elys_tacticlaser,1,,200,900,100,,,0,20,4,,,,ENERGY,,100,0.1,0.1,,,,,,,2400,,,,,,,"PD, PD_ALSO","beam9, LR, elysium_weap_bp",,Elysium,,General/PD,,,,,Laser that can disrupt phased ships and hit missiles,,,,,1
-Elysian Energy Blaster S,elys_energy_blaster_small,2,1,2500,600,150,,0,10,45,6,,,,ENERGY,,200,2,0.5,1,,,,,,2400,,,,,,,,"energy10, beam8, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy damage with HE explosion projectile after charge up,,,,,2
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Energy damage with HE explosion projectile after charge up,,,,,
+Elysian Tactical Laser,elys_tacticlaser,1,,200,900,100,,,0,20,4,,,,ENERGY,,100,0.1,0.1,,,,,,,2400,,,,,,,"PD, PD_ALSO","beam9, LR, elysium_weap_bp",,Elysium,,General/PD,,,,,Laser that can disrupt phased ships and defend against missiles,,The laser will have a %s chance to disable a phase system when passing over a phased ship. Increases phase cooldown onhit. ,5%,,1
+Elysian Energy Blaster S,elys_energy_blaster_small,2,1,2500,600,150,,0,10,45,6,,,,ENERGY,,200,2,0.5,1,,,,,,2400,,,,,,,,"energy10, beam8, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy beam that when fully charged launches an explosive projectile. The projectile does %s explosive damage on a radius.,600,,,,2
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##med,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Elysian Energy Blaster M,elys_energy_blaster_medium,2,1,5000,800,300,,0,20,30,10,,,,ENERGY,,350,2.5,0.75,1,,,,,,2400,,,,,,,,"energy12, beam10, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy damage with HE explosion projectile after charge up,,,,,23
+Elysian Energy Blaster M,elys_energy_blaster_medium,2,1,5000,800,300,,0,20,30,10,,,,ENERGY,,350,2.5,0.75,1,,,,,,2400,,,,,,,,"energy12, beam10, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy beam that when fully charged launches an explosive projectile. The projectile does %s explosive damage on a radius.,3000,,,,23
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##large,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Elysian Energy Blaster L,elys_energy_blaster_large,3,0.5,10000,1000,600,,0,30,15,26,,,,ENERGY,,700,3,1,1,,,,,,2400,,,,,,,,"energy14, beam12, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy damage with HE explosion projectile after charge up,,,,,24
-Elysian Energy Devastator,elys_energy_blaster_large_alt,4,0.3,15000,800,500,,300,40,10,30,,,,ENERGY,,700,4,1,1,,,,,,2400,,,,,,,,"energy16, beam14, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy damage with HE & EMP explosion projectile after charge up,,Fires 3 projectiles.,,,25
+Elysian Energy Blaster L,elys_energy_blaster_large,3,0.5,10000,1000,600,,0,30,15,26,,,,ENERGY,,700,3,1,1,,,,,,2400,,,,,,,,"energy14, beam12, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy beam that when fully charged launches an explosive projectile. The projectile does 3000 explosive damage on a radius.,,,,,24
+Elysian Energy Devastator,elys_energy_blaster_large_alt,4,0.3,15000,800,500,,300,40,10,30,,,,ENERGY,,700,4,1,1,,,,,,2400,,,,,,,,"energy16, beam14, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy beam that when fully charged launches a shotgun of explosive projectiles. The projectiles do %s explosive damage and %s EMP on a radius.,1500 | 300,Fires 3 projectiles in a wide range.,,,25
 #synergy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##small ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Flower Torpedo Launcher (S),elys_flowertrp_s,3,0.5,8000,2000,,1200,0,30,15,7,2,0.15,2,ENERGY,1000,,0.3,0.2,1,0,0,0,0,0,,180,80,10,1200,,,"STRIKE, DO_NOT_AIM,USE_VS_FRIGATES,","strike16, missile16, elysium_weap_bp",,Elysium,,Guided Energy Torpedo,Slow,Good,,,Slow guided torpedos that do %s bonus Shield Damage ,+20%,,,TRUE,31
+Flower Torpedo Launcher (S),elys_flowertrp_s,3,0.5,8000,2000,,1200,0,30,15,7,2,0.15,2,ENERGY,1000,,0.3,0.2,1,0,0,0,0,0,,180,80,10,1200,,,"STRIKE, DO_NOT_AIM,USE_VS_FRIGATES,","strike16, missile16, elysium_weap_bp",,Elysium,,Guided Energy Torpedo,Slow,Good,,,Slow guided torpedos that do %s bonus damage to shields,+20%,,,TRUE,31
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##med,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Flower Torpedo Launcher (M),elys_flowertrp_m,4,0.4,16000,2000,,1500,0,35,12,17,4,0.45,2,ENERGY,1200,,0.4,0.2,2,0.1,0,0,0,0,,180,80,10,1500,,,"STRIKE, DO_NOT_AIM,USE_VS_FRIGATES,","strike16, missile16, elysium_weap_bp",,Elysium,,Guided Energy Torpedo,Slow,Good,,,Slow guided torpedos that do %s bonus Shield Damage ,+20%,,,TRUE,32
+Flower Torpedo Launcher (M),elys_flowertrp_m,4,0.4,16000,2000,,1500,0,35,12,17,4,0.45,2,ENERGY,1200,,0.4,0.2,2,0.1,0,0,0,0,,180,80,10,1500,,,"STRIKE, DO_NOT_AIM,USE_VS_FRIGATES,","strike16, missile16, elysium_weap_bp",,Elysium,,Guided Energy Torpedo,Slow,Good,,,Slow guided torpedos that do %s bonus damage to shields,+20%,,,TRUE,32
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##large,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Flower Torpedo Launcher (L),elys_flowertrp_l,4,0.3,40000,2000,,1800,0,40,10,32,8,0.75,4,ENERGY,1500,,0.5,0.2,4,0.1,0,0,0,0,,180,90,10,1800,,,"STRIKE, DO_NOT_AIM,USE_VS_FRIGATES,","strike16, missile16, elysium_weap_bp",,Elysium,,Guided Energy Torpedo,Slow,Good,,,Slow guided torpedos that do %s bonus Shield Damage ,+20%,,,TRUE,33
+Flower Torpedo Launcher (L),elys_flowertrp_l,4,0.3,40000,2000,,1800,0,40,10,32,8,0.75,4,ENERGY,1500,,0.5,0.2,4,0.1,0,0,0,0,,180,90,10,1800,,,"STRIKE, DO_NOT_AIM,USE_VS_FRIGATES,","strike16, missile16, elysium_weap_bp",,Elysium,,Guided Energy Torpedo,Slow,Good,,,Slow guided torpedos that do %s bonus damage to shields,+20%,,,TRUE,33
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #missile,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##small,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Elysium Swarmer (S),elys_swarm_small,2,0.5,1500,2000,,100,20,5,15,5,27,,,KINETIC,,,"0,5",2,3,,,,,,,600,90,5,150,,,"DO_NOT_AIM, STRIKE, USE_VS_FRIGATES,","missile19, strike15,elysium_weap_bp",,Elysium,,Suppression,Very Fast,Special,,,Extremely fast shield suppression guided missiles,,,,,50
-Elysium Assault Torpedo (S),elys_torpedo_small,2,1,500,1200,,3000,,75,10,2,1,,,ENERGY,,,0,5,1,,0,0,0,0,,400,70,3.5,500,,,STRIKE,"strike8, rocket3, elysium_weap_bp",,Elysium,,Torpedo,Fast,None,,,Torpedo that does Point-blank boosted damage,,Deals up to 50% more damage at short range,,TRUE,51
+Elysium Swarmer (S),elys_swarm_small,2,0.5,1500,2000,,100,20,5,15,5,27,,,KINETIC,,,"0,5",2,3,,,,,,,600,90,5,150,,,"DO_NOT_AIM, STRIKE, USE_VS_FRIGATES,","missile19, strike15,elysium_weap_bp",,Elysium,,Suppression,Very Fast,Special,,,"Extremely fast guided missiles, their damage is low but they can successfully suppress shields",,,,,50
+Elysium Assault Torpedo (S),elys_torpedo_small,2,1,500,1200,,3000,,75,10,2,1,,,ENERGY,,,0,5,1,,0,0,0,0,,400,70,3.5,500,,,STRIKE,"strike8, rocket3, elysium_weap_bp",,Elysium,,Torpedo,Fast,None,,,Unguided Torpedo that does boosted damage when fired Point-blank,,Deals up to 50% more damage at short range,,TRUE,51
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##med,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Elysium Swarmer (M),elys_swarm_med,2,0.5,3000,2000,,120,20,11,12,10,55,,,KINETIC,,,"0,5",2,5,,,,,,,600,90,5,200,,,"DO_NOT_AIM, STRIKE, USE_VS_FRIGATES, ","missile19, strike15,elysium_weap_bp",,Elysium,,Suppression,Very Fast,Special,,,Extremely fast shield suppression guided missiles,,,,,52
-Elysium Assault Torpedo Array (M),elys_torpedo_medium,3,0.8,1500,1200,,3000,,75,20,13,10,,,ENERGY,,,0,10,2,,0,0,0,0,,400,55,3.5,500,,,STRIKE,"strike13, rocket8, elysium_weap_bp",,Elysium,,Torpedo,Fast,None,,,"Torpedo that does Point-blank boosted damage. , this version launches 2 torpedo, but half the speed. ",,Deals up to 50% more damage at short range,,TRUE,53
+Elysium Swarmer (M),elys_swarm_med,2,0.5,3000,2000,,120,20,11,12,10,55,,,KINETIC,,,"0,5",2,5,,,,,,,600,90,5,200,,,"DO_NOT_AIM, STRIKE, USE_VS_FRIGATES, ","missile19, strike15,elysium_weap_bp",,Elysium,,Suppression,Very Fast,Special,,,"Extremely fast guided missiles, their damage is low but they can successfully suppress shields",,,,,52
+Elysium Assault Torpedo Array (M),elys_torpedo_medium,3,0.8,1500,1200,,3000,,75,20,13,10,,,ENERGY,,,0,10,2,,0,0,0,0,,400,55,3.5,500,,,STRIKE,"strike13, rocket8, elysium_weap_bp",,Elysium,,Torpedo,Fast,None,,,"Unguided Torpedo that does boosted damage when fired Point-blank. This version fires 2 torpedos at the same time, but at slower speeds. ",,Deals up to 50% more damage at short range,,TRUE,53
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##large,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Elysium Swarmer (L),elys_swarm_large,2,0.5,15000,2500,,130,20,20,8,20,225,,,KINETIC,,,"0,5",5,15,,,,,,,600,90,6,300,,,"DO_NOT_AIM, STRIKE, USE_VS_FRIGATES","missile19, strike15,elysium_weap_bp",,Elysium,,Suppression,Very Fast,Special,,,Extremely fast shield suppression guided missiles,,,,,54
+Elysium Swarmer (L),elys_swarm_large,2,0.5,15000,2500,,130,20,20,8,20,225,,,KINETIC,,,"0,5",5,15,,,,,,,600,90,6,300,,,"DO_NOT_AIM, STRIKE, USE_VS_FRIGATES","missile19, strike15,elysium_weap_bp",,Elysium,,Suppression,Very Fast,Special,,,"Extremely fast guided missiles, their damage is low but they can successfully suppress shields",,,,,54
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##hidden,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Pulse Bolt s,elys_energy_blaster_small_projectile_shot_hidden,4,,2500,600,,1,,,50,99,,,,ENERGY,0,,0,0.2,,,5,5,1,10,,2500,,,500,,,SYSTEM,"no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,,,,,,,,,,,
 Pulse Bolt m,elys_energy_blaster_medium_projectile_shot_hidden,4,,2500,800,,1,,,50,99,,,,ENERGY,0,,0,0.2,,,5,5,1,10,,2500,,,500,,,SYSTEM,"no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,,,,,,,,,,,
 Pulse Bolt l,elys_energy_blaster_large_projectile_shot_hidden,4,,2500,1000,,1,,,50,99,,,,ENERGY,0,,0,0.2,,,5,5,1,10,,2500,,,500,,,SYSTEM,"no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,,,,,,,,,,,
 Pulse Bolt la,elys_energy_blaster_largeALT_projectile_shot_hidden,4,,2500,1000,,1,,,50,99,,,,ENERGY,0,,0,0.2,,,5,5,1,10,,2500,,,500,,,SYSTEM,"no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,,,,,,,,,,,
-Comet Flower Torpedo Launcher,elys_flowertrp_s_Comet_hidden,3,,8000,2000,,1400,200,30,15,99,2,0.10,2,HIGH_EXPLOSIVE,200,,0.3,0.2,1,0,0,0,0,0,,400,110,10,700,,,"STRIKE, DO_NOT_AIM,USE_VS_FRIGATES,SYSTEM","no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,Guided Energy Torpedo,Slow,Good,,,Explosive Guided torpedos that do %s bonus Shield Damage ,+20%,,,TRUE,
-Elysian Fragmentation cannon,elys_energy_blaster_fragmentation_cannon_inbuilt,2,,5000,1000,2500,,0,20,30,99,,,,FRAGMENTATION,,300,0.25,0.5,1,3,,,,,2400,,,,,,,,"no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,Anti hull,,,,,Fragmentation damage with HE explosion projectile after charge up,,,,,
-Elysian Beam Repeater,elys_energy_beam_repeater_small_inbuilt,2,,5000,700,700,,0,20,30,99,,,,ENERGY,,800,0.25,0.5,1,1,,,,,2400,,,,,,,,"no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,Anti Armor,,,,,Energy damage with HE explosion projectile after charge up,,,,,
-Comet Swarmer,elys_swarm_small_comet_inbuilt,2,,1500,2000,,100,50,5,15,,10,,,KINETIC,,,"0,5",2,2,,,,,,,700,80,5,100,,,"DO_NOT_AIM, STRIKE, USE_VS_FRIGATES,","no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,Suppression,Very Fast,Special,,,Extremely fast shield suppression guided missiles,,,,,50
+Comet Flower Torpedo Launcher,elys_flowertrp_s_Comet_hidden,3,,8000,2000,,1400,200,30,15,99,2,0.10,2,HIGH_EXPLOSIVE,200,,0.3,0.2,1,0,0,0,0,0,,400,110,10,700,,,"STRIKE, DO_NOT_AIM,USE_VS_FRIGATES,SYSTEM","no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,Guided Energy Torpedo,Slow,Good,,,Slow guided torpedos that do %s bonus damage to shields,+20%,,,TRUE,
+Elysian Fragmentation cannon,elys_energy_blaster_fragmentation_cannon_inbuilt,2,,5000,1000,2500,,0,20,30,99,,,,FRAGMENTATION,,300,0.25,0.5,1,3,,,,,2400,,,,,,,,"no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,Anti hull,,,,,Fragmentation beam that when fully charged launches an explosive projectile. The projectile does %s explosive damage on a radius.,2000,,,,
+Elysian Beam Repeater,elys_energy_beam_repeater_small_inbuilt,2,,5000,700,700,,0,20,30,99,,,,ENERGY,,800,0.25,0.5,1,1,,,,,2400,,,,,,,,"no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,Anti Armor,,,,,Energy beam that when fully charged launches an explosive projectile. The projectile does %s explosive damage on a radius.,600,,,,
+Comet Swarmer,elys_swarm_small_comet_inbuilt,2,,1500,2000,,100,50,5,15,,10,,,KINETIC,,,"0,5",2,2,,,,,,,700,80,5,100,,,"DO_NOT_AIM, STRIKE, USE_VS_FRIGATES,","no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,Suppression,Very Fast,Special,,,"Extremely fast guided missiles, their damage is low but they can successfully suppress shields",,,,,50
 Ember Fang,elys_ember_fang,3,,1000,1000,3000,,1000,0,7,,,,,FRAGMENTATION,,2000,0.1,0.1,2,4,,,,,6000,,,,,,,,"no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,General,,,,,,,,,,
 Aetherion Cannon,elys_aetherion_beam,3,,1000,800,2500,,,0,7,,,,,FRAGMENTATION,,1500,0.1,0.1,2,,,,,,6000,,,,,,,,"no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,General,,,,,,,,,,
 Aeternum singularity beam,elys_aeternum_beam,3,,1000,800,12000,,,0,7,,,,,FRAGMENTATION,,4000,1.5,0.5,3,2,,,,,6000,,,,,,,,"no_drop,no_sell,no_drop_salvage,restricted",,Elysium,,General,,,,,,,,,,
-
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

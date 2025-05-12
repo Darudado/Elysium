@@ -1,0 +1,84 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+		"ELYS_Starseeker_explorer":4,
+		"ELYS_Starseeker_Elysean":6,
+		"ELYS_Starseeker_Persean":2,
+		"ELYS_Starbane_Persean":3,
+		"ELYS_Starbane_Elysean":4,
+		
+		
+	},
+	"combatSmall":{
+		"ELYS_Starseeker_explorer":2,
+		"ELYS_Starseeker_Elysean":7,
+		"ELYS_Starseeker_Persean":6,
+		"ELYS_Starforge_Persean":3,
+		"ELYS_Starforge_Elysean":4,
+		"ELYS_Starbane_Persean":4,
+		"ELYS_Starbane_Elysean":4,
+		
+		
+		
+		
+	},
+	"combatMedium":{
+		"ELYS_Perennion_Persean":3,
+		"ELYS_Aetherblade_Elysian":7,
+		"ELYS_Perennion_Elysian":4,
+		
+		
+	},
+	"combatLarge":{
+		"ELYS_Sempitern_Elysean":2,
+		"ELYS_Solstice_Persean":6,
+		"ELYS_Sempitern_Persean":3,
+		"ELYS_Solstice_Elysean":7,
+		
+		
+	},
+	"combatCapital":{
+		"ELYS_Necrothauma_Elysian_Torpedo": 2,
+		"ELYS_Necrothauma_Elysian":3,
+		"ELYS_Necrothauma_Persean":2,
+		"ELYS_CometStrike_Persean": 4,
+		"ELYS_Woodslaught_Persean":2,
+		"ELYS_Woodslaught_Elysean":3,
+		"ELYS_CometStrike_Assault":2,
+		"ELYS_Emberfang_Elysean":6,
+		"ELYS_Emberfang_persean":4,
+		"ELYS_aeternum_base":1,
+		"ELYS_Aetherion_base":5,
+		
+		
+		
+		
+		
+		
+	},
+	# carriers
+	"carrierSmall":{
+		"ELYS_Crepuscole_Elysean":4,
+
+	},
+	"carrierMedium":{
+		
+		"ELYS_Twilight_Persean":3,
+		"ELYS_Twilight_Elysian":6,
+		
+		
+
+	},
+	"carrierLarge":{
+		"ELYS_Sempitern_Elysean":2,
+		"ELYS_CometStrike_Persean":4,
+		"ELYS_CometStrike_Assault":5,
+		"ELYS_Sempitern_Persean":3,
+		"ELYS_Twilight_Persean":3,
+		
+		
+
+	},
+
+}

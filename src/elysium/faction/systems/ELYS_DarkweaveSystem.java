@@ -21,29 +21,29 @@ import java.util.Random;
 
 public class ELYS_DarkweaveSystem {
 
-    // Constants for orbital distances - MODIFIED FOR ISOLATION
-    // Isolated black hole - larger distances for planets
-    final float greenholdDist = 18000f;    // Moved much farther out
-    final float thaumaspireDist = 15500f;  // Moved much farther out
-    final float shadowveilDist = 22000f;   // Pushed further away
-    final float whisperholdDist = 3500f;   // Closer to black hole but still isolated
-    final float luminarchDist = 25000f;    // Far out
+    // Constants for orbital distances - MODIFIED FOR MORE COMPACT LAYOUT
+    // More compact layout while preserving isolation feeling
+    final float greenholdDist = 9000f;     // Reduced from 18000f
+    final float thaumaspireDist = 8000f;   // Reduced from 15500f and moved closer to Greenhold
+    final float shadowveilDist = 12000f;   // Reduced from 22000f
+    final float whisperholdDist = 2500f;   // Slightly reduced from 3500f
+    final float luminarchDist = 14000f;    // Reduced from 25000f
 
-    // Dead zone size (no planets inside this except debris)
-    final float deadZoneRadius = 6000f;
+    // Dead zone size (no planets inside this except debris) - reduced
+    final float deadZoneRadius = 3500f;    // Reduced from 6000f
 
     // Jump points and navigation - MODIFIED
-    final float jumpFringeDist = 19000f;   // Outer jump point
-    final float jumpInnerDist = 12000f;    // Inner jump point
-    final float comDist = 9000f;
-    final float navDist = 7000f;
-    final float sensorDist = 5000f;
+    final float jumpFringeDist = 10000f;   // Reduced from 19000f
+    final float jumpInnerDist = 7000f;     // Reduced from 12000f
+    final float comDist = 6500f;           // Reduced from 9000f
+    final float navDist = 5000f;           // Reduced from 7000f
+    final float sensorDist = 4000f;        // Reduced from 5000f
 
     public void generate(SectorAPI sector) {
 	// Create the star system
 	StarSystemAPI system = sector.createStarSystem("Darkweave");
 	system.getLocation().set(-34000, -20000); // Southwest quadrant, near Elysium
-	system.setBackgroundTextureFilename("graphics/backgrounds/ELYS_BG2.jpeg");
+	system.setBackgroundTextureFilename("graphics/backgrounds/background5.jpg");
 
 	// Initialize the black hole as the center
 	PlanetAPI voidsEye = system.initStar("voids_eye", // unique id
@@ -58,12 +58,13 @@ public class ELYS_DarkweaveSystem {
 	system.addRingBand(voidsEye, "misc", "rings_special0", 256f, 0, new Color(60, 20, 120), 256f, 700, 50f);
 	system.addRingBand(voidsEye, "misc", "rings_dust0", 256f, 1, new Color(100, 50, 150, 100), 256f, 1100, 70f);
 
-	// Add more dramatic accretion disk effects
-	system.addRingBand(voidsEye, "misc", "rings_dust0", 256f, 3, new Color(50, 20, 100, 130), 256f, 1500, 40f);
-	system.addRingBand(voidsEye, "misc", "rings_dust0", 256f, 0, new Color(80, 30, 120, 150), 256f, 2000, 50f);
-	system.addRingBand(voidsEye, "misc", "rings_dust0", 256f, 2, new Color(60, 10, 90, 170), 256f, 2500, 60f);
+	// Add more dramatic accretion disk effects (adjusted for smaller system)
+	system.addRingBand(voidsEye, "misc", "rings_dust0", 256f, 3, new Color(50, 20, 100, 130), 256f, 1200, 40f);
+	system.addRingBand(voidsEye, "misc", "rings_dust0", 256f, 0, new Color(80, 30, 120, 150), 256f, 1600, 50f);
+	system.addRingBand(voidsEye, "misc", "rings_dust0", 256f, 2, new Color(60, 10, 90, 170), 256f, 2000, 60f);
 
-	// RELOCATED: Greenhold near the outer jump point (terran world)
+	// MODIFIED: Moved Greenhold and Thaumaspire closer (now about 60 degrees apart)
+	// Greenhold (terran world)
 	PlanetAPI greenhold = system.addPlanet("greenhold",
 		voidsEye,
 		"Greenhold",
@@ -149,21 +150,21 @@ public class ELYS_DarkweaveSystem {
 	militaryCommander.setImportance(PersonImportance.HIGH);
 	militaryCommander.getName().setFirst("Thorne");
 	militaryCommander.getName().setLast("Dawnblade");
-	militaryCommander.setPortraitSprite("graphics/portraits/male/Elys_16.png");
+	militaryCommander.setPortraitSprite("graphics/portraits/male/ELYS_16.png");
 
 	Global.getSector().getImportantPeople().addPerson(militaryCommander);
 	greenhold_market.getCommDirectory().addPerson(militaryCommander);
 	greenhold_market.addPerson(militaryCommander);
 
-	// RELOCATED: Thaumaspire near inner jump point (volcanic world)
+	// MODIFIED: Moved Thaumaspire closer to Greenhold
 	PlanetAPI thaumaspire = system.addPlanet("thaumaspire",
 		voidsEye,
 		"Thaumaspire",
 		"lava",
-		45f,
+		80f, // Changed angle to be closer to Greenhold
 		110f,
 		thaumaspireDist,
-		160f);
+		220f);
 
 	MarketAPI thaumaspire_market = ELYS_Gen.addMarketplace(
 		"elysium",
@@ -225,7 +226,7 @@ public class ELYS_DarkweaveSystem {
 	    thaumaspire_market.getIndustry(Industries.MINING).setAICoreId(Commodities.GAMMA_CORE);
 	}
 
-	// RELOCATED: Shadowveil (gas giant)
+	// MODIFIED: Shadowveil (gas giant) - moved closer
 	PlanetAPI shadowveil = system.addPlanet("shadowveil",
 		voidsEye,
 		"Shadowveil",
@@ -243,7 +244,7 @@ public class ELYS_DarkweaveSystem {
 	shadowveil_market.addCondition(Conditions.DARK);
 	shadowveil.setCustomDescriptionId("planet_shadowveil");
 
-	// MODIFIED: Whisperhold (closer to black hole but still in dead zone edge)
+	// MODIFIED: Whisperhold (barren world just outside dead zone)
 	PlanetAPI whisperhold = system.addPlanet("whisperhold",
 		voidsEye,
 		"Whisperhold",
@@ -262,14 +263,14 @@ public class ELYS_DarkweaveSystem {
 	whisperhold_market.addCondition(Conditions.DARK);
 	whisperhold.setCustomDescriptionId("planet_whisperhold");
 
-	// MODIFIED: Gate to be between colonies and jump points
+	// MODIFIED: Gate position
 	SectorEntityToken gate = system.addCustomEntity("gateStarshard",
 		"Starshard gate",
 		"inactive_gate",
 		Factions.NEUTRAL);
-	gate.setCircularOrbitPointingDown(voidsEye, 120f, 14000f, 140f);
+	gate.setCircularOrbitPointingDown(voidsEye, 120f, 8500f, 140f); // Moved closer
 
-	// RELOCATED: Luminarch far from the black hole
+	// MODIFIED: Luminarch moved closer
 	PlanetAPI luminarch = system.addPlanet("luminarch",
 		voidsEye,
 		"Luminarch",
@@ -307,14 +308,14 @@ public class ELYS_DarkweaveSystem {
 	ebontide_market.addCondition(Conditions.RUINS_SCATTERED);
 	ebontide.setCustomDescriptionId("planet_ebontide");
 
-	// RELOCATED: The Spires (3 barren worlds)
+	// MODIFIED: The Spires (3 barren worlds) - moved closer together
 	PlanetAPI spire1 = system.addPlanet("spire1",
 		voidsEye,
 		"Spire Alpha",
 		"barren",
 		240f,
 		50f,
-		13000f,
+		7000f, // Reduced from 13000f
 		340f);
 
 	PlanetAPI spire2 = system.addPlanet("spire2",
@@ -323,7 +324,7 @@ public class ELYS_DarkweaveSystem {
 		"barren-bombarded",
 		242f,
 		60f,
-		13500f,
+		7200f, // Reduced from 13500f
 		350f);
 
 	PlanetAPI spire3 = system.addPlanet("spire3",
@@ -332,21 +333,21 @@ public class ELYS_DarkweaveSystem {
 		"barren-bombarded",
 		244f,
 		55f,
-		14000f,
+		7400f, // Reduced from 14000f
 		360f);
 
-	// ENHANCED: Multiple asteroid fields for visual interest and isolation effect
+	// MODIFIED: Asteroid fields adjusted for smaller system
 	// Inner asteroid field 1 (close to black hole)
 	SectorEntityToken darkweaveAF1 = system.addTerrain(Terrain.ASTEROID_FIELD,
 		new AsteroidFieldTerrainPlugin.AsteroidFieldParams(
 			400f, // min radius
-			800f, // max radius (increased)
-			15, // min asteroid count (increased)
-			30, // max asteroid count (increased)
+			800f, // max radius
+			15, // min asteroid count
+			30, // max asteroid count
 			4f, // min asteroid radius
 			16f, // max asteroid radius
 			"Inner Asteroids Field")); // name
-	darkweaveAF1.setCircularOrbit(voidsEye, 60f, 1800f, 320f);
+	darkweaveAF1.setCircularOrbit(voidsEye, 60f, 1500f, 320f); // Moved closer
 
 	// Inner asteroid field 2
 	SectorEntityToken darkweaveAF2 = system.addTerrain(Terrain.ASTEROID_FIELD,
@@ -358,19 +359,19 @@ public class ELYS_DarkweaveSystem {
 			8f, // min asteroid radius
 			16f, // max asteroid radius
 			"Secondary Asteroids Field")); // name
-	darkweaveAF2.setCircularOrbit(voidsEye, 150f, 2500f, 400f);
+	darkweaveAF2.setCircularOrbit(voidsEye, 150f, 2000f, 400f); // Moved closer
 
 	// Dead zone edge asteroid field
 	SectorEntityToken darkweaveAF3 = system.addTerrain(Terrain.ASTEROID_FIELD,
 		new AsteroidFieldTerrainPlugin.AsteroidFieldParams(
 			700f, // min radius
-			1200f, // max radius (increased)
-			25, // min asteroid count (increased)
-			40, // max asteroid count (increased)
+			1200f, // max radius
+			25, // min asteroid count
+			40, // max asteroid count
 			8f, // min asteroid radius
-			20f, // max asteroid radius (increased)
+			20f, // max asteroid radius
 			"Dense Border Asteroids Field")); // name
-	darkweaveAF3.setCircularOrbit(voidsEye, 200f, 5000f, 400f);
+	darkweaveAF3.setCircularOrbit(voidsEye, 200f, 3500f, 400f); // Moved closer
 
 	// Outer asteroid field
 	SectorEntityToken darkweaveAF4 = system.addTerrain(Terrain.ASTEROID_FIELD,
@@ -382,23 +383,23 @@ public class ELYS_DarkweaveSystem {
 			6f, // min asteroid radius
 			18f, // max asteroid radius
 			"Outer Asteroids Belt")); // name
-	darkweaveAF4.setCircularOrbit(voidsEye, 270f, 10000f, 400f);
+	darkweaveAF4.setCircularOrbit(voidsEye, 270f, 6000f, 400f); // Moved closer
 
-	// ENHANCED: More debris fields around the black hole
+	// MODIFIED: Debris fields adjusted for smaller system
 	Random rand = new Random();
 
 	// Inner intense debris field
 	DebrisFieldTerrainPlugin.DebrisFieldParams params1 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
-		500f, // field radius (increased)
-		1.2f, // density (increased)
+		500f, // field radius
+		1.2f, // density
 		10000000f, // duration
 		0f); // days the field will keep generating glowing pieces
 	params1.source = DebrisFieldTerrainPlugin.DebrisFieldSource.MIXED;
-	params1.baseSalvageXP = 750; // increased
+	params1.baseSalvageXP = 750;
 	SectorEntityToken debrisField1 = Misc.addDebrisField(system, params1, StarSystemGenerator.random);
 	debrisField1.setSensorProfile(800f);
 	debrisField1.setDiscoverable(true);
-	debrisField1.setCircularOrbit(voidsEye, rand.nextFloat() * 360f, 1200f, 120f);
+	debrisField1.setCircularOrbit(voidsEye, rand.nextFloat() * 360f, 1000f, 120f); // Moved closer
 
 	// Secondary debris field
 	DebrisFieldTerrainPlugin.DebrisFieldParams params2 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
@@ -411,7 +412,7 @@ public class ELYS_DarkweaveSystem {
 	SectorEntityToken debrisField2 = Misc.addDebrisField(system, params2, StarSystemGenerator.random);
 	debrisField2.setSensorProfile(700f);
 	debrisField2.setDiscoverable(true);
-	debrisField2.setCircularOrbit(voidsEye, rand.nextFloat() * 360f, 2800f, 180f);
+	debrisField2.setCircularOrbit(voidsEye, rand.nextFloat() * 360f, 2000f, 180f); // Moved closer
 
 	// Third debris field
 	DebrisFieldTerrainPlugin.DebrisFieldParams params3 = new DebrisFieldTerrainPlugin.DebrisFieldParams(
@@ -424,10 +425,9 @@ public class ELYS_DarkweaveSystem {
 	SectorEntityToken debrisField3 = Misc.addDebrisField(system, params3, StarSystemGenerator.random);
 	debrisField3.setSensorProfile(600f);
 	debrisField3.setDiscoverable(true);
-	debrisField3.setCircularOrbit(voidsEye, rand.nextFloat() * 360f, 4000f, 200f);
+	debrisField3.setCircularOrbit(voidsEye, rand.nextFloat() * 360f, 3000f, 200f); // Moved closer
 
-	// Add navigation entities
-
+	// MODIFIED: Navigation entities moved closer
 	// Comm relay
 	SectorEntityToken commRelay = system.addCustomEntity("darkweave_comm_relay",
 		"Darkweave Comm Relay",
@@ -449,7 +449,7 @@ public class ELYS_DarkweaveSystem {
 		"elysium");
 	sensorArray.setCircularOrbitPointingDown(voidsEye, 270f, sensorDist, 365f);
 
-	// MODIFIED: Jump points positioned near colonies
+	// MODIFIED: Jump points positioned near colonies but closer in
 	JumpPointAPI jumpPoint1 = Global.getFactory().createJumpPoint(
 		"inner_jump",
 		"Darkweave Inner Jump Point");

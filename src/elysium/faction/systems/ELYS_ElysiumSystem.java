@@ -38,7 +38,7 @@ public class ELYS_ElysiumSystem {
 	// Create the star system
 	StarSystemAPI system = sector.createStarSystem("Elysium");
 	system.getLocation().set(-35000, -18000); // Southwest quadrant
-	system.setBackgroundTextureFilename("graphics/backgrounds/ELYS_BG2.jpeg");
+	system.setBackgroundTextureFilename("graphics/backgrounds/background5.jpg");
 
 
 	// Initialize the star
@@ -137,7 +137,7 @@ public class ELYS_ElysiumSystem {
 	elysiumLeader.setImportance(PersonImportance.VERY_HIGH);
 	elysiumLeader.getName().setFirst("Sylvaris");
 	elysiumLeader.getName().setLast("Everlight");
-	elysiumLeader.setPortraitSprite("graphics/portraits/female/Elys_1.png");
+	elysiumLeader.setPortraitSprite("graphics/portraits/female/ELYS_1.png");
 
 	Global.getSector().getImportantPeople().addPerson(elysiumLeader);
 	elysiumPrime_market.getCommDirectory().addPerson(elysiumLeader);

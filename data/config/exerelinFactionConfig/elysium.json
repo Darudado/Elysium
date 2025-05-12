@@ -20,22 +20,23 @@
     
     "colonyExpeditionChance":0.5,
     
-    "startShipsSolo":[["ELYS_Starbane"]],
+    "startShipsSolo":[["ELYS_Starbane_Elysean"]],
     "startShipsCombatSmall":[
-      ["ELYS_Starbane","ELYS_Starforge","ELYS_Starseeker"]
+      ["ELYS_Starseeker_explorer","ELYS_Starbane_Elysean","ELYS_Starbane_Elysean"]
     ],
     
-    "startShipsCarrierSmall":[["ELYS_Crepuscole", "ELYS_Starseeker"]],
+    "startShipsCarrierSmall":[["ELYS_Crepuscole_Elysean", "ELYS_Starseeker_explorer"]],
 	
 	"startShipsSuper":[
-        ["ELYS_Sempitern","ELYS_Starseeker"],
+        ["ELYS_Sempitern_Elysean","ELYS_Starseeker_explorer"],
     ],
+    "startShipsCombatLarge":["ELYS_CometStrike_Persean","ELYS_Solstice_Elysean","ELYS_Aetherblade_Elysian","ELYS_Starforge_Elysean","ELYS_Starseeker_Elysean"],
     
     "startSpecialItems":[
-[["elysium_hull_package",""],[["elysium_weap_package",""]]
+[["elysium_hull_package",""]],[["elysium_weap_package",""]]
     ],
 	
-	"bonusSeeds": [
+	"bonusSeeds":[
     {"id": "nanoforge_pristine", "count": 2},
     {"id": "aiCore_station", "count": 2, "mult": 0.2},
     {"id": "aiCore_military", "mult": 0.5},

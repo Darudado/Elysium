@@ -1,12 +1,12 @@
 {
-    "displayName": "Perseus",
+    "displayName": "Assault",
     "fluxCapacitors":  22,
     "fluxVents": 22,
     "goalVariant": true,
     "hullId": "ELYS_CometStrike",
     "hullMods": [],
     "quality": 0.0,
-    "variantId": "ELYS_CometStrike_Perseus",
+    "variantId": "ELYS_CometStrike_Assault",
     "weaponGroups": [
         {
             "autofire": false,

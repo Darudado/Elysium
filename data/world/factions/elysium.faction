@@ -35,8 +35,7 @@
 	},
 	# multiplier for how often hulls show up in the faction's fleets
 	"hullFrequency":{
-		"tags":{
-		},
+		"tags":{},
 		"hulls":{"ELYS_Starbane":1.2,"ELYS_Starforge":1.2,"ELYS_Starseeker":1.2,"ELYS_Aetherblade":1.2,"ELYS_Solstice":1.2,"ELYS_Aetherion":1.2,"ELYS_CometStrike":1.2,
 		},
 	},
@@ -46,16 +45,29 @@
 		"hulls":[],
 	},
 	"knownShips":{
-		"tags":["elysium_bp"],
-		"hulls":[
-		    "atlas",
-		    "prometheus",
-			"buffalo",
-			"phaeton",
-			"dram"
-
-
-		],
+    "tags":["elysium_bp"],
+    "hulls":[
+        "atlas",
+        "prometheus",
+        "buffalo",
+        "phaeton",
+        "dram",
+        "ELYS_Starbane",
+        "ELYS_Starforge",
+        "ELYS_Starseeker",
+        "ELYS_Aetherblade",
+        "ELYS_Crepuscole",
+        "ELYS_Perennion",
+        "ELYS_Solstice",
+        "ELYS_Twilight",
+        "ELYS_Sempitern",
+        "ELYS_Aetherion",
+        "ELYS_CometStrike",
+        "ELYS_Emberfang",
+        "ELYS_Necrothauma",
+        "ELYS_Woodslaught",
+        "ELYS_aeternum"
+    	],
 	},
 	# listing ships here will make the faction mostly use them even if other hulls become available
 	"priorityShips":{
