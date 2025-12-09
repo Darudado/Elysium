@@ -15,21 +15,20 @@ public class CombatMusicPlugin implements EveryFrameCombatPlugin {
 
     @Override
     public void init(CombatEngineAPI engine) {
-
+	// Initialization if needed
     }
 
     @Override
     public void advance(float amount, List<InputEventAPI> events) {
-	Global.getLogger(this.getClass()).info("CombatMusicPlugin init() called!");
 	CombatEngineAPI engine = Global.getCombatEngine();
-	if (engine == null ) return;
-	if (engine.isPaused() || played) return;
+
+	if (engine == null || engine.isPaused() || Util.isElysiumMusicPlaying) return;
 
 	if (shouldPlayMusic(engine)) {
 	    if (engine.getTotalElapsedTime(false) > 1f) {
 		try {
 		    Global.getSoundPlayer().playCustomMusic(1, 1, "ELYS_battlemusic", true);
-		    played = true;
+		    Util.isElysiumMusicPlaying = true; // Set the flag
 		} catch (Exception e) {
 		    Global.getLogger(this.getClass()).warn("Failed to play music set ELYS_battlemusic", e);
 		}
@@ -38,10 +37,10 @@ public class CombatMusicPlugin implements EveryFrameCombatPlugin {
     }
 
     private boolean shouldPlayMusic(CombatEngineAPI engine) {
-	if (engine.getContext() == null) return false ;
-	if (engine.getContext().getOtherFleet() == null) return false ;
+	if (engine.getContext() == null) return false;
+	if (engine.getContext().getOtherFleet() == null) return false;
 	FactionAPI enemyFaction = engine.getContext().getOtherFleet().getFaction();
-	return enemyFaction.getId().equals("elysium") | enemyFaction.getId().equals("elysium_void");
+	return enemyFaction.getId().equals("elysium") || enemyFaction.getId().equals("elysium_void");
     }
 
     @Override

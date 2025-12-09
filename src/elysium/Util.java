@@ -11,6 +11,9 @@ public class Util
 {
     public static final String FACTION_ID = "Elysium";
 
+    // Music state tracking
+    public static boolean isElysiumMusicPlaying = false;
+
     // Visual effect colors
     public static final Color JITTER_COLOR = new Color(219, 166, 255, 75);            // Light purple
     public static final Color JITTER_UNDER_COLOR = new Color(219, 166, 255, 175);     // Deeper purple

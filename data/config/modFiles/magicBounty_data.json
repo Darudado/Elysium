@@ -366,7 +366,7 @@
         "fleet_flagship_name": "Convergence Alpha",
         "fleet_flagship_alwaysRecoverable": true,
         "fleet_preset_ships": {
-            "ELYS_Emberfang_persean": 2,
+            "ELYS_Emberfang_Persean": 2,
             "ELYS_Solstice_Elysian": 1,
             "ELYS_Twilight_Elysian": 2,
             "ELYS_Perennion_Elysian": 4,
@@ -539,14 +539,14 @@
         
         "fleet_name": "SINGULARITY ARMADA",
         "fleet_faction": "elysium_void",
-        "fleet_flagship_variant": "ELYS_aeternum_base",
+        "fleet_flagship_variant": "ELYS_aeternum_Base",
         "fleet_flagship_name": "SINGULARITY-ONE",
         "fleet_flagship_alwaysRecoverable": true,
         "fleet_preset_ships": {
             "ELYS_Woodslaught_Persean": 1,
             "ELYS_Aetherion_base": 1,
             "ELYS_Necrothauma_Elysian_Torpedo": 1,
-            "ELYS_Emberfang_persean": 2,
+            "ELYS_Emberfang_Persean": 2,
             "ELYS_CometStrike_Assault": 1,
             "ELYS_Necrothauma_Elysian": 1,
             "ELYS_Solstice_Elysian": 4,

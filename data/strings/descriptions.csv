@@ -7,9 +7,9 @@ Generates hard flux to repair hull.
 Pause repair if flux levels become dangerous.","The Elysium living armor's remarkable self-healing properties were eventually weaponized as support technology. By catalyzing and projecting the regenerative resin through specialized emitters, Elysium support vessels can repair their allies in the heat of battle.",,,
 elys_sensoryboost,SHIP_SYSTEM,"Temporarily stimulates the ship's living armor to produce specialized sensory filaments, enhancing the ship's sensor capabilities and boosting its speed.
 ","Elysium engineers discovered that their living ship armor could be temporarily stimulated to grow sensory filaments that detect subtle spatial disturbances. These sensory enhancements also synchronize with the ship's engines, allowing for brief but significant mobility increases.",,,
-elys_temporaloverdrive,SHIP_SYSTEM,"Accelerates the ship's living armor's metabolic processes, creating a localized temporal distortion field.
+temporaloverdrive,SHIP_SYSTEM,"Accelerates the ship's living armor's metabolic processes, creating a localized temporal distortion field.
 Significantly increases ship speed, maneuverability, and weapon cooldown rates temporarily. Creates 4 temporal distorions of the ship that act as decoys.
-Generates moderate flux during activation.","Elysium bioscientists discovered that with precise biochemical stimulation, their living ship armor can briefly synchronize its cellular processes to manipulate the fabric of local spacetime. This creates a temporal acceleration field that enhances all ship systems at the cost of significant strain on the armor tissue.",,,
+Generates moderate flux during activation.","Elysium bioscientists discovered that with precise biochemical stimulation, their living ship armor can briefly synchronize its cellular processes to manipulate the fabric of local spacetime. This creates a temporal acceleration field that enhances all ship systems at the cost of significant strain on the armor tissue. The crew will age faster, but for their long lived species it's a small sacrifice.",,,
 elys_voidsingularity,SHIP_SYSTEM,"Creates a powerful gravitational singularity at the target location.
 Pulls nearby enemy ships toward the center, disrupting their maneuvers.
 Vents 40% of current flux when activated.
