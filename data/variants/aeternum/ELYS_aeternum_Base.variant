@@ -1,0 +1,71 @@
+{
+    "displayName": "Base",
+    "fluxCapacitors": 39,
+    "fluxVents": 50,
+    "goalVariant": false,
+    "hullId": "ELYS_aeternum",
+    "hullMods": [
+        "autorepair",
+        "fluxbreakers",
+        "fluxdistributor",
+        "hardened_subsystems",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_aeternum_Base",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 006": "elys_flowertrp_s",
+                "WS 007": "elys_flowertrp_s",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "elys_torpedo_medium",
+                "WS 000": "elys_torpedo_medium",
+                "WS 001": "elys_torpedo_medium",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 012": "elys_aeternum_beam",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "elys_tacticlaser",
+                "WS 009": "elys_tacticlaser",
+                "WS 004": "elys_tacticlaser",
+                "WS 005": "elys_tacticlaser",
+                "WS 011": "elys_tacticlaser",
+                "WS 010": "elys_tacticlaser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "heavyburst",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [
+        {"WS 017": "ELYS_aeternum_left_frontal_Base"},
+        {"WS 018": "ELYS_aeternum_right_frontal_Base"},
+        {"WS 015": "ELYS_aeternum_left_armor_Base"},
+        {"WS 016": "ELYS_aeternum_right_armor_Base"},
+        {"WS 013": "ELYS_aeternum_left_artillery_Base"},
+        {"WS 014": "ELYS_aeternum_right_artillery_Base"},
+    ],
+}

@@ -205,13 +205,13 @@
 	"illegalCommodities":[
 	],
 	"music":{
-		"theme":"music_tritach_encounter_neutral",
-		"market_neutral":"music_tritach_market_neutral",
-		"market_hostile":"music_tritach_market_hostile",
-		"market_friendly":"music_tritach_market_friendly",
-		"encounter_neutral":"music_tritach_encounter_neutral",
-		"encounter_hostile":"music_tritach_encounter_hostile",
-		"encounter_friendly":"music_tritach_encounter_friendly",
+		"theme":"ELYS_marketfriendly",
+		"market_neutral":"ELYS_marketneutral",
+		"market_hostile":"ELYS_markethostile",
+		"market_friendly":"ELYS_marketfriendly",
+		"encounter_neutral":"ELYS_encounterneutral",
+		"encounter_hostile":"ELYS_encounterhostile",
+		"encounter_friendly":"ELYS_encounterfriendly",
 	},
 	"internalComms":"tritachyon_internal",
 	"portraits": {

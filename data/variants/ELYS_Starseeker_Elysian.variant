@@ -1,0 +1,34 @@
+{
+    "displayName": "Elysian",
+    "fluxCapacitors": 10,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "ELYS_Starseeker",
+    "hullMods": [
+        "ELYS_EMPBeam",
+        "safetyoverrides",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Starseeker_Elysian",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "elys_energy_blaster_medium",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "elys_tacticlaser",
+                "WS 001": "elys_tacticlaser",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

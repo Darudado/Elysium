@@ -1,5 +1,6 @@
 package elysium.faction.systems;
 
+import com.fs.starfarer.api.impl.MusicPlayerPluginImpl;
 import elysium.faction.*;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
@@ -37,6 +38,9 @@ public class ELYS_ElysiumSystem {
     public void generate(SectorAPI sector) {
 	// Create the star system
 	StarSystemAPI system = sector.createStarSystem("Elysium");
+	system.setOptionalUniqueId("Elysium");
+	system.addTag("theme_unsafe");
+	system.addTag("theme_hidden");
 	system.getLocation().set(-35000, -18000); // Southwest quadrant
 	system.setBackgroundTextureFilename("graphics/backgrounds/background5.jpg");
 
@@ -407,5 +411,7 @@ public class ELYS_ElysiumSystem {
 
 	// Generate hyperspace connections
 	system.autogenerateHyperspaceJumpPoints(true, false);
+
+	system.getMemoryWithoutUpdate().set(MusicPlayerPluginImpl.MUSIC_SET_MEM_KEY, "ELYS_wordelys");
     }
 }

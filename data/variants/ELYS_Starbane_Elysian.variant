@@ -1,0 +1,49 @@
+{
+    "displayName": "Elysian",
+    "fluxCapacitors": 0,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "ELYS_Starbane",
+    "hullMods": [
+        "ELYS_TacticalFluxRedirector",
+        "safetyoverrides",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Starbane_Elysian",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "elys_energy_blaster_medium",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "elys_torpedo_small",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "elys_energy_blaster_small",
+                "WS 001": "elys_energy_blaster_small",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "elys_tacticlaser",
+                "WS 003": "elys_tacticlaser",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

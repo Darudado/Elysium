@@ -1,0 +1,91 @@
+{
+    "displayName": "Elysian",
+    "fluxCapacitors": 2,
+    "fluxVents": 10,
+    "goalVariant": false,
+    "hullId": "ELYS_CometStrike",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_CometStrike_Elysian",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 026": "elys_flowertrp_l",
+                "WS 027": "elys_flowertrp_l",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 039": "elys_swarm_small_comet_inbuilt",
+                "WS 037": "elys_swarm_small_comet_inbuilt",
+                "WS 038": "elys_swarm_small_comet_inbuilt",
+                "WS 035": "elys_swarm_small_comet_inbuilt",
+                "WS 036": "elys_swarm_small_comet_inbuilt",
+                "WS 033": "elys_swarm_small_comet_inbuilt",
+                "WS 034": "elys_swarm_small_comet_inbuilt",
+                "WS 032": "elys_swarm_small_comet_inbuilt",
+                "WS 040": "elys_swarm_small_comet_inbuilt",
+                "WS 041": "elys_swarm_small_comet_inbuilt",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 017": "elys_torpedo_small",
+                "WS 016": "elys_torpedo_small",
+                "WS 013": "elys_torpedo_small",
+                "WS 012": "elys_torpedo_small",
+                "WS 024": "elys_flowertrp_m",
+                "WS 025": "elys_flowertrp_m",
+                "WS 023": "elys_flowertrp_m",
+                "WS 020": "elys_flowertrp_m",
+                "WS 021": "elys_flowertrp_m",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 019": "elys_tacticlaser",
+                "WS 018": "elys_tacticlaser",
+                "WS 015": "elys_tacticlaser",
+                "WS 014": "elys_tacticlaser",
+                "WS 011": "elys_tacticlaser",
+                "WS 010": "elys_tacticlaser",
+                "WS 008": "elys_tacticlaser",
+                "WS 009": "elys_tacticlaser",
+                "WS 006": "elys_tacticlaser",
+                "WS 007": "elys_tacticlaser",
+                "WS 004": "elys_tacticlaser",
+                "WS 005": "elys_tacticlaser",
+                "WS 002": "elys_tacticlaser",
+                "WS 003": "elys_tacticlaser",
+                "WS 000": "elys_tacticlaser",
+                "WS 001": "elys_tacticlaser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 031": "heavyburst",
+                "WS 030": "heavyburst",
+                "WS 028": "heavyburst",
+                "WS 029": "heavyburst",
+                "WS 022": "heavyburst",
+            }
+        },
+    ],
+    "wings": [
+        "ELYS_wing_stasis_wing",
+        "ELYS_wing_stasis_wing",
+    ],
+    "modules": [],
+}

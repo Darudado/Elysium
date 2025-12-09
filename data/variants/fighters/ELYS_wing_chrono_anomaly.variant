@@ -13,8 +13,8 @@
             "mode": "ALTERNATING",
             "weapons": {
                 "WS 000": "elys_torpedo_small",
-                #"WS 001": "elys_torpedo_small",
-                "WS 002": "elys_tacticlaser",
+                "WS 001": "elys_torpedo_small",
+                #"WS 002": "elys_energy_beam_repeater_small_inbuilt",
                 #"WS 003": "elys_tacticlaser"
             }
         }

@@ -1,0 +1,45 @@
+{
+    "displayName": "Base",
+    "fluxCapacitors": 0,
+    "fluxVents": 26,
+    "goalVariant": false,
+    "hullId": "ELYS_aeternum_left_frontal",
+    "hullMods": [
+        "ELYS_TacticalFluxRedirector",
+        "heavyarmor",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_aeternum_left_frontal_Base",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "elys_energy_blaster_large_alt",
+                "WS 001": "elys_energy_blaster_large_alt",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "elys_tacticlaser",
+                "WS 007": "elys_tacticlaser",
+                "WS 004": "elys_tacticlaser",
+                "WS 005": "elys_tacticlaser",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "heavyburst",
+                "WS 003": "heavyburst",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

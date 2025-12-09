@@ -1,5 +1,6 @@
 package elysium.faction.systems;
 
+import com.fs.starfarer.api.impl.MusicPlayerPluginImpl;
 import elysium.faction.*;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
@@ -42,11 +43,13 @@ public class ELYS_DarkweaveSystem {
     public void generate(SectorAPI sector) {
 	// Create the star system
 	StarSystemAPI system = sector.createStarSystem("Darkweave");
+	system.setOptionalUniqueId("Darkweave");
+	system.addTag("theme_unsafe");
+	system.addTag("theme_hidden");
+	system.addTag("ELYS_void");
 	system.getLocation().set(-34000, -20000); // Southwest quadrant, near Elysium
-	system.setBackgroundTextureFilename("graphics/backgrounds/background5.jpg");
-
 	// Initialize the black hole as the center
-	PlanetAPI voidsEye = system.initStar("voids_eye", // unique id
+	PlanetAPI voidsEye = system.initStar("star_voids_eye", // unique id
 		"black_hole", // star type
 		350f, // radius
 		0); // no corona for black hole
@@ -466,6 +469,7 @@ public class ELYS_DarkweaveSystem {
 
 	// Generate hyperspace connections
 	system.autogenerateHyperspaceJumpPoints(true, false);
+	system.getMemoryWithoutUpdate().set(MusicPlayerPluginImpl.MUSIC_SET_MEM_KEY, "ELYS_worldvoid");
 
     }
 }

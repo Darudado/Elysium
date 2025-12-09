@@ -8,7 +8,7 @@
         "safetyoverrides"
     ],
     "quality": 0.0,
-    "variantId": "ELYS_Starseeker_explorer",
+    "variantId": "ELYS_Starseeker_Explorer",
     "weaponGroups": [
         {
             "autofire": false,

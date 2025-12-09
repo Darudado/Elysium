@@ -14,7 +14,7 @@
             "weapons": {
                 "WS 000": "elys_swarm_small",
                 "WS 001": "elys_swarm_small",
-                #"WS 002": "elys_swarm_small",
+                "WS 002": "elys_swarm_small",
             }
         }
     ]

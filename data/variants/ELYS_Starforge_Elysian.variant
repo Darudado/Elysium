@@ -1,0 +1,42 @@
+{
+    "displayName": "Elysian",
+    "fluxCapacitors": 4,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ELYS_Starforge",
+    "hullMods": [
+        "ELYS_OverchargedMunitions",
+        "heavyarmor",
+        "missile_autoloader",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Starforge_Elysian",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "elys_swarm_med",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "elys_torpedo_small",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "elys_flowertrp_s",
+                "WS 001": "elys_flowertrp_s",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

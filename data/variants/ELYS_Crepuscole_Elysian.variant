@@ -1,0 +1,40 @@
+{
+    "displayName": "Elysian",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "ELYS_Crepuscole",
+    "hullMods": [
+        "expanded_deck_crew",
+        "recovery_shuttles",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Crepuscole_Elysian",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "pdlaser",
+                "WS 005": "pdlaser",
+                "WS 002": "pdlaser",
+                "WS 003": "pdlaser",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 000": "elys_flowertrp_s",
+                "WS 001": "elys_flowertrp_s",
+            }
+        },
+    ],
+    "wings": [
+        "ELYS_wing_comet_flower_wing",
+        "ELYS_wing_comet_wing",
+    ],
+    "modules": [],
+}

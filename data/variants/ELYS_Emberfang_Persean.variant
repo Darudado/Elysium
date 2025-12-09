@@ -1,0 +1,88 @@
+{
+    "displayName": "Persean",
+    "fluxCapacitors": 13,
+    "fluxVents": 50,
+    "goalVariant": false,
+    "hullId": "ELYS_Emberfang",
+    "hullMods": [
+        "auxiliarythrusters",
+        "magazines",
+        "targetingunit",
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "suppressedMods": [],
+    "variantId": "ELYS_Emberfang_Persean",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 025": "elys_ember_fang",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 015": "lrpdlaser",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 013": "lrpdlaser",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 012": "lrpdlaser",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 010": "lrpdlaser",
+                "WS 008": "lrpdlaser",
+                "WS 007": "lrpdlaser",
+                "WS 009": "lrpdlaser",
+                "WS 011": "lrpdlaser",
+                "WS 014": "lrpdlaser",
+                "WS 016": "lrpdlaser",
+                "WS 017": "lrpdlaser",
+                "WS 019": "lrpdlaser",
+                "WS 021": "lrpdlaser",
+                "WS 023": "lrpdlaser",
+                "WS 024": "lrpdlaser",
+                "WS 022": "lrpdlaser",
+                "WS 020": "lrpdlaser",
+                "WS 018": "lrpdlaser",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "typhoon",
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "typhoon",
+                "WS 003": "sabotpod",
+                "WS 004": "sabotpod",
+                "WS 000": "autopulse",
+                "WS 002": "autopulse",
+                "WS 001": "autopulse",
+            }
+        },
+    ],
+    "wings": [],
+    "modules": [],
+}

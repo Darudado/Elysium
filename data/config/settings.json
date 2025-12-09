@@ -22,6 +22,16 @@
 				"FULL_CIRCLE_PATH":"graphics/fx/fullcircle.png",
 				"GLOW_SPRITE_PATH":"graphics/fx/glow.png",
 				"SHIELD_SPRITE_PATH":"graphics/fx/shields256.png",
+		},
+		"characters":{
+			"AI00":"graphics/portraits/ai/ELYS_ai0.png",
+			"AI01":"graphics/portraits/ai/ELYS_ai1.png",
+			"AI03":"graphics/portraits/ai/ELYS_ai3.png",
+			"AI04":"graphics/portraits/ai/ELYS_ai4.png",
+			"AI05":"graphics/portraits/ai/ELYS_ai5.png",
 		}
+	},
+	"plugins": {
+		"CombatMusicPlugin": "elysium.CombatMusicPlugin"
 	}
 }
