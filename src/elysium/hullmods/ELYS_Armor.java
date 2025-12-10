@@ -14,6 +14,9 @@ import java.awt.*;
 import java.util.HashMap;
 import java.util.Map;
 
+import static elysium.Util.FACTION_ID;
+import static elysium.Util.FACTION_ID_VOID;
+
 public class ELYS_Armor extends BaseHullMod {
 
     public final float MIN_DURATION = 1.95f;
@@ -334,12 +337,19 @@ public class ELYS_Armor extends BaseHullMod {
 
     @Override
     public boolean isApplicableToShip(ShipAPI ship) {
-	return !((ship.getVariant().getHullMods().contains(HullMods.HEAVYARMOR))||(ship.getVariant().getHullMods().contains(HullMods.ARMOREDWEAPONS)));
+	if( !((ship.getVariant().getHullMods().contains(HullMods.HEAVYARMOR)) || (ship.getVariant().getHullMods().contains(HullMods.ARMOREDWEAPONS))) )
+	    return true;
+	else
+	    return FACTION_ID.equals(ship.getHullSpec().getManufacturer()) || FACTION_ID_VOID.equals(
+		    ship.getHullSpec().getManufacturer());
     }
 
     public String getUnapplicableReason(ShipAPI ship) {
 	if (ship.getVariant().getHullMods().contains(HullMods.HEAVYARMOR) || ship.getVariant().getHullMods().contains(HullMods.ARMOREDWEAPONS)) {
 	    return "Incompatible with other armor mods";
+	}
+	if (!FACTION_ID.equals(ship.getHullSpec().getManufacturer()) || FACTION_ID_VOID.equals(ship.getHullSpec().getManufacturer()) ) {
+	    return "Can only be installed on ships of the Elysium faction";
 	}
 	return null;
     }

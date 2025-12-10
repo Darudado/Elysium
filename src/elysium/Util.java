@@ -9,7 +9,8 @@ import java.awt.*;
 
 public class Util
 {
-    public static final String FACTION_ID = "Elysium";
+    public static final String FACTION_ID = "elysium";
+    public static final String FACTION_ID_VOID = "elysium_void";
 
     // Music state tracking
     public static boolean isElysiumMusicPlaying = false;

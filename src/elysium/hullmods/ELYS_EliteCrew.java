@@ -6,6 +6,7 @@ import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 
 import static elysium.Util.FACTION_ID;
+import static elysium.Util.FACTION_ID_VOID;
 
 public class ELYS_EliteCrew extends BaseHullMod {
 
@@ -44,14 +45,14 @@ public class ELYS_EliteCrew extends BaseHullMod {
 	if (ship == null) return false;
 
 	// Check if ship belongs to your faction
-	return FACTION_ID.equals(ship.getHullSpec().getManufacturer());
+	return FACTION_ID.equals(ship.getHullSpec().getManufacturer()) || FACTION_ID_VOID.equals(ship.getHullSpec().getManufacturer()) ;
     }
 
     @Override
     public String getUnapplicableReason(ShipAPI ship) {
 	if (ship == null) return "Ship does not exist";
 
-	if (!FACTION_ID.equals(ship.getHullSpec().getManufacturer())) {
+	if (!FACTION_ID.equals(ship.getHullSpec().getManufacturer()) || FACTION_ID_VOID.equals(ship.getHullSpec().getManufacturer()) ) {
 	    return "Can only be installed on ships of the Elysium faction";
 	}
 

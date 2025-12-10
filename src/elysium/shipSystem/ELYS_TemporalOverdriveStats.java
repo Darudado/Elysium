@@ -23,10 +23,10 @@ public class ELYS_TemporalOverdriveStats extends BaseShipSystemScript {
     public static final float FLUX_PERCENT_PER_SECOND = 0.04f; // 5% flux per second
 
     // Speed boost based on hull size
-    public static final float FRIGATE_SPEED_BOOST = 0.7f;     // +100%
-    public static final float DESTROYER_SPEED_BOOST = 1f;   // +110%
-    public static final float CRUISER_SPEED_BOOST = 1.3f;     // +120%
-    public static final float CAPITAL_SPEED_BOOST = 1.5f;     // +130%
+    public static final float FRIGATE_SPEED_BOOST = 0.4f;
+    public static final float DESTROYER_SPEED_BOOST = 0.6f;
+    public static final float CRUISER_SPEED_BOOST = 0.8f;
+    public static final float CAPITAL_SPEED_BOOST = 1.6f;
 
     // Flower sprite paths
     private static final String FLOWER_LARGE_SPRITE_PATH = "FLOWER_LARGE_SPRITE_PATH";

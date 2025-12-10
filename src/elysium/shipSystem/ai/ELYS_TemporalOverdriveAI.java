@@ -29,7 +29,7 @@ public class ELYS_TemporalOverdriveAI implements ShipSystemAIScript {
     private IntervalUtil tracker = new IntervalUtil(0.05f, 0.1f);
 
     // Very basic flux thresholds - single threshold for all ships
-    private static final float DISABLE_FLUX_LEVEL = 0.85f; // Disable at 75% flux
+    private static final float DISABLE_FLUX_LEVEL = 0.80f; // Disable at 80% flux
 
     @Override
     public void init(ShipAPI ship, ShipSystemAPI system, ShipwideAIFlags flags, CombatEngineAPI engine) {
@@ -66,7 +66,7 @@ public class ELYS_TemporalOverdriveAI implements ShipSystemAIScript {
 	// ==============================
 	if (!systemActive) {
 	    // Don't activate if flux is already too high
-	    if (fluxLevel >= DISABLE_FLUX_LEVEL - 0.05f) {
+	    if (fluxLevel >= DISABLE_FLUX_LEVEL - 0.10f) {
 		return;
 	    }
 

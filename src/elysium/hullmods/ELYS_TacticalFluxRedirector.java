@@ -6,6 +6,7 @@ import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import java.awt.Color;
 
 import static elysium.Util.FACTION_ID;
+import static elysium.Util.FACTION_ID_VOID;
 
 public class ELYS_TacticalFluxRedirector extends BaseHullMod {
 
@@ -14,7 +15,7 @@ public class ELYS_TacticalFluxRedirector extends BaseHullMod {
     private static final float FLUX_COST_PERCENT = 0.20f; // 20% flux cost increase
     private static final float ARMOR_DAMAGE_PERCENT = 0.03f; // 3% armor damage per second above threshold
     private static final float FLUX_THRESHOLD = 0.60f; // Start damaging armor at 60% flux
-    private static final float SMOD_FLUX_THRESHOLD = 50f; // S-mod: Start damaging armor at 70% flux
+    private static final float SMOD_FLUX_THRESHOLD = 0.70f; // S-mod: Start damaging armor at 70% flux
     private static final float SMOD_ARMOR_DAMAGE_PERCENT = 0.06f; // S-mod: Start damaging armor at 70% flux
 
 
@@ -84,7 +85,7 @@ public class ELYS_TacticalFluxRedirector extends BaseHullMod {
     @Override
     public boolean isApplicableToShip(ShipAPI ship) {
 
-	return ship.getShield() == null || ship.getShield().getType() == ShieldAPI.ShieldType.NONE || FACTION_ID.equals(ship.getHullSpec().getManufacturer());
+	return ship.getShield() == null || ship.getShield().getType() == ShieldAPI.ShieldType.NONE || FACTION_ID.equals(ship.getHullSpec().getManufacturer()) || FACTION_ID_VOID.equals(ship.getHullSpec().getManufacturer()) ;
     }
 
     @Override
@@ -92,7 +93,7 @@ public class ELYS_TacticalFluxRedirector extends BaseHullMod {
 	if (ship.getShield() != null && ship.getShield().getType() != ShieldAPI.ShieldType.NONE) {
 	    return "Incompatible with shielded ships";
 	}
-	if (!FACTION_ID.equals(ship.getHullSpec().getManufacturer())) {
+	if (!FACTION_ID.equals(ship.getHullSpec().getManufacturer()) || FACTION_ID_VOID.equals(ship.getHullSpec().getManufacturer()) ) {
 	    return "Can only be installed on ships of the Elysium faction";
 	}
 	return null;

@@ -17,10 +17,11 @@ import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import java.util.List;
 
 import static elysium.Util.FACTION_ID;
+import static elysium.Util.FACTION_ID_VOID;
 
 /**
  * A comprehensive hull mod that enhances point defense capabilities by combining
- * features from PDIntegration and IntegratedPointDefenseAI.
+ * features from PDIntegration and IntegratedPointDefenseAI. NOT USED
  */
 public class ELYS_CanopyDefense extends BaseHullMod {
 
@@ -110,13 +111,13 @@ public class ELYS_CanopyDefense extends BaseHullMod {
 	if (ship == null) return false;
 
 	// Check if ship belongs to your faction
-	return FACTION_ID.equals(ship.getHullSpec().getManufacturer());
+	return FACTION_ID.equals(ship.getHullSpec().getManufacturer()) || FACTION_ID_VOID.equals(ship.getHullSpec().getManufacturer()) ;
     }
     @Override
     public String getUnapplicableReason(ShipAPI ship) {
 	if (ship == null) return "Ship does not exist";
 
-	if (!FACTION_ID.equals(ship.getHullSpec().getManufacturer())) {
+	if (!FACTION_ID.equals(ship.getHullSpec().getManufacturer()) || FACTION_ID_VOID.equals(ship.getHullSpec().getManufacturer()) ) {
 	    return "Can only be installed on ships of the Elysium faction";
 	}
 
