@@ -9,10 +9,9 @@ import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 public class ELYS_EnhancedHealingArmor extends BaseHullMod {
 
     // Configuration
-    private static final float ARMOR_CEILING_INCREASE = 0.10f;
+    private static final float ARMOR_CEILING_INCREASE = 0.20f; //check armor implementation, not here
     private static final float KINETIC_DAMAGE_INCREASE = 0.30f; // 30% increase to kinetic damage taken
     private static final float SMOD_KINETIC_DAMAGE_INCREASE = 0.50f; // 50% increase to kinetic damage when S-modded
-    private static final float SMOD_MANEUVER_PENALTY = 20;
 
     @Override
     public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
@@ -21,10 +20,7 @@ public class ELYS_EnhancedHealingArmor extends BaseHullMod {
 	float kineticIncrease = sMod ? SMOD_KINETIC_DAMAGE_INCREASE : KINETIC_DAMAGE_INCREASE;
 	stats.getKineticDamageTakenMult().modifyMult(id, 1f + kineticIncrease);
 	if(sMod){
-	    stats.getAcceleration().modifyMult(id, 1f - SMOD_MANEUVER_PENALTY * 0.01f);
-	    stats.getDeceleration().modifyMult(id, 1f - SMOD_MANEUVER_PENALTY * 0.01f);
-	    stats.getTurnAcceleration().modifyMult(id, 1f - SMOD_MANEUVER_PENALTY * 0.01f);
-	    stats.getMaxTurnRate().modifyMult(id, 1f - SMOD_MANEUVER_PENALTY * 0.01f);
+	    stats.getKineticDamageTakenMult().modifyMult(id, 1f + kineticIncrease);
 	}
     }
 
@@ -39,7 +35,7 @@ public class ELYS_EnhancedHealingArmor extends BaseHullMod {
     @Override
     public String getSModDescriptionParam(int index, HullSize hullSize) {
 	if (index == 0) return Math.round(SMOD_KINETIC_DAMAGE_INCREASE * 100) + "%";
-	if (index == 0) return Math.round(SMOD_MANEUVER_PENALTY) + "%";
+	if (index == 0) return Math.round(ARMOR_CEILING_INCREASE) + "%";
 	return null;
     }
 

@@ -11,7 +11,7 @@
         "job_deadline": 180,
         "job_credit_reward": 40000,
         "job_reputation_reward": 5,
-        "job_type": "assassination",
+        "job_type": "obliteration",
         "job_show_fleet": "vanilla",
         "job_show_distance": "exact",
         "job_pick_option": "Accept the contract",
@@ -41,7 +41,7 @@
         "fleet_composition_quality": 1,
         "fleet_transponder": false,
         "fleet_behavior": "AGGRESSIVE",
-        
+        "fleet_no_retreat": true,
         "location_distance": "CLOSE",
 		"location_themes": ["ELYS_void"],
         
@@ -65,7 +65,7 @@
         "job_deadline": 240,
         "job_credit_reward": 85000,
         "job_reputation_reward": 5,
-        "job_type": "assassination",
+        "job_type": "obliteration",
         "job_show_fleet": "vanilla",
         "job_show_distance": "exact",
         
@@ -96,7 +96,7 @@
         "fleet_composition_quality": 1,
         "fleet_transponder": false,
         "fleet_behavior": "AGGRESSIVE",
-        
+        "fleet_no_retreat": true,
         "location_distance": "CLOSE",
 		"location_themes": ["ELYS_void"],
         
@@ -119,7 +119,7 @@
         "job_deadline": 300,
         "job_credit_reward": 180000,
         "job_reputation_reward": 5,
-        "job_type": "assassination",
+        "job_type": "obliteration",
         "job_show_fleet": "vanilla",
         "job_show_distance": "exact",
         
@@ -151,7 +151,7 @@
         "fleet_composition_quality": 1.5,
         "fleet_transponder": false,
         "fleet_behavior": "AGGRESSIVE",
-        
+        "fleet_no_retreat": true,
         "location_distance": "CLOSE",
 		"location_themes": ["ELYS_void"],
         
@@ -174,7 +174,7 @@
         "job_deadline": 360,
         "job_credit_reward": 320000,
         "job_reputation_reward": 5,
-        "job_type": "assassination",
+        "job_type": "obliteration",
         "job_show_fleet": "vanilla",
         "job_show_distance": "exact",
         
@@ -207,7 +207,7 @@
         "fleet_composition_quality": 1.5,
         "fleet_transponder": false,
         "fleet_behavior": "GUARDED",
-        
+        "fleet_no_retreat": true,
         "location_distance": "CLOSE",
 		"location_themes": ["ELYS_void"],
         
@@ -230,7 +230,7 @@
         "job_deadline": 420,
         "job_credit_reward": 850000,
         "job_reputation_reward": 10,
-        "job_type": "assassination",
+        "job_type": "obliteration",
         "job_show_fleet": "vanilla",
         "job_show_distance": "exact",
         
@@ -264,7 +264,7 @@
         "fleet_composition_quality": 2,
         "fleet_transponder": false,
         "fleet_behavior": "AGGRESSIVE",
-        
+        "fleet_no_retreat": true,
         "location_distance": "CLOSE",
 		"location_themes": ["ELYS_void"],
         
@@ -287,7 +287,7 @@
         "job_deadline": 480,
         "job_credit_reward": 1250000,
         "job_reputation_reward": 10,
-        "job_type": "assassination",
+        "job_type": "obliteration",
         "job_show_fleet": "vanilla",
         "job_show_distance": "exact",
         
@@ -321,7 +321,7 @@
         "fleet_composition_quality": 2,
         "fleet_transponder": false,
         "fleet_behavior": "AGGRESSIVE",
-        
+        "fleet_no_retreat": true,
         "location_distance": "CLOSE",
 		"location_themes": ["ELYS_void"],
         
@@ -344,7 +344,7 @@
         "job_deadline": 540,
         "job_credit_reward": 1600000,
         "job_reputation_reward": 15,
-        "job_type": "assassination",
+        "job_type": "obliteration",
         "job_show_fleet": "vanilla",
         "job_show_distance": "exact",
         
@@ -366,7 +366,7 @@
         "fleet_flagship_name": "Convergence Alpha",
         "fleet_flagship_alwaysRecoverable": true,
         "fleet_preset_ships": {
-            "ELYS_Emberfang_Persean": 2,
+            "ELYS_Emberfang_persean": 2,
             "ELYS_Solstice_Elysian": 1,
             "ELYS_Twilight_Elysian": 2,
             "ELYS_Perennion_Elysian": 4,
@@ -378,7 +378,7 @@
         "fleet_composition_quality": 2,
         "fleet_transponder": false,
         "fleet_behavior": "AGGRESSIVE",
-        
+        "fleet_no_retreat": true,
         "location_distance": "CLOSE",
 		"location_themes": ["ELYS_void"],
         
@@ -401,7 +401,7 @@
         "job_deadline": 600,
         "job_credit_reward": 2400000,
         "job_reputation_reward": 15,
-        "job_type": "assassination",
+        "job_type": "obliteration",
         "job_show_fleet": "vanilla",
         "job_show_distance": "exact",
         
@@ -438,7 +438,7 @@
         "fleet_composition_quality": 2,
         "fleet_transponder": false,
         "fleet_behavior": "GUARDED",
-        
+        "fleet_no_retreat": true,
         "location_distance": "CLOSE",
 		"location_themes": ["ELYS_void"],
         
@@ -479,7 +479,7 @@
         
         "fleet_name": "Dimensional Hegemony Fleet",
         "fleet_faction": "elysium_void",
-        "fleet_flagship_variant": "ELYS_Necrothauma_Elysian",
+        "fleet_flagship_variant": "ELYS_aeternum_base",
         "fleet_flagship_name": "Hegemony Absolute",
         "fleet_flagship_alwaysRecoverable": true,
         "fleet_preset_ships": {
@@ -498,7 +498,7 @@
         "fleet_composition_quality": 2,
         "fleet_transponder": false,
         "fleet_behavior": "AGGRESSIVE",
-        
+        "fleet_no_retreat": true,
         "location_distance": "CLOSE",
 		"location_themes": ["ELYS_void"],
         
@@ -539,14 +539,14 @@
         
         "fleet_name": "SINGULARITY ARMADA",
         "fleet_faction": "elysium_void",
-        "fleet_flagship_variant": "ELYS_aeternum_Base",
+        "fleet_flagship_variant": "ELYS_aeternum_base",
         "fleet_flagship_name": "SINGULARITY-ONE",
         "fleet_flagship_alwaysRecoverable": true,
         "fleet_preset_ships": {
             "ELYS_Woodslaught_Persean": 1,
             "ELYS_Aetherion_base": 1,
             "ELYS_Necrothauma_Elysian_Torpedo": 1,
-            "ELYS_Emberfang_Persean": 2,
+            "ELYS_Emberfang_persean": 2,
             "ELYS_CometStrike_Assault": 1,
             "ELYS_Necrothauma_Elysian": 1,
             "ELYS_Solstice_Elysian": 4,

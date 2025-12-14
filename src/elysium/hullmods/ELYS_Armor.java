@@ -108,7 +108,7 @@ public class ELYS_Armor extends BaseHullMod {
 
 	float armorRepairCeilingFinal = ARMOR_REPAIR_CEILING;
 	if (ship.getVariant().hasHullMod("ELYS_EnhancedHealingArmor")){
-	    armorRepairCeilingFinal += 0.1f;
+	    armorRepairCeilingFinal += 0.2f;
 	}
 
 	FluxTrackerAPI fluxTracker = ship.getFluxTracker();

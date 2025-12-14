@@ -12,7 +12,7 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS 000": "elys_swarm_small",
+                #"WS 000": "elys_swarm_small",
                 "WS 001": "elys_energy_beam_repeater_small_inbuilt",
                 #"WS 002": "elys_energy_beam_repeater_small_inbuilt",
             }

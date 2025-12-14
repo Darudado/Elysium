@@ -29,7 +29,7 @@ Increases energy weapon damage by %s.",Enhanced energy weapon storage system tha
 Elite Crew,ELYS_EliteCrew,3,,Elysium,special,Special,12000,FALSE,FALSE,,3,6,12,20,elysium.hullmods.ELYS_EliteCrew,"Elysium ships are crewed by highly trained specialists with an intimate understanding of their unique technology.
 
 Reduces crew casualties in combat by %s.
-Increases energy weapon damage by %s due to superior weapon expertize.",Highly trained Elysium specialists that reduce casualties and enhance weapon performance.,S-mod: Reduces combat system repair time by %s.,graphics/hullmods/ELYS_elitecrew.png
+Increases peak CR time by %s.",Highly trained Elysium specialists that reduce casualties and enhance performance.,S-mod: Reduces combat system repair time by %s.,graphics/hullmods/ELYS_elitecrew.png
 EMP Beam Capacitors,ELYS_EMPBeam,3,,Elysium,offensive,Weapons,15000,FALSE,FALSE,,8,15,25,35,elysium.hullmods.ELYS_EMPBeam,"A specialized modification to beam weapon systems that imbues their energy discharge with electromagnetic disruption capabilities.
 
 Beam weapons deal %s of their damage as additional EMP damage when hitting hull or armor.
@@ -49,7 +49,7 @@ Enhanced Healing Armor,ELYS_EnhancedHealingArmor,2,,Elysium,defensive,Defenses,1
 Increases the armor repair ceiling by %s, allowing the living armor to repair to a higher threshold.
 However, this enhancement makes the ship even more vulnerable to kinetic damage, increasing damage taken by %s.
 
-Requires the Living Armor hullmod to be installed.",Enhanced regenerative capabilities for Elysium's living armor system.,S-mod: Kinetic damage vulnerability increased to %s.,graphics/hullmods/ELYS_enhancedhealingarmor.png
+Requires the Living Armor hullmod to be installed.",Enhanced regenerative capabilities for Elysium's living armor system.,"S-mod: Kinetic damage vulnerability increased to %s, healing treshold increased to %s.",graphics/hullmods/ELYS_enhancedhealingarmor.png
 Overcharged Munitions,ELYS_OverchargedMunitions,2,,Elysium,offensive,Weapons,9000,FALSE,FALSE,,8,15,25,35,elysium.hullmods.ELYS_OverchargedMunitions,"A specialized system that infuses missiles with additional energy discharge capabilities.
 
 Missiles deal %s of their base damage as additional energy damage on impact.

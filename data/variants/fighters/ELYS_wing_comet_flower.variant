@@ -13,7 +13,7 @@
             "mode": "ALTERNATING",
             "weapons": {
                 "WS 000": "elys_flowertrp_s_Comet_hidden",
-                "WS 001": "elys_flowertrp_s_Comet_hidden",
+                #"WS 001": "elys_flowertrp_s_Comet_hidden",
                 #"WS 002": "elys_energy_beam_repeater_small_inbuilt",
             }
         }
