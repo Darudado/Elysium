@@ -2,15 +2,10 @@ package elysium.shipSystem.ai;
 
 import java.util.List;
 
+import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.combat.*;
 import org.lwjgl.util.vector.Vector2f;
 
-import com.fs.starfarer.api.combat.CombatEngineAPI;
-import com.fs.starfarer.api.combat.MissileAPI;
-import com.fs.starfarer.api.combat.ShipAPI;
-import com.fs.starfarer.api.combat.ShipCommand;
-import com.fs.starfarer.api.combat.ShipSystemAIScript;
-import com.fs.starfarer.api.combat.ShipSystemAPI;
-import com.fs.starfarer.api.combat.ShipwideAIFlags;
 import com.fs.starfarer.api.util.IntervalUtil;
 
 /**
@@ -73,17 +68,33 @@ public class ELYS_TemporalOverdriveAI implements ShipSystemAIScript {
 	    // Check for activation triggers
 	    boolean shouldActivate = false;
 
-	    // 1. Missiles incoming
+	    // Missiles incoming
 	    if (areMissilesIncoming()) {
 		shouldActivate = true;
 	    }
+	    if (flags.hasFlag(ShipwideAIFlags.AIFlags.PURSUING)) {
+		shouldActivate = true;
+	    }
+	    // Capturing points
+	    if(Global.getCombatEngine().getFleetManager(ship.getOwner()) != null){
+		CombatFleetManagerAPI manager = Global.getCombatEngine().getFleetManager(ship.getOwner());
+		if(manager.getTaskManager(false) != null){
+		    CombatTaskManagerAPI taskmanager = manager.getTaskManager(false);
+		    if(taskmanager.getAssignmentFor(ship) != null){
+			CombatFleetManagerAPI.AssignmentInfo assignment = taskmanager.getAssignmentFor(ship);
+			if(assignment.getType() == CombatAssignmentType.CAPTURE){
+			    shouldActivate = true;
+			}
+		    }
+		}
+	    }
 
-	    // 2. Enemies nearby
+	    // Enemies nearby
 	    else if (areEnemiesNearby(isLargeShip)) {
 		shouldActivate = true;
 	    }
 
-	    // 3. Danger flags from AI
+	    // Danger flags from AI
 	    else if (flags.hasFlag(ShipwideAIFlags.AIFlags.HAS_INCOMING_DAMAGE) ||
 		    flags.hasFlag(ShipwideAIFlags.AIFlags.IN_CRITICAL_DPS_DANGER)) {
 		shouldActivate = true;

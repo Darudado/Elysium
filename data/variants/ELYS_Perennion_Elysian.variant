@@ -6,7 +6,8 @@
     "hullId": "ELYS_Perennion",
     "hullMods": [
         "ELYS_BeamExpertize",
-        "escort_package",
+        "escort_package"
+
     ],
     "permaMods": [],
     "sMods": [],

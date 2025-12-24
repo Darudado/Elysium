@@ -81,11 +81,11 @@
 	},
 	"priorityFighters":{
 		"tags":[],
-		"fighters":["ELYS_wing_chrono","ELYS_wing_trail"
+		"fighters":["ELYS_wing_chrono_anomaly","ELYS_wing_comet_repeater"
 		],
 	},
 	"knownWeapons":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp, elysium_weap_bp"],
+		"tags":["base_bp", "hightech_bp", "missile_bp, elysium_weap_bp"],
 		"weapons":[
 			"gorgon",
 			"gorgonpod",
@@ -123,17 +123,46 @@
 			"guardian",
 			"hil",
 			"tachyonlance",
+			            "elys_tacticlaser",
+            		    "elys_energy_blaster_small",
+            		    "elys_energy_blaster_medium",
+            		    "elys_energy_blaster_large",
+            		    "elys_swarm_small",
+            		    "elys_torpedo_small",
+            		    "elys_swarm_med",
+            		    "elys_torpedo_medium",
+            		    "elys_swarm_large",
+            		    "elys_flowertrp_s",
+            		    "elys_flowertrp_m",
+            		    "elys_flowertrp_l"
 		],
 	},
 	"priorityWeapons":{
 		"tags":[],
 		"weapons":[
+		    "elys_tacticlaser",
+		    "elys_energy_blaster_small",
+		    "elys_energy_blaster_medium",
+		    "elys_energy_blaster_large",
+		    "elys_swarm_small",
+		    "elys_torpedo_small",
+		    "elys_swarm_med",
+		    "elys_torpedo_medium",
+		    "elys_swarm_large",
+		    "elys_flowertrp_s",
+		    "elys_flowertrp_m",
+		    "elys_flowertrp_l"
 		],
 	},
+	"weaponSellFrequency":{
+        "BALLISTIC": 0,
+        "ENERGY": 10,
+        "MISSILE": 8,
+        "COMPOSITE": 2
+    },
 	"knownHullMods":{
 		"tags":["base_bp"],
 		"hullMods":[
-			"advancedshieldemitter", # accelerated
 			"advancedoptics",
 			"turretgyros",
 			"armoredweapons",
@@ -145,16 +174,11 @@
 			"expanded_deck_crew",
 			"magazines",
 			"missleracks",
-			"extendedshieldemitter",
-			"frontemitter",
-			"frontshield",  # makeshift
-			"hardenedshieldemitter",
 			"heavyarmor",
 			"insulatedengine",
 			"pointdefenseai",
 			"targetingunit",
 			"nav_relay",
-			"adaptiveshields", # omni
 			"operations_center",
 			"recovery_shuttles",
 			"fluxbreakers",

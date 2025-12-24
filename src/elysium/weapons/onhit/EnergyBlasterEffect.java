@@ -14,11 +14,19 @@ public class EnergyBlasterEffect implements BeamEffectPlugin {
     private IntervalUtil fireInterval = new IntervalUtil(0.5f, 2.5f); // Longer charge time
     private boolean wasZero = true;
     boolean runOnce = false;
+    boolean beamwidthstored = false;
+    float beamwidthinitial = 0;
 
     @Override
     public void advance(float amount, CombatEngineAPI engine, BeamAPI beam) {
 	WeaponAPI weapon = beam.getWeapon();
 	float range = beam.getBrightness() * 500f;
+	if(!beamwidthstored)
+	{
+	    beamwidthinitial = beam.getWidth();
+	    beamwidthstored = true;
+	}
+
 
 	// Visual effect during charging
 	MagicRender.battlespace(
@@ -42,6 +50,18 @@ public class EnergyBlasterEffect implements BeamEffectPlugin {
 	    if (!wasZero) dur = 0;
 	    wasZero = beam.getDamage().getDpsDuration() <= 0;
 	    fireInterval.advance(dur);
+
+
+	    // Adjust beam width based on charge level, with proper bounds
+	    if (weapon.getChargeLevel() >= 0.5f) {
+		// Calculate a multiplier that scales from 1.0 to 2.0 as charge goes from 0.5 to 1.0
+		float chargeScale = 1.0f + 2.0f * (weapon.getChargeLevel() - 0.5f);
+
+
+		// Apply the multiplier directly (no negative factor)
+		// Set a maximum width
+		beam.setWidth(Math.min(beamwidthinitial * 2f,beam.getWidth() * chargeScale));
+	    }
 
 	    // When fully charged, fire the projectile
 	    if (!runOnce) {
@@ -73,20 +93,6 @@ public class EnergyBlasterEffect implements BeamEffectPlugin {
 			new Vector2f()
 		);
 
-		// Adjust beam width based on charge level, with proper bounds
-		if (weapon.getChargeLevel() >= 0.5f) {
-		    // Calculate a multiplier that scales from 1.0 to 2.0 as charge goes from 0.5 to 1.0
-		    float chargeScale = 1.0f + 2.0f * (weapon.getChargeLevel() - 0.5f);
-
-		    // Apply the multiplier directly (no negative factor)
-		    beam.setWidth(beam.getWidth() * chargeScale);
-
-		    // Set a maximum width limit if needed
-		    float maxWidth = beam.getWidth() * 2.5f; // example: 2.5x original width
-		    if (beam.getWidth() > maxWidth) {
-			beam.setWidth(maxWidth);
-		    }
-		}
 	    }
 	} else {
 	    runOnce = false;
