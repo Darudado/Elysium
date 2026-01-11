@@ -6,10 +6,10 @@ Elysian Tactical Laser,elys_tacticlaser,1,,200,900,150,,,0,60,4,,,,ENERGY,,100,0
 Elysian Energy Blaster S,elys_energy_blaster_small,2,1,2500,600,150,,0,10,45,6,,,,ENERGY,,200,2,0.5,1,,,,,,2400,,,,,,,,"energy10, beam8, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy beam that when fully charged launches an explosive projectile. The projectile does %s explosive damage on a radius.,600,,,,2
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##med,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Elysian Energy Blaster M,elys_energy_blaster_medium,2,1,5000,800,300,,0,20,30,10,,,,ENERGY,,350,2.5,0.75,1,,,,,,2400,,,,,,,,"energy12, beam10, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy beam that when fully charged launches an explosive projectile. The projectile does %s explosive damage on a radius.,3000,,,,23
+Elysian Energy Blaster M,elys_energy_blaster_medium,2,1,5000,800,300,,0,20,30,10,,,,ENERGY,,350,2.5,0.75,1,,,,,,2400,,,,,,,,"energy12, beam10, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy beam that when fully charged launches an explosive projectile. The projectile does %s explosive damage on a radius.,1500,,,,23
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##large,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Elysian Energy Blaster L,elys_energy_blaster_large,3,0.5,10000,1000,600,,0,30,15,26,,,,ENERGY,,700,3,1,1,,,,,,2400,,,,,,,,"energy14, beam12, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy beam that when fully charged launches an explosive projectile. The projectile does 3000 explosive damage on a radius.,,,,,24
+Elysian Energy Blaster L,elys_energy_blaster_large,3,0.5,10000,1000,600,,0,30,15,26,,,,ENERGY,,700,3,1,1,,,,,,2400,,,,,,,,"energy14, beam12, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy beam that when fully charged launches an explosive projectile. The projectile does %s explosive damage on a radius.,3000,,,,24
 Elysian Energy Devastator,elys_energy_blaster_large_alt,4,0.3,15000,800,500,,300,40,10,30,,,,ENERGY,,700,4,1,1,,,,,,2400,,,,,,,,"energy16, beam14, elysium_weap_bp",,Elysium,,Anti Armor,,,,,Energy beam that when fully charged launches a shotgun of explosive projectiles. The projectiles do %s explosive damage and %s EMP on a radius.,1500 | 300,Fires 3 projectiles in a wide range.,,,25
 #synergy,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##small ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -24,7 +24,7 @@ Flower Torpedo Launcher (L),elys_flowertrp_l,4,0.1,40000,2200,,1600,0,40,10,32,8
 #missile,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##small,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Elysium Swarmer (S),elys_swarm_small,2,0.5,1500,2000,,140,20,5,15,5,27,,,KINETIC,,,"0,5",2,3,,,,,,,600,90,5,150,,,"DO_NOT_AIM, STRIKE, USE_VS_FRIGATES,","missile19, strike15,elysium_weap_bp",,Elysium,,Suppression,Very Fast,Special,,,"Extremely fast guided missiles, their damage is low but they can successfully suppress shields",,,,,50
-Elysium Assault Torpedo (S),elys_torpedo_small,2,1,500,1200,,4000,,75,10,2,1,,,ENERGY,,,0,5,1,,0,0,0,0,,400,70,3.5,500,,,STRIKE,"strike8, rocket3, elysium_weap_bp",,Elysium,,Torpedo,Fast,None,,,Unguided Torpedo that does boosted damage when fired Point-blank,,Deals up to 50% more damage at short range,,TRUE,51
+Elysium Assault Torpedo (S),elys_torpedo_small,2,1,500,1200,,4000,500,75,10,2,1,,,ENERGY,,,0,5,1,,0,0,0,0,,400,70,3.5,500,,,STRIKE,"strike8, rocket3, elysium_weap_bp",,Elysium,,Torpedo,Fast,None,,,Unguided Torpedo that does boosted damage when fired Point-blank,,Deals up to 50% more damage at short range,,TRUE,51
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##med,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

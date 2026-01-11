@@ -24,7 +24,7 @@ public class EnergyBlasterOnHit implements OnHitEffectPlugin {
 
 	    if (projectileId.contains("medium")) {
 		explosionRadius = 200f;
-		baseDamage = 2000f;
+		baseDamage = 1500;
 	    } else if (projectileId.contains("large")) {
 		explosionRadius = 300f;
 		baseDamage = 3000f;
