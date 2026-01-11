@@ -1,5 +1,3 @@
-MOD is UNBALANCED, play at your own risk. 
-
 # Elysium Faction
 
 ## Overview
