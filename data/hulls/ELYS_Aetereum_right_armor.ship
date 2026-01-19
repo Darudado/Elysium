@@ -22,7 +22,10 @@
     "builtInMods": [
         "ELYS_Armor",
         "always_detaches",
-        "ELYS_EnhancedHealingArmor"
+        "ELYS_EnhancedHealingArmor",
+        "shared_flux_sink",
+        "always_detaches",
+        "reduced_explosion"
     ],
     "builtInWings": [],
     "builtInModules": null,

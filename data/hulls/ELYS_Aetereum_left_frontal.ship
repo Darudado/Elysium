@@ -21,8 +21,13 @@
     "viewOffset": 0,
     "builtInMods": [
         "ELYS_Armor",
+        "ELYS_EnhancedHealingArmor",
         "always_detaches",
-        "advancedcore"
+        "advancedcore",
+        "shared_flux_sink",
+        "always_detaches",
+        "reduced_explosion"
+        
     ],
     "builtInWings": [],
     "builtInModules": null,

@@ -1,7 +1,7 @@
 {
     "hullName": "Aeternum Left Armor",
     "hullId": "ELYS_aeternum_left_armor",
-    "hullSize": "CRUISER",
+    "hullSize": "DESTROYER",
     "style": "ELYSIUM",
     "spriteName": "graphics/ships/aeternum/aeternum_mid_left.png",
     "height": 196,
@@ -22,7 +22,10 @@
     "builtInMods": [
         "ELYS_Armor",
         "always_detaches",
-        "ELYS_EnhancedHealingArmor"
+        "ELYS_EnhancedHealingArmor",
+        "shared_flux_sink",
+        "always_detaches",
+        "reduced_explosion"
     ],
     "builtInWings": [],
     "builtInModules": null,

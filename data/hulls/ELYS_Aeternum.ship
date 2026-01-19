@@ -24,7 +24,10 @@
     "builtInMods": [
             "ELYS_Armor",
             "ELYS_AeternumBeamAnimationHullmod",
-            "advancedcore"
+            "advancedcore",
+            "shared_flux_sink",
+            "do_not_back_off"
+
         ],
     "weaponSlots": [
         {
