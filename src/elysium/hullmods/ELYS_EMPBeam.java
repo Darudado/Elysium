@@ -109,7 +109,7 @@ public class ELYS_EMPBeam extends BaseHullMod {
 	    if (Math.random() < EMP_ARC_CHANCE) {
 		// Create actual EMP arc (not just visual) that can pierce shields
 		engine.spawnEmpArcPierceShields(
-			beam.getSource(), point, beam.getDamageTarget(), beam.getDamageTarget(),
+			beam.getSource(), point, target, target,
 			DamageType.ENERGY, // Damage type
 			empAmount * 0.25f,              // Hull damage (none)
 			empAmount * 0.5f, // EMP damage (50% of the calculated amount)
