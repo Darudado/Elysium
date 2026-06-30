@@ -24,12 +24,12 @@ Flower Torpedo Launcher (L),elys_flowertrp_l,4,0.1,40000,2200,,1600,0,40,10,32,8
 #missile,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##small,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Elysium Swarmer (S),elys_swarm_small,2,0.5,1500,2000,,140,20,5,15,5,27,,,KINETIC,,,"0,5",2,3,,,,,,,600,90,5,150,,,"DO_NOT_AIM, STRIKE, USE_VS_FRIGATES,","missile19, strike15,elysium_weap_bp",,Elysium,,Suppression,Very Fast,Special,,,"Extremely fast guided missiles, their damage is low but they can successfully suppress shields",,,,,50
-Elysium Assault Torpedo (S),elys_torpedo_small,2,1,500,1200,,4000,500,75,10,2,1,,,ENERGY,,,0,5,1,,0,0,0,0,,400,70,3.5,500,,,STRIKE,"strike8, rocket3, elysium_weap_bp",,Elysium,,Torpedo,Fast,None,,,Unguided Torpedo that does boosted damage when fired Point-blank,,Deals up to 50% more damage at short range,,TRUE,51
+Elysium Assault Torpedo (S),elys_torpedo_small,2,1,500,1200,,4000,500,75,10,2,1,,,ENERGY,,,0,5,1,,0,0,0,0,,400,70,3.5,500,,,STRIKE,"strike8, rocket3, elysium_weap_bp",,Elysium,,Torpedo,Fast,None,,,Unguided Torpedo that does boosted damage when fired Point-blank,,Deals up to %s more damage at short range,50%,TRUE,51
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##med,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Elysium Swarmer (M),elys_swarm_med,2,0.5,3000,2000,,150,20,11,12,10,55,,,KINETIC,,,"0,5",2,5,,,,,,,600,90,5,200,,,"DO_NOT_AIM, STRIKE, USE_VS_FRIGATES, ","missile19, strike15,elysium_weap_bp",,Elysium,,Suppression,Very Fast,Special,,,"Extremely fast guided missiles, their damage is low but they can successfully suppress shields",,,,,52
-Elysium Assault Torpedo Array (M),elys_torpedo_medium,3,0.8,1500,1200,,3000,,75,20,13,10,,,ENERGY,,,0,10,2,,0,0,0,0,,400,55,3.5,500,,,STRIKE,"strike13, rocket8, elysium_weap_bp",,Elysium,,Torpedo,Fast,None,,,"Unguided Torpedo that does boosted damage when fired Point-blank. This version fires 2 torpedos at the same time, but at slower speeds. ",,Deals up to 50% more damage at short range,,TRUE,53
+Elysium Assault Torpedo Array (M),elys_torpedo_medium,3,0.8,1500,1200,,3000,,75,20,13,10,,,ENERGY,,,0,10,2,,0,0,0,0,,400,55,3.5,500,,,STRIKE,"strike13, rocket8, elysium_weap_bp",,Elysium,,Torpedo,Fast,None,,,"Unguided Torpedo that does boosted damage when fired Point-blank. This version fires 2 torpedos at the same time, but at slower speeds. ",,Deals up to %s more damage at short range,50%,TRUE,53
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ##large,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
